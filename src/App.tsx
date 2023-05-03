@@ -1,4 +1,3 @@
-// import './App.css';
 import AboutMoov from './components/AboutMoov';
 
 function App() {

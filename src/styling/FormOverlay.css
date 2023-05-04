@@ -1,0 +1,53 @@
+.root{
+    margin: 80px 40px 40px 40px;
+    padding: 40px;
+}
+.item1{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item2{
+    height: 600px;
+}
+.item3{
+    height: 600px;
+}
+.item4{
+    height: 300px
+}
+.hash-numbers{
+    font-size: xx-large;
+    padding: 20px 0px 20px 20px;
+}
+.list-headline{
+    font-weight: 700;
+    text-align: center;
+    font-size: xx-large;
+    margin: 5px;
+}
+.list-content{
+    padding: 10px 50px 10px 30px;
+    font-size: 17px;
+}
+.title-main{
+    font-size: xxx-large;
+}
+.icon-tray{
+    justify-content: center;
+}
+.description-tray{
+    justify-content: center;
+}
+.arrow-icon{
+    position: relative;
+    top: 7px;
+}
+.bottomline-titile{
+    color: #2047B6
+}
+.footer{
+    align-items: center;
+    padding-top: 60px;
+}

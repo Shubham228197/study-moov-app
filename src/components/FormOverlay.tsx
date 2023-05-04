@@ -41,7 +41,7 @@ const FormOverlay = () => {
             </table>
           </Stack>
         </Grid>
-        <Grid className='item3' item sm={7} xs={12}>Item 3</Grid>
+        <Grid className='item3' item sm={7} xs={12}></Grid>
         <Grid className='item4' item sm={12} xs={12}>
           <Stack direction='column'>
             <Stack className='icon-tray' padding={2} direction='row'>

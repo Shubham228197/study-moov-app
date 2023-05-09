@@ -1,39 +1,22 @@
-import { Paper} from "@mui/material";
-import CloseIcon from "@mui/icons-material/Close";
 import "../styling/AboutMoov.css";
+import { aboutData } from "../constants/constants.js";
+import {
+  AboutCardContainer,
+  CrossButtonIcon,
+  AboutHeadline,
+  AboutContent,
+} from "../styling/TextStyling";
+
 const AboutMoov = () => {
   return (
     <div>
-      <Paper
-        className="about-container"
-        sx={{ borderRadius: "20px" }}
-        elevation={15}
-      >
-        <CloseIcon
-          className="cross-button"
-          onClick={() => {
-            console.log("hello");
-          }}
-          sx={{opacity: '10px', color: "primary"}}
-        />
-        <h1 className="about-headline">About Us</h1>
-        <p>
-          An idea of ​​what it might take for you to get into your dream
-          university. <br />
-          <br />
-          Personalized and detailed offer of our services depending on your
-          needs.
-          <br />
-          <br />
-          Understanding what financial and time commitments will be required
-          from you to get into the university of your dreams.
-          <br />
-          <br />
-          Discuss the strength of your portfolio and application in general.
-          <br />
-          <br />
-        </p>
-      </Paper>
+      <AboutCardContainer sx={{ borderRadius: "20px" }} elevation={15}>
+        <CrossButtonIcon />
+        <AboutHeadline>About Us</AboutHeadline>
+        {aboutData.map((item) => (
+          <AboutContent>{item}</AboutContent>
+        ))}
+      </AboutCardContainer>
     </div>
   );
 };

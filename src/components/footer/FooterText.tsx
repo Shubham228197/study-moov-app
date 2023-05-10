@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
+import { FooterTextConatiner } from "../../styling/main/MainOverlayStyles";
+import { FooterTextTitle } from "../../styling/main/MainTextStyles";
 import {
-  FooterTextTitle,
-  FooterTextConatiner,
   HeartIcon,
   GreaterThanIcon,
-} from "../../styling/homepage/FormOverlayStyles";
+} from "../../styling/Buttons/IconButtonStyles";
 
 const FooterText = () => {
   return (

@@ -1,4 +1,3 @@
-import { Stack } from "@mui/material";
 import {
   FaceBookIcon,
   InstaGramIcon,
@@ -6,19 +5,19 @@ import {
   LinkedinIcon,
   YoutubeIcon,
 } from "../../styling/Buttons/IconButtons";
-import { StudyMoovDesc } from "../../styling/homepage/FormOverlayStyles";
+import { StudyMoovDesc, IconTray } from "../../styling/main/MainOverlayStyles";
 import { FooterLink } from "../../styling/Buttons/ButtonStyles";
 
 const FooterIcon = () => {
   return (
-    <div>
-      <Stack className="icon-tray" padding={2} direction="row">
+    <div style={{ margin: "30px" }}>
+      <IconTray direction="row">
         <FaceBookIcon />
         <YoutubeIcon />
         <InstaGramIcon />
         <TwitteRIcon />
         <LinkedinIcon />
-      </Stack>
+      </IconTray>
       <StudyMoovDesc direction="row">
         <FooterLink>About Us</FooterLink>
         <FooterLink>Privacy Policy</FooterLink>

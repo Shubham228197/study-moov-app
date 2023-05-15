@@ -4,12 +4,12 @@ import FilterFieldHome from "./FilterFieldHome";
 import CollegeCardOpen from "./CollegeCardDetails";
 import FooterIcon from "../footer/FooterIcon";
 import FooterText from "../footer/FooterText";
-import { ShowMoreButton } from "../../styling/Buttons/ButtonStyles";
+import { ShowMoreButton } from "../../../styling/Buttons/ButtonStyles";
 import {
   HomepageContent,
   ShowMoreButtonContainer,
-} from "../../styling/main/HomepageOverlayStyles";
-import { HomepageHeading } from "../../styling/main/HomepageTextStyles";
+} from "../../../styling/main/HomepageOverlayStyles";
+import { HomepageHeading } from "../../../styling/main/HomepageTextStyles";
 
 const HomepageMain = () => {
   return (

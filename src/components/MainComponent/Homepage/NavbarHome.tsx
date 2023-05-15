@@ -1,15 +1,15 @@
 import "./styling.css";
 import TransparentNavbar from "./TransparentNavbar";
 import { Box } from "@mui/material";
-import BritainFlag from "../../figma_Images/great-britain-flag-icon.png";
-import ScotlandFlag from "../../figma_Images/scotland-flag-icon.png";
+import BritainFlag from "../../../figma_Images/great-britain-flag-icon.png";
+import ScotlandFlag from "../../../figma_Images/scotland-flag-icon.png";
 import {
   BritainFlagImage,
   ScotlandFlagImage,
   NaviagtionFooter,
-} from "../../styling/main/HomepageOverlayStyles";
-import { NaviagtionHeading } from "../../styling/main/HomepageTextStyles";
-import { CommonButton } from "../../styling/Buttons/ButtonStyles";
+} from "../../../styling/main/HomepageOverlayStyles";
+import { NaviagtionHeading } from "../../../styling/main/HomepageTextStyles";
+import { CommonButton } from "../../../styling/Buttons/ButtonStyles";
 
 const NavbarHome = () => {
   return (

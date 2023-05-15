@@ -1,15 +1,15 @@
 import { Grid } from "@mui/material";
-import image from "../figma_Images/confetti_1-removebg-preview.png";
+import image from "../../figma_Images/confetti_1-removebg-preview.png";
 import {
   Formbox,
   MessageBox,
   FormImageContainer,
   CrackerImage,
-} from "../styling/main/MainOverlayStyles";
+} from "../../styling/main/MainOverlayStyles";
 import {
   FormPrimaryText,
   FormSecondaryText,
-} from "../styling/main/MainTextStyles";
+} from "../../styling/main/MainTextStyles";
 
 const FormOutput = () => {
   return (

@@ -1,45 +1,47 @@
 import { Toolbar, Stack } from "@mui/material";
 import {
-  Navtitle,
   NavSpan,
   NavtitleSubheading,
-  ContactNumber,
-  ChooseCountries,
-} from "../styling/main/MainTextStyles";
-import { NavigationBar } from "../styling/main/MainOverlayStyles";
-import { CallBackButton } from "../styling/Buttons/ButtonStyles";
+  ContactNumberWhite,
+  NavtitleWhite,
+} from "../../../styling/main/MainTextStyles";
+import { CallBackButton } from "../../../styling/Buttons/ButtonStyles";
 import {
   GreaterThanIcon,
-  GlobeIcon,
-} from "../styling/Buttons/IconButtonStyles";
+  GlobeIconBlue,
+} from "../../../styling/Buttons/IconButtonStyles";
+import {
+  TransparentNavConatiner,
+  SelecteCountries,
+} from "../../../styling/main/HomepageOverlayStyles";
 
-const FormNavbar = () => {
+const TransparentNavbar = () => {
   return (
-    <NavigationBar elevation={0}>
+    <TransparentNavConatiner sx={{ boxShadow: "none" }}>
       <Toolbar>
-        <Navtitle>
+        <NavtitleWhite>
           Study
           <GreaterThanIcon sx={{ color: "#2047B6" }} />
           <NavSpan>Moov</NavSpan>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
-        </Navtitle>
+        </NavtitleWhite>
         <Stack direction="row" spacing={2}>
-          <ContactNumber>+7 495 284-44-23</ContactNumber>
+          <ContactNumberWhite>+7 495 284-44-23</ContactNumberWhite>
           <CallBackButton variant="contained">Call Back</CallBackButton>
           <Stack direction="row" spacing={2}>
-            <GlobeIcon />
-            <ChooseCountries name="countries">
+            <GlobeIconBlue />
+            <SelecteCountries name="countries">
               <option value="Russia">Russian</option>
               <option value="India">India</option>
               <option value="China">China</option>
               <option value="Austria">Austria</option>
               <option value="USA">USA</option>
-            </ChooseCountries>
+            </SelecteCountries>
           </Stack>
         </Stack>
       </Toolbar>
-    </NavigationBar>
+    </TransparentNavConatiner>
   );
 };
 
-export default FormNavbar;
+export default TransparentNavbar;

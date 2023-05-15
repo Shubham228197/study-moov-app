@@ -4,9 +4,9 @@ import {
   TwitteRIcon,
   LinkedinIcon,
   YoutubeIcon,
-} from "../../styling/Buttons/IconButtons";
-import { StudyMoovDesc, IconTray } from "../../styling/main/MainOverlayStyles";
-import { FooterLink } from "../../styling/Buttons/ButtonStyles";
+} from "../../../styling/Buttons/IconButtons";
+import { StudyMoovDesc, IconTray } from "../../../styling/main/MainOverlayStyles";
+import { FooterLink } from "../../../styling/Buttons/ButtonStyles";
 
 const FooterIcon = () => {
   return (

@@ -8,6 +8,8 @@ import {
   HeartIcon,
   GreaterThanIcon,
   CrossButtonIcon,
+  StarIconLogo,
+  InfoIconLogo,
 } from "./IconButtonStyles";
 export {
   FaceBookIcon,
@@ -19,4 +21,6 @@ export {
   HeartIcon,
   GreaterThanIcon,
   CrossButtonIcon,
+  StarIconLogo,
+  InfoIconLogo,
 };

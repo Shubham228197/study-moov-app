@@ -1,7 +1,7 @@
-import { aboutData } from "../constants/constants.js";
-import { AboutHeadline, AboutContent } from "../styling/main/MainTextStyles";
-import { AboutCardContainer } from "../styling/main/MainOverlayStyles";
-import { CrossButtonIcon } from "../styling/Buttons/IconButtonStyles";
+import { aboutData } from "../../constants/constants.js";
+import { AboutHeadline, AboutContent } from "../../styling/main/MainTextStyles.js";
+import { AboutCardContainer } from "../../styling/main/MainOverlayStyles.js";
+import { CrossButtonIcon } from "../../styling/Buttons/IconButtonStyles.js";
 
 const AboutMoov = () => {
   return (

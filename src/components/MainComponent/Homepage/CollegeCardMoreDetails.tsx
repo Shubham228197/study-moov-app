@@ -1,20 +1,20 @@
 import { Box, Button, Divider, Grid } from "@mui/material";
-import GradImage from "../../figma_Images/graduation-cap-icon-main.png";
-import PencilImage from "../../figma_Images/pencil-icon.png";
-import BellImage from "../../figma_Images/bell-icon.png";
-import AppleImage from "../../figma_Images/apple-icon.png";
-import SandClockImage from "../../figma_Images/sandwatch-icon.png";
+import GradImage from "../../../figma_Images/graduation-cap-icon-main.png";
+import PencilImage from "../../../figma_Images/pencil-icon.png";
+import BellImage from "../../../figma_Images/bell-icon.png";
+import AppleImage from "../../../figma_Images/apple-icon.png";
+import SandClockImage from "../../../figma_Images/sandwatch-icon.png";
 import {
   ExtendedButton,
   ExtendedButtonSelected,
-} from "../../styling/Buttons/ButtonStyles";
+} from "../../../styling/Buttons/ButtonStyles";
 import {
   CollegeInfoExtended,
   ExtendedInfoButtonContainer,
   UtilityIcons,
   UtilityContainer,
-} from "../../styling/main/HomepageOverlayStyles";
-import { CollegeDegreeDetails } from "../../constants/constants";
+} from "../../../styling/main/HomepageOverlayStyles";
+import { CollegeDegreeDetails } from "../../../constants/constants";
 
 const CollegeCardMoreDetails = () => {
   return (

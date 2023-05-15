@@ -1,5 +1,5 @@
-import { FeeText } from "../../styling/main/HomepageTextStyles";
-import { FeeContainer } from "../../styling/main/HomepageOverlayStyles";
+import { FeeText } from "../../../styling/main/HomepageTextStyles";
+import { FeeContainer } from "../../../styling/main/HomepageOverlayStyles";
 
 const CollegeFee = () => {
   return (

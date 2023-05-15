@@ -6,13 +6,13 @@ import FooterText from "../footer/FooterText";
 import {
   FilterBoxMain,
   ShowMoreButtonContainer,
-} from "../../styling/main/HomepageOverlayStyles";
+} from "../../../styling/main/HomepageOverlayStyles";
 import {
   FilterMainHeadline,
   FilterMainSubheading,
-} from "../../styling/main/HomepageTextStyles";
-import { HomepageFilterSubheadingText } from "../../constants/constants.js";
-import { ShowMoreButton } from "../../styling/Buttons/ButtonStyles";
+} from "../../../styling/main/HomepageTextStyles";
+import { HomepageFilterSubheadingText } from "../../../constants/constants.js";
+import { ShowMoreButton } from "../../../styling/Buttons/ButtonStyles";
 
 const HomepageFiltered = () => {
   return (

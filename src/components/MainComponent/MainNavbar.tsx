@@ -1,47 +1,45 @@
 import { Toolbar, Stack } from "@mui/material";
 import {
+  Navtitle,
   NavSpan,
   NavtitleSubheading,
-  ContactNumberWhite,
-  NavtitleWhite,
+  ContactNumber,
+  ChooseCountries,
 } from "../../styling/main/MainTextStyles";
+import { NavigationBar } from "../../styling/main/MainOverlayStyles";
 import { CallBackButton } from "../../styling/Buttons/ButtonStyles";
 import {
   GreaterThanIcon,
-  GlobeIconBlue,
+  GlobeIcon,
 } from "../../styling/Buttons/IconButtonStyles";
-import {
-  TransparentNavConatiner,
-  SelecteCountries,
-} from "../../styling/main/HomepageOverlayStyles";
 
-const TransparentNavbar = () => {
+const FormNavbar = () => {
   return (
-    <TransparentNavConatiner sx={{ boxShadow: "none" }}>
+    <NavigationBar elevation={0}>
       <Toolbar>
-        <NavtitleWhite>
+        <Navtitle>
           Study
           <GreaterThanIcon sx={{ color: "#2047B6" }} />
           <NavSpan>Moov</NavSpan>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
-        </NavtitleWhite>
+        </Navtitle>
         <Stack direction="row" spacing={2}>
-          <ContactNumberWhite>+7 495 284-44-23</ContactNumberWhite>
+          <ContactNumber>+7 495 284-44-23</ContactNumber>
           <CallBackButton variant="contained">Call Back</CallBackButton>
           <Stack direction="row" spacing={2}>
-            <GlobeIconBlue />
-            <SelecteCountries name="countries">
+            <GlobeIcon />
+            <ChooseCountries name="countries">
               <option value="Russia">Russian</option>
               <option value="India">India</option>
               <option value="China">China</option>
               <option value="Austria">Austria</option>
               <option value="USA">USA</option>
-            </SelecteCountries>
+            </ChooseCountries>
           </Stack>
         </Stack>
       </Toolbar>
-    </TransparentNavConatiner>
+    </NavigationBar>
   );
 };
 
-export default TransparentNavbar;
+export default FormNavbar;

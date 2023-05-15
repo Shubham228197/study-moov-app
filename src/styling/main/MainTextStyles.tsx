@@ -45,6 +45,13 @@ export const Navtitle = Styles(Typography)`
     font-size: x-large ! important;
     color: black !important;
 `;
+export const NavtitleWhite = Styles(Typography)`
+    font-family: 'Montserrat', sans-serif ! important;
+    flex-grow: 1;
+    font-weight: bolder ! important;
+    font-size: x-large ! important;
+    color: #ffffff !important;
+`;
 
 export const NavSpan = Styles.span`
     color: blue;
@@ -60,6 +67,12 @@ export const NavtitleSubheading = Styles(Typography)`
 export const ContactNumber = Styles(Typography)`
     font-family: 'Inter', sans-serif ! important;
     color: black ! important;
+    margin: 5px ! important;
+    font-weight: bold ! important;
+`;
+export const ContactNumberWhite = Styles(Typography)`
+    font-family: 'Inter', sans-serif ! important;
+    color: #ffffff ! important;
     margin: 5px ! important;
     font-weight: bold ! important;
 `;

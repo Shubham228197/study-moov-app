@@ -17,7 +17,27 @@ export const FormSubmit = Styles(Button)`
 `;
 
 export const CallBackButton = Styles(Button)`
-font-family: 'Inter', sans-serif;
-margin-left: 6px;
-text-transform: capitalize ! important;
+  font-family: 'Inter', sans-serif;
+  margin-left: 6px;
+  text-transform: capitalize ! important;
+`;
+
+export const ShowMoreButton = Styles(Button)`
+  border: 2px solid black ! important;
+  color: black ! important;
+`;
+
+export const ExtendedButtonSelected = Styles(Button)`
+  background-color: black ! important; 
+  color: white ! important;
+`;
+
+export const ExtendedButton = Styles(Button)`
+  color: gray ! important;
+`;
+
+export const CommonButton = Styles(Button)`
+  display: flex ! important;
+  margin: 30px auto 5px auto ! important;
+  text-transform: capitalize ! important;
 `;

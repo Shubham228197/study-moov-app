@@ -22,7 +22,7 @@ export const FilterBoxMain = Styles(Box)`
 export const ShowMoreButtonContainer = Styles(Box)`
     display: flex ! important; 
     justify-content: center ! important; 
-    margin: 50px ! important;
+    margin: 20px ! important;
 `;
 
 export const CollegeInfoCard = Styles(Paper)`

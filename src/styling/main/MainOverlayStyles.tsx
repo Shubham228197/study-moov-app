@@ -12,7 +12,7 @@ import {
 
 export const FooterTextConatiner = Styles(Stack)`
     align-items: center;
-    padding-top: 60px;
+    padding: 20px;
 `;
 
 export const StudyMoovDesc = Styles(Stack)`

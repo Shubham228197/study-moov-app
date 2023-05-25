@@ -20,7 +20,7 @@ import CollegeBuiding from "../../../figma_Images/Rectangle-cropped.jpg";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CollegeCardMoreDetails from "./CollegeCardMoreDetails";
-import React, { useState } from "react";
+import { useState } from "react";
 import { StarIconLogo, InfoIconLogo } from "../../../styling/Buttons/IconButtons";
 import { InfoBullets, InfoPoints } from "../../../styling/main/HomepageTextStyles";
 import VienaaImage from "../../../figma_Images/vienna-logo.jpg";

@@ -4,7 +4,7 @@ import { GlobeIcon } from "../../styling/Buttons/IconButtonStyles";
 
 const CookieNavbar = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: "transparent" }}>
+    <AppBar position="static" sx={{ backgroundColor: "transparent", boxShadow: 'none' }}>
       <Toolbar>
         <Stack direction='row' sx={{ flexGrow: 1 }}>
           <Typography

@@ -18,9 +18,6 @@
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 // import CookieListPage from "./components/Cookies/CookieListPage";
 // import CookieManagement from "./components/Cookies/CookieManagement";
-// import PageNotFound from "./components/ErrorPage/PageNotFound";
-import CookieErrorPage from "./components/ErrorPage/CookieErrorPage";
-// import MultiLang from "./components/ErrorPage/MultiLang";
 
 function App() {
   return (
@@ -44,9 +41,7 @@ function App() {
       {/* <ProgramDetails/> */}
       {/* <CookieListPage/> */}
       {/* <CookieManagement/> */}
-      {/* <PageNotFound/> */}
-      <CookieErrorPage/>
-      {/* <MultiLang/> */}
+
     </div>
   );
 }

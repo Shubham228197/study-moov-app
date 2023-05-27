@@ -17,7 +17,8 @@
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 // import CookieListPage from "./components/Cookies/CookieListPage";
-import CookieManagement from "./components/Cookies/CookieManagement";
+// import CookieManagement from "./components/Cookies/CookieManagement";
+import CollegeProfilePage from "./components/IndividualCollegeProfile/CollegeProfilePage";
 
 function App() {
   return (
@@ -40,7 +41,8 @@ function App() {
       {/* <ConsultationResult/> */}
       {/* <ProgramDetails/> */}
       {/* <CookieListPage/> */}
-      <CookieManagement/>
+      {/* <CookieManagement/> */}
+      <CollegeProfilePage/>
     </div>
   );
 }

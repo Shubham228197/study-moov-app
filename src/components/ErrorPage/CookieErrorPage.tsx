@@ -1,74 +1,49 @@
 import React from "react";
 import CookieNavbar from "../Cookies/CookieNavbar";
 import { Box, Button, Grid, Typography } from "@mui/material";
-import { langVariations } from "./constant";
+import { langVariations } from "./ErrorPageConstant/constant";
 import MultiLang from "./MultiLang";
 import CookieFooter from "../Cookies/CookieFooter";
+import {
+  GridCenterLowMargin,
+  GridColummn,
+  HomePageButton,
+  MultiLanguBox,
+} from "./Styling/ErrorPageStylingOverlays";
+import {
+  BoldText,
+  CenterBoldText,
+  HomeButtonText,
+  MultiLangHeading,
+} from "./Styling/ErrorPageStylingText";
 
 const CookieErrorPage = () => {
   return (
     <div style={{ backgroundColor: "#f2efce" }}>
       <CookieNavbar />
       <Box>
-        <Typography
-          variant="h4"
-          fontWeight="bold"
-          sx={{ textAlign: "center", margin: "40px 0px" }}
-        >
-          404 ERROR: Page Not Found
-        </Typography>
+        <CenterBoldText variant="h4">404 ERROR: Page Not Found</CenterBoldText>
         <Grid container>
-          <Grid
-            item
-            xs={6}
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              padding: "0px 0px 0px 20%",
-            }}
-          >
+          <GridColummn item xs={6}>
             {langVariations.map((lines) => (
-              <Typography variant="h5" fontWeight="bold">
-                {lines}
-              </Typography>
+              <BoldText variant="h5">{lines}</BoldText>
             ))}
-          </Grid>
-          <Grid item xs={6} sx={{ textAlign: "center", margin: "5px 0px" }}>
-            <Button
-              size="large"
-              sx={{
-                textTransform: "capitalize",
-                backgroundColor: "#C4C4C4",
-                color: "black",
-                fontWeight: "bold",
-                padding: "0px",
-              }}
-            >
-              <Typography
-                variant="h5"
-                padding="10px 80px"
-                fontWeight="bold"
-                border={1}
-                fontStyle="italic"
-              >
-                to Home Page
-              </Typography>
-            </Button>
-          </Grid>
+          </GridColummn>
+          <GridCenterLowMargin item xs={6}>
+            <HomePageButton size="large">
+              <HomeButtonText variant="h5">to Home Page</HomeButtonText>
+            </HomePageButton>
+          </GridCenterLowMargin>
         </Grid>
-        <Box sx={{display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px'}}>
-          <Typography
-            variant="h4"
-            fontWeight="bold"
-            sx={{ textAlign: "center", margin: "80px 0px 40px 0px" }}
-          >
+        <MultiLanguBox>
+          <MultiLangHeading variant="h4">
             This is an example of visualization of a record in different
             languages.
-          </Typography>
+          </MultiLangHeading>
           <MultiLang />
-        </Box>
+        </MultiLanguBox>
       </Box>
-      <CookieFooter/>
+      <CookieFooter />
     </div>
   );
 };

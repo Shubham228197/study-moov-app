@@ -1,6 +1,6 @@
 import React from "react";
 import CookieNavbar from "../Cookies/CookieNavbar";
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import { langVariations } from "./ErrorPageConstant/constant";
 import MultiLang from "./MultiLang";
 import CookieFooter from "../Cookies/CookieFooter";
@@ -12,7 +12,7 @@ import {
 } from "./Styling/ErrorPageStylingOverlays";
 import {
   BoldText,
-  CenterBoldText,
+  CenterBoldTextHighMar,
   HomeButtonText,
   MultiLangHeading,
 } from "./Styling/ErrorPageStylingText";
@@ -22,7 +22,9 @@ const CookieErrorPage = () => {
     <div style={{ backgroundColor: "#f2efce" }}>
       <CookieNavbar />
       <Box>
-        <CenterBoldText variant="h4">404 ERROR: Page Not Found</CenterBoldText>
+        <CenterBoldTextHighMar variant="h4">
+          404 ERROR: Page Not Found
+        </CenterBoldTextHighMar>
         <Grid container>
           <GridColummn item xs={6}>
             {langVariations.map((lines) => (

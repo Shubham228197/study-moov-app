@@ -2,7 +2,7 @@ import { Typography } from '@mui/material'
 import Styles from 'styled-components'
 
 // CookieErrorPage
-export const CenterBoldText = Styles(Typography)`
+export const CenterBoldTextHighMar = Styles(Typography)`
 font-weight: bold ! important;
 text-align: center ! important;
 margin: 40px 0px ! important;

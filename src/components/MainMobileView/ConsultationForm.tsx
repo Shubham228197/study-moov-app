@@ -1,31 +1,25 @@
-import {
-  Paper,
-  FormControl,
-  FormGroup,
-  FormControlLabel,
-  Typography,
-  Box,
-} from "@mui/material";
+import { FormControl, FormGroup, FormControlLabel } from "@mui/material";
 import { CheckboxLabel, FormHeading } from "../../styling/main/MainTextStyles";
 import { CheckBox, FormFields } from "../../styling/main/MainOverlayStyles";
 import { FormSubmit } from "../../styling/Buttons/ButtonStyles";
 import { FormTnC } from "../../constants/constants";
 import FooterIcon from "../MainComponent/footer/FooterIcon";
 import FooterText from "../MainComponent/footer/FooterText";
+import { BoxCenter, PaperMidPad } from "./Styling/MobileStylingOverlays";
+import { CenterTextHighMar } from "./Styling/MobileStylingText";
 
-const FieldStyle = {
+export const FieldStyle = {
   style: {
     borderRadius: "10px",
     border: "1px solid black",
   },
 };
+
 const ConsultationForm = () => {
   return (
     <>
-      <Paper elevation={8} sx={{ padding: "10px" }}>
-        <Typography sx={{ margin: "20px", textAlign: "center" }}>
-          Study &gt; Moov
-        </Typography>
+      <PaperMidPad elevation={8}>
+        <CenterTextHighMar>Study &gt; Moov</CenterTextHighMar>
         <FormControl>
           <FormHeading>Book a consultation</FormHeading>
           <FormGroup>
@@ -43,11 +37,11 @@ const ConsultationForm = () => {
           </FormGroup>
           <FormSubmit variant="contained">Submit your application</FormSubmit>
         </FormControl>
-      </Paper>
-      <Box sx={{ textAlign: "center" }}>
+      </PaperMidPad>
+      <BoxCenter>
         <FooterIcon />
         <FooterText />
-      </Box>
+      </BoxCenter>
     </>
   );
 };

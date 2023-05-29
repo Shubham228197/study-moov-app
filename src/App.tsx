@@ -1,5 +1,5 @@
 // import AboutMoov from './components/MainComponent/AboutMoov';
-// import AboutMobView from "./components/MainMobileView/AboutMobView";
+import AboutMobView from "./components/MainMobileView/AboutMobView";
 // import MainNavbar from './components/MainComponent/MainNavbar';
 // import FormOverlay from './components/MainComponent/FormOverlay';
 // import FormOutput from './components/MainComponent/FormOutput';
@@ -9,11 +9,11 @@
 // import HomepageMain from "./components/MainComponent/Homepage/HomepageMain";
 // import HomepageFiltered from "./components/MainComponent/Homepage/HomepageFiltered";
 // import TransparentNavbar from "./components/MainComponent/Homepage/TransparentNavbar";
-// import NavbarMob from "./components/MainMobileView/NavbarMob";
-// import MidbarMob from "./components/MainMobileView/MidbarMob";
+import NavbarMob from "./components/MainMobileView/NavbarMob";
+import MidbarMob from "./components/MainMobileView/MidbarMob";
 // import HomepageMob from "./components/MainMobileView/HomepageMob";
-// import ConsultationForm from "./components/MainMobileView/ConsultationForm";
-// import ConsultationResult from "./components/MainMobileView/ConsultationResult";
+import ConsultationForm from "./components/MainMobileView/ConsultationForm";
+import ConsultationResult from "./components/MainMobileView/ConsultationResult";
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 // import CookieListPage from "./components/Cookies/CookieListPage";
@@ -21,14 +21,16 @@
 // import CookieErrorPage from "./components/ErrorPage/CookieErrorPage";
 // import MultiLang from "./components/ErrorPage/MultiLang";
 // import PageNotFound from "./components/ErrorPage/PageNotFound";
+import ProgramDetails from "./components/MainMobileView/ProgramDetails";
+import UniversityCard from "./components/MainMobileView/UniversityCard";
 
 function App() {
   return (
     <div className="App">
       {/* <AboutMoov/> */}
-      {/* <AboutMobView/> */}
-      {/* <NavbarMob/>
-      <MidbarMob/> */}
+      <AboutMobView/>
+      <NavbarMob/>
+      <MidbarMob/>
       {/* <MainNavbar/> */}
       {/* <FormOverlay/>      */}
       {/* <FormOutput/> */}
@@ -39,14 +41,16 @@ function App() {
       {/* <HomepageFiltered/> */}
       {/* <TransparentNavbar/> */}
       {/* <HomepageMob/> */}
-      {/* <ConsultationForm/> */}
-      {/* <ConsultationResult/> */}
+      <ConsultationForm/>
+      <ConsultationResult/>
       {/* <ProgramDetails/> */}
       {/* <CookieListPage/> */}
       {/* <CookieManagement/> */}
       {/* <CookieErrorPage/>
       <MultiLang/>
       <PageNotFound/> */}
+      <ProgramDetails/>
+      <UniversityCard/>
     </div>
   );
 }

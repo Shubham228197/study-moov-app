@@ -1,10 +1,10 @@
 import { Typography } from "@mui/material";
-import BagImage from "../../figma_Images/backpack-icon-main.png";
-import GraduationImage from "../../figma_Images/graduation-cap-icon-main.png";
-import BookIcon from "../../figma_Images/book-icon.png";
-import EnglandFlagImage from "../../figma_Images/great-britain-flag-icon.png";
-import SpainFlagImage from "../../figma_Images/spain-flag-icon.png";
-import FranceFlagImage from "../../figma_Images/france-flag-icon.png";
+import BagImage from "../../../figma_Images/backpack-icon-main.png";
+import GraduationImage from "../../../figma_Images/graduation-cap-icon-main.png";
+import BookIcon from "../../../figma_Images/book-icon.png";
+import EnglandFlagImage from "../../../figma_Images/great-britain-flag-icon.png";
+import SpainFlagImage from "../../../figma_Images/spain-flag-icon.png";
+import FranceFlagImage from "../../../figma_Images/france-flag-icon.png";
 
 export const MidbarText = [
   {

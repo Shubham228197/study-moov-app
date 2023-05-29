@@ -1,10 +1,11 @@
-import { Box, Stack } from "@mui/material";
-import { MidbarTextFull } from "./constant";
+import { Stack } from "@mui/material";
+import { MidbarTextFull } from "./MobileConstant/constant";
+import { BoxFlexMidPad } from "./Styling/MobileStylingOverlays";
 const MidbarMob = () => {
   return (
-    <Stack direction="column" sx={{backgroundColor:'lightgray'}}>
+    <Stack sx={{backgroundColor:'lightgray'}}>
       {MidbarTextFull.map((item) => (
-        <Box sx={{padding: '10px', display:'flex'}}>{item}</Box>
+        <BoxFlexMidPad>{item}</BoxFlexMidPad>
       ))}
     </Stack>
   );

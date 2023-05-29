@@ -1,2 +1,14 @@
 Improve Navbar of mobile
 Can not just remove any <tag></tag> as JSX does not return newly install MUI or Styled Components so  retturn (<tag></tag>); is imp
+When we have to add hover in Button it eill only work wehn Hover is inline Declaired of a Button MUI Comp, but when we Do the same with Styled Mui Button and Hover does not work in Styled as well as in Inline SX={{}} of Styled. 
+in Short Hover works in Inline of Original MUI comp. coz when we do explicit it losses its attributes and some attributes wont allow overiding.
+we can do the hover in syles with these syntax: 
+const Wrapper = styled.div`
+  &:hover .my__unique__button__class-asdf123 {
+    display: none;
+  }
+`
+
+<Wrapper>
+  <Button className="my__unique__button__class-asdf123" />
+</Wrapper>

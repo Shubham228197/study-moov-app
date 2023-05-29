@@ -6,7 +6,7 @@ import MultiLang from "./MultiLang";
 import CookieFooter from "../Cookies/CookieFooter";
 import {
   GridCenterLowMargin,
-  GridColummn,
+  GridColumn,
   HomePageButton,
   MultiLanguBox,
 } from "./Styling/ErrorPageStylingOverlays";
@@ -26,11 +26,11 @@ const CookieErrorPage = () => {
           404 ERROR: Page Not Found
         </CenterBoldTextHighMar>
         <Grid container>
-          <GridColummn item xs={6}>
+          <GridColumn item xs={6}>
             {langVariations.map((lines) => (
               <BoldText variant="h5">{lines}</BoldText>
             ))}
-          </GridColummn>
+          </GridColumn>
           <GridCenterLowMargin item xs={6}>
             <HomePageButton size="large">
               <HomeButtonText variant="h5">to Home Page</HomeButtonText>

@@ -2,7 +2,7 @@ import { Box, Button, Grid, Paper, Stack } from '@mui/material'
 import Styles from 'styled-components'
 
 // CookieErrorPage.tsx
-export const GridColummn = Styles(Grid)`
+export const GridColumn = Styles(Grid)`
     display: flex;
     flex-direction: column ! important;
     padding: 0px 0px 0px 20%;

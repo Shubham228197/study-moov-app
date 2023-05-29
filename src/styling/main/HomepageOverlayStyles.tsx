@@ -14,6 +14,14 @@ export const SelecteCountries = Styles.select`
     boxShadow: none;
     color: white;
 `;
+export const SelectCount = Styles.select`
+    border: 0;
+    width: 40px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: transparent; 
+    // boxShadow: none;
+`;
 
 export const FilterBoxMain = Styles(Box)`
     margin: 20px 150px 20px 150px ! important;

@@ -57,6 +57,7 @@ export const HeartIcon = Styles(FavoriteIcon)`
 export const GreaterThanIcon = Styles(KeyboardArrowRightIcon)`
     position: relative;
     top: 7px;
+    color: #2047B6;
 `;
 
 export const CrossButtonIcon = Styles(CloseIcon)`

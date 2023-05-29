@@ -1,25 +1,28 @@
-import React from "react";
 import CookieAccordianPage from "./CookieAccordianPage";
-import { Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import MainNavbar from "../MainComponent/MainNavbar";
 import FooterIcon from "../MainComponent/footer/FooterIcon";
 import CookieFooter from "./CookieFooter";
+import { Box30margin } from "./CookiesStyling/CookieStylingOverlays";
+import { BoldTextNoLRMidPad } from "./CookiesStyling/CookieStylingText";
 
 const CookieManagement = () => {
   return (
-    <div>
+    <>
       <MainNavbar />
-      <Box sx={{margin: '30px'}}>
-        <Typography variant="h5" sx={{fontWeight: 'bold', padding: '10px 0px'}}>Manage your cookies</Typography>
+      <Box30margin>
+        <BoldTextNoLRMidPad variant="h5">
+          Manage your cookies
+        </BoldTextNoLRMidPad>
         <Typography>
           Essential cookies are always on. You have the option to turn off other
           cookie types.
         </Typography>
-      </Box>
+      </Box30margin>
       <CookieAccordianPage />
       <FooterIcon />
       <CookieFooter />
-    </div>
+    </>
   );
 };
 

@@ -1,7 +1,7 @@
-import { aboutData } from "../../constants/constants";
-import { AboutHeadline, AboutContent } from "../../styling/main/MainTextStyles";
-import { AboutCardContainer } from "../../styling/main/MainOverlayStyles";
-import { CrossButtonIcon } from "../../styling/Buttons/IconButtonStyles";
+import { aboutData } from "../../../GeneralConstants/Constants";
+import { AboutHeadline, AboutContent } from "../MainStyling/MainTextStyles";
+import { AboutCardContainer } from "../MainStyling/MainOverlayStyles";
+import { CrossButtonIcon } from "../../../GeneralStyling/IconStyles";
 
 const AboutMoov = () => {
   return (

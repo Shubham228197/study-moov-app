@@ -2,10 +2,10 @@ import NavbarMob from "./NavbarMob";
 import MidbarMob from "./MidbarMob";
 import { Box, Typography } from "@mui/material";
 import UniversityCard from "./UniversityCard";
-import { ShowMoreButton } from "../../styling/Buttons/ButtonStyles";
-import { ShowMoreButtonContainer } from "../../styling/main/HomepageOverlayStyles";
-import FooterIcon from "../MainComponent/footer/FooterIcon";
-import FooterText from "../MainComponent/footer/FooterText";
+import { ShowMoreButton } from "../../GeneralStyling/Buttons";
+import { ShowMoreButtonContainer } from "../MainComponent/MainStyling/HomepageOverlayStyles";
+import FooterIcon from "../MainComponent/MainPage/FooterIcon";
+import FooterText from "../MainComponent/MainPage/FooterText";
 
 const HomepageMob = () => {
   return (

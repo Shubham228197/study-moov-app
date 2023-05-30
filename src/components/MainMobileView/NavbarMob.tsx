@@ -1,8 +1,8 @@
 import { Toolbar, Typography } from "@mui/material";
-import image from "../../figma_Images/vadim-sherbakov-darked-mob.jpg";
+import image from "../../FigmaImages/vadim-sherbakov-darked-mob.jpg";
 import React from "react";
-import { ButtonMidMar, MobNavbar, StackCenterMidPad } from "./Styling/MobileStylingOverlays";
-import { CenterTextHighMar } from "./Styling/MobileStylingText";
+import { ButtonMidMar, MobNavbar, StackCenterMidPad } from "./MobileStyling/MobileStylingOverlays";
+import { CenterTextHighMar } from "./MobileStyling/MobileStylingText";
 
 const NavbarMob = () => {
   return (

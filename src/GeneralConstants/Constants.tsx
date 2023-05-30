@@ -1,10 +1,10 @@
 import { InputAdornment, MenuItem } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
-import { UtilityIcons } from "../styling/main/HomepageOverlayStyles";
-import BritainFlag from "../figma_Images/great-britain-flag-icon.png";
-import SpainImage from "../figma_Images/spain-flag-icon.png";
-import GermanImage from "../figma_Images/icons8-germany-48.png";
-import RussiaImage from "../figma_Images/russia-flag-icon.png";
+import { UtilityIcons } from "../components/MainComponent/MainStyling/HomepageOverlayStyles";
+import BritainFlag from "../FigmaImages/great-britain-flag-icon.png";
+import SpainImage from "../FigmaImages/spain-flag-icon.png";
+import GermanImage from "../FigmaImages/icons8-germany-48.png";
+import RussiaImage from "../FigmaImages/russia-flag-icon.png";
 
 export const overlayData = [
   {

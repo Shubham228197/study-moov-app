@@ -1,19 +1,19 @@
-import "./styling.css";
 import TransparentNavbar from "./TransparentNavbar";
 import { Box } from "@mui/material";
-import BritainFlag from "../../../figma_Images/great-britain-flag-icon.png";
-import ScotlandFlag from "../../../figma_Images/scotland-flag-icon.png";
+import BritainFlag from "../../../FigmaImages/great-britain-flag-icon.png";
+import ScotlandFlag from "../../../FigmaImages/scotland-flag-icon.png";
 import {
   BritainFlagImage,
   ScotlandFlagImage,
   NaviagtionFooter,
-} from "../../../styling/main/HomepageOverlayStyles";
-import { NaviagtionHeading } from "../../../styling/main/HomepageTextStyles";
-import { CommonButton } from "../../../styling/Buttons/ButtonStyles";
+} from "../MainStyling/HomepageOverlayStyles";
+import { NaviagtionHeading } from "../MainStyling/HomepageTextStyles";
+import { CommonButton } from "../../../GeneralStyling/Buttons";
+import DarkedCollegeImage from '../../../FigmaImages/vadim-sherbakov-darked.jpg'
 
 const NavbarHome = () => {
   return (
-    <div className="image">
+    <Box sx={{backgroundImage: `url(${DarkedCollegeImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
       <TransparentNavbar />
       <Box>
         <BritainFlagImage src={BritainFlag} alt="great-britain-flag-icon" />
@@ -25,7 +25,7 @@ const NavbarHome = () => {
         <CommonButton variant="contained">Select University</CommonButton>
         <ScotlandFlagImage src={ScotlandFlag} alt="scotland-flag-icon" />
       </NaviagtionFooter>
-    </div>
+    </Box>
   );
 };
 

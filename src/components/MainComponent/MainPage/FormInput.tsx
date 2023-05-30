@@ -4,10 +4,10 @@ import {
   FormContainer,
   FormFields,
   CheckBox,
-} from "../../styling/main/MainOverlayStyles";
-import { FormHeading, CheckboxLabel } from "../../styling/main/MainTextStyles";
-import { FormSubmit } from "../../styling/Buttons/ButtonStyles";
-import { FormTnC } from "../../constants/constants";
+} from "../MainStyling/MainOverlayStyles";
+import { FormHeading, CheckboxLabel } from "../MainStyling/MainTextStyles";
+import { FormSubmit } from "../../../GeneralStyling/Buttons";
+import { FormTnC } from "../../../GeneralConstants/Constants";
 
 const FieldStyle = {
   style: {

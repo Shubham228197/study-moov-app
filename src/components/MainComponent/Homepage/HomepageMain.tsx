@@ -2,14 +2,14 @@ import NavbarHome from "./NavbarHome";
 import MidbarHome from "./MidbarHome";
 import FilterFieldHome from "./FilterFieldHome";
 import CollegeCardOpen from "./CollegeCardDetails";
-import FooterIcon from "../footer/FooterIcon";
-import FooterText from "../footer/FooterText";
-import { ShowMoreButton } from "../../../styling/Buttons/ButtonStyles";
+import FooterIcon from "../MainPage/FooterIcon";
+import FooterText from "../MainPage/FooterText";
+import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 import {
   HomepageContent,
   ShowMoreButtonContainer,
-} from "../../../styling/main/HomepageOverlayStyles";
-import { HomepageHeading } from "../../../styling/main/HomepageTextStyles";
+} from "../MainStyling/HomepageOverlayStyles";
+import { HomepageHeading } from "../MainStyling/HomepageTextStyles";
 
 const HomepageMain = () => {
   return (

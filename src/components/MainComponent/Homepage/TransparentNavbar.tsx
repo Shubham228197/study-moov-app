@@ -4,16 +4,16 @@ import {
   NavtitleSubheading,
   ContactNumberWhite,
   NavtitleWhite,
-} from "../../../styling/main/MainTextStyles";
-import { CallBackButton } from "../../../styling/Buttons/ButtonStyles";
+} from "../MainStyling/MainTextStyles";
+import { CallBackButton } from "../../../GeneralStyling/Buttons";
 import {
   GreaterThanIcon,
   GlobeIconBlue,
-} from "../../../styling/Buttons/IconButtonStyles";
+} from "../../../GeneralStyling/IconStyles";
 import {
   TransparentNavConatiner,
   SelecteCountries,
-} from "../../../styling/main/HomepageOverlayStyles";
+} from "../MainStyling/HomepageOverlayStyles";
 
 const TransparentNavbar = () => {
   return (

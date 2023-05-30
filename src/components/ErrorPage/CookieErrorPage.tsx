@@ -1,7 +1,7 @@
 import React from "react";
 import CookieNavbar from "../Cookies/CookieNavbar";
 import { Box, Grid } from "@mui/material";
-import { langVariations } from "./ErrorPageConstant/constant";
+import { langVariations } from "./ErrorPageConstant/ErrorPageConstant";
 import MultiLang from "./MultiLang";
 import CookieFooter from "../Cookies/CookieFooter";
 import {
@@ -9,13 +9,13 @@ import {
   GridColumn,
   HomePageButton,
   MultiLanguBox,
-} from "./Styling/ErrorPageStylingOverlays";
+} from "./ErrorPageStyling/ErrorPageStylingOverlays";
 import {
   BoldText,
   CenterBoldTextHighMar,
   HomeButtonText,
   MultiLangHeading,
-} from "./Styling/ErrorPageStylingText";
+} from "./ErrorPageStyling/ErrorPageStylingText";
 
 const CookieErrorPage = () => {
   return (

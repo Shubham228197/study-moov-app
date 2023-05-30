@@ -2,7 +2,7 @@ import { Button, Stack, Toolbar } from "@mui/material";
 import {
   GlobeIcon,
   GreaterThanIcon,
-} from "../../styling/Buttons/IconButtonStyles";
+} from "../../GeneralStyling/IconStyles";
 import {
   CapBlackButton,
   CookieNavSelect,
@@ -15,8 +15,8 @@ import {
 import {
   ContactNumber,
   NavtitleSubheading,
-} from "../../styling/main/MainTextStyles";
-import { SelectCount } from "../../styling/main/HomepageOverlayStyles";
+} from "../MainComponent/MainStyling/MainTextStyles";
+import { SelectCount } from "../MainComponent/MainStyling/HomepageOverlayStyles";
 
 const CookieNavbar = () => (
   <TranspNavNoShadow>

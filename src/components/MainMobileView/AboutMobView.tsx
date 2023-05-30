@@ -1,6 +1,6 @@
-import { aboutData } from "../../constants/constants";
-import { LowPadBoldText, LowPadText } from "./Styling/MobileStylingText";
-import { AboutContainerMob } from "./Styling/MobileStylingOverlays";
+import { aboutData } from "../../GeneralConstants/Constants";
+import { LowPadBoldText, LowPadText } from "./MobileStyling/MobileStylingText";
+import { AboutContainerMob } from "./MobileStyling/MobileStylingOverlays";
 
 const AboutMobView = () => {
   return (

@@ -1,14 +1,14 @@
 import { Paper } from "@mui/material";
-import FooterIcon from "../MainComponent/footer/FooterIcon";
-import FooterText from "../MainComponent/footer/FooterText";
-import image from "../../figma_Images/confetti_1-removebg-preview.png";
-import { FormSecondaryText } from "../../styling/main/MainTextStyles";
-import { CenterBoldText, CenterTextHighMar } from "./Styling/MobileStylingText";
+import FooterIcon from "../MainComponent/MainPage/FooterIcon";
+import FooterText from "../MainComponent/MainPage/FooterText";
+import image from "../../FigmaImages/confetti_1-removebg-preview.png";
+import { FormSecondaryText } from "../MainComponent/MainStyling/MainTextStyles";
+import { CenterBoldText, CenterTextHighMar } from "./MobileStyling/MobileStylingText";
 import {
   BoxCenter,
   ConfettiImage,
   ConfettiImageContainer,
-} from "./Styling/MobileStylingOverlays";
+} from "./MobileStyling/MobileStylingOverlays";
 
 const ConsultationResult = () => {
   return (

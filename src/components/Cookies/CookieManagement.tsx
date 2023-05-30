@@ -1,7 +1,7 @@
 import CookieAccordianPage from "./CookieAccordianPage";
 import { Typography } from "@mui/material";
 import MainNavbar from "../MainComponent/MainNavbar";
-import FooterIcon from "../MainComponent/footer/FooterIcon";
+import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import CookieFooter from "./CookieFooter";
 import { Box30margin } from "./CookiesStyling/CookieStylingOverlays";
 import { BoldTextNoLRMidPad } from "./CookiesStyling/CookieStylingText";

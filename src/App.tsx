@@ -16,8 +16,8 @@
 // import ConsultationResult from "./components/MainMobileView/ConsultationResult";
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
-import CookieListPage from "./components/Cookies/CookieListPage";
-import CookieManagement from "./components/Cookies/CookieManagement";
+// import CookieListPage from "./components/Cookies/CookieListPage";
+// import CookieManagement from "./components/Cookies/CookieManagement";
 // import CookieErrorPage from "./components/ErrorPage/CookieErrorPage";
 // import MultiLang from "./components/ErrorPage/MultiLang";
 // import PageNotFound from "./components/ErrorPage/PageNotFound";
@@ -25,8 +25,18 @@ import CookieManagement from "./components/Cookies/CookieManagement";
 // import CookieAccordianPage from "./components/Cookies/CookieAccordianPage";
 // import UniversityCard from "./components/MainMobileView/UniversityCard";
 // import CookieFooter from "./components/Cookies/CookieFooter";
-import CookieListContent from "./components/Cookies/CookieListContent";
+// import CookieListContent from "./components/Cookies/CookieListContent";
 // import CookieNavbar from "./components/Cookies/CookieNavbar";
+// import AdmissionsDetails from "./components/IndividualCollegeProfile/AdmissionsDetails";
+// import CollegeImages from "./components/IndividualCollegeProfile/CollegeImages";
+// import CollegeProfileNavbar from "./components/IndividualCollegeProfile/CollegeProfileNavbar";
+// import CollegeProgramInfo from "./components/IndividualCollegeProfile/CollegeProgramInfo";
+// import EntryRequirements from "./components/IndividualCollegeProfile/EntryRequirements";
+// import FAQAboutCollege from "./components/IndividualCollegeProfile/FAQAboutCollege";
+// import MedicalProgramCard from "./components/IndividualCollegeProfile/MedicalProgramCard";
+// import MedicalSchoolCard from "./components/IndividualCollegeProfile/MedicalSchoolCard";
+// import ReviewAndRating from "./components/IndividualCollegeProfile/ReviewAndRating";
+import CollegeProfilePage from "./components/IndividualCollegeProfile/CollegeProfilePage";
 
 function App() {
   return (
@@ -48,8 +58,8 @@ function App() {
       {/* <ConsultationForm/> */}
       {/* <ConsultationResult/> */}
       {/* <ProgramDetails/> */}
-      <CookieListPage/>
-      <CookieManagement/>
+      {/* <CookieListPage/> */}
+      {/* <CookieManagement/> */}
       {/* <CookieErrorPage/>
       <MultiLang/>
       <PageNotFound/> */}
@@ -57,8 +67,18 @@ function App() {
       {/* <UniversityCard/> */}
       {/* <CookieAccordianPage/> */}
       {/* <CookieFooter/> */}
-      <CookieListContent/>
+      {/* <CookieListContent/> */}
       {/* <CookieNavbar/> */}
+      {/* <AdmissionsDetails/> */}
+      {/* <CollegeImages/> */}
+      {/* <CollegeProfileNavbar/> */}
+      {/* <CollegeProgramInfo/> */}
+      {/* <EntryRequirements/> */}
+      {/* <FAQAboutCollege/> */}
+      {/* <MedicalProgramCard/> */}
+      {/* <MedicalSchoolCard/> */}
+      {/* <ReviewAndRating/> */}
+      <CollegeProfilePage/>
     </div>
   );
 }

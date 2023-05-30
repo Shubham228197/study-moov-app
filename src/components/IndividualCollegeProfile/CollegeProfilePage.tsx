@@ -7,35 +7,40 @@ import EntryRequirements from "./EntryRequirements";
 import CollegeProgramInfo from "./CollegeProgramInfo";
 import CollegeProfileNavbar from "./CollegeProfileNavbar";
 import CollegeImages from "./CollegeImages";
-import { Box, Button, Stack } from "@mui/material";
+import { Box } from "@mui/material";
+import {
+  ArticleLinks,
+  ArticlesBox,
+  BlackTextButton,
+} from "./CollegeProfileStyling/ProfileStylingOverlays";
 
 const CollegeProfilePage = () => {
   return (
     <Box>
       <CollegeProfileNavbar />
       <nav>
-        <Stack direction="row" sx={{display: 'flex', justifyContent: 'center', paddingTop: '30px'}}>
+        <ArticleLinks direction="row">
           <a href="#programs">
-            <Button sx={{color: 'black'}}>📜 Programs</Button>
+            <BlackTextButton>📜 Programs</BlackTextButton>
           </a>
           <a href="#admission">
-            <Button sx={{color: 'black'}}>📚 Admission</Button>
+            <BlackTextButton>📚 Admission</BlackTextButton>
           </a>
           {/* <a href="#location">
             <Button>📍 Location</Button>
           </a> */}
           <a href="#ranking">
-            <Button sx={{color: 'black'}}>📊 Ranking</Button>
+            <BlackTextButton>📊 Ranking</BlackTextButton>
           </a>
           <a href="#gallery">
-            <Button sx={{color: 'black'}}>🖼 Gallery</Button>
+            <BlackTextButton>🖼 Gallery</BlackTextButton>
           </a>
           <a href="#FAQ">
-            <Button sx={{color: 'black'}}>️❓FAQ</Button>
+            <BlackTextButton>️❓FAQ</BlackTextButton>
           </a>
-        </Stack>
+        </ArticleLinks>
       </nav>
-      <Box sx={{ padding: "20px 80px 40px 80px" }}>
+      <ArticlesBox>
         <Box id="programs">
           <CollegeProgramInfo />
         </Box>
@@ -54,7 +59,7 @@ const CollegeProfilePage = () => {
         </Box>
         <FooterIcon />
         <FooterText />
-      </Box>
+      </ArticlesBox>
     </Box>
   );
 };

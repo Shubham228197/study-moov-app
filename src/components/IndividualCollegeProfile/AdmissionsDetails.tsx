@@ -1,16 +1,18 @@
-import { Paper, Typography } from '@mui/material'
-import { AdmissionPoints } from './CollegeProfileConstants'
+import { Typography } from '@mui/material'
+import { AdmissionPoints } from './CollegeProfileConstant/CollegeProfileConstants'
+import { AddmissionContainer } from './CollegeProfileStyling/ProfileStylingOverlays'
+import { BoldText, LiLowPadNoLR, TextMidPadNoLR } from './CollegeProfileStyling/ProfileStylingText'
 
 const AdmissionsDetails = () => {
   return (
-    <Paper elevation={4} sx={{padding: '50px', margin: '30px 0px 30px 0px'}}>
-      <Typography variant='h4' fontWeight='bold'>{AdmissionPoints.title}</Typography>
-      <Typography sx={{margin: '10px 0px'}}>{AdmissionPoints.about}</Typography>
+    <AddmissionContainer elevation={4}>
+      <BoldText variant='h4'>{AdmissionPoints.title}</BoldText>
+      <TextMidPadNoLR>{AdmissionPoints.about}</TextMidPadNoLR>
       <Typography>These include:</Typography>
       <ul>
-        {AdmissionPoints.points.map((points)=><li style={{padding: '5px 0px'}}>{points}</li>)}
+        {AdmissionPoints.points.map((points)=><LiLowPadNoLR>{points}</LiLowPadNoLR>)}
       </ul>
-    </Paper>
+    </AddmissionContainer>
   )
 }
 

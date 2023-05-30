@@ -1,18 +1,18 @@
 import {
-  Accordion,
   AccordionDetails,
   AccordionSummary,
-  Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { FAQ } from "./CollegeProfileConstants";
+import { FAQ } from "./CollegeProfileConstant/CollegeProfileConstants";
+import { Box30MarginNoLR, FAQAccordion } from "./CollegeProfileStyling/ProfileStylingOverlays";
+import { BoldText } from "./CollegeProfileStyling/ProfileStylingText";
 
 const FAQAboutCollege = () => {
   return (
-    <div style={{margin: '30px 0px 30px 0px'}}>
-      <Typography variant="h5" sx={{fontWeight: 'bold'}}>Frequently Asked Questions</Typography>
+    <Box30MarginNoLR>
+      <BoldText variant="h5">Frequently Asked Questions</BoldText>
       {FAQ.map((faq) => (
-        <Accordion sx={{margin: '30px 0px',fontSize: 'large', padding: '15px'}} elevation={5}>
+        <FAQAccordion elevation={5}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -21,9 +21,9 @@ const FAQAboutCollege = () => {
             {faq.Questions}
           </AccordionSummary>
           <AccordionDetails>{faq.Answers}</AccordionDetails>
-        </Accordion>
+        </FAQAccordion>
       ))}
-    </div>
+    </Box30MarginNoLR>
   );
 };
 

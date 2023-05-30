@@ -1,47 +1,37 @@
-import { Box, Button, ImageList, ImageListItem, Typography } from "@mui/material";
-import { HarwardCampusImageList } from "./CollegeProfileConstants";
-import { HarwardRoomsImageList } from "./CollegeProfileConstants";
+import { Button, ImageList, ImageListItem } from "@mui/material";
+import { HarwardCampusImageList } from "./CollegeProfileConstant/CollegeProfileConstants";
+import { HarwardRoomsImageList } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { useState } from "react";
+import { BoldText } from "./CollegeProfileStyling/ProfileStylingText";
+import {
+  ToggleButton,
+  ToggleContainer,
+} from "./CollegeProfileStyling/ProfileStylingOverlays";
 
 const CollegeImages = () => {
   const [ImagePreview, setImagePreview] = useState("campus");
   const ShowCampusImages = () => {
-    setImagePreview('campus')
-  }
+    setImagePreview("campus");
+  };
   const ShowRoomsImages = () => {
-    setImagePreview('rooms')
-  }
+    setImagePreview("rooms");
+  };
   return (
-    <div>
-        <Typography variant="h4" fontWeight='bold'>Gallery</Typography>
-      <Box
-        sx={{
-          backgroundColor: "#cbcbcb",
-          display: "inline-block",
-          borderRadius: "10px",
-          margin: "10px 0px",
-        }}
-      >
-        <Button
+    <>
+      <BoldText variant="h4">Gallery</BoldText>
+      <ToggleContainer>
+        <ToggleButton
           size="small"
           variant="contained"
           color="inherit"
-          sx={{
-            color: "white",
-            backgroundColor: "black",
-            ":hover": {
-              color: "black",
-            },
-            margin: "5px",
-          }}
           onClick={ShowCampusImages}
         >
           Campus
-        </Button>
+        </ToggleButton>
         <Button color="inherit" size="small" onClick={ShowRoomsImages}>
           Rooms
         </Button>
-      </Box>
+      </ToggleContainer>
       {ImagePreview === "campus" ? (
         <ImageList
           cols={3}
@@ -71,7 +61,7 @@ const CollegeImages = () => {
           ))}
         </ImageList>
       )}
-    </div>
+    </>
   );
 };
 

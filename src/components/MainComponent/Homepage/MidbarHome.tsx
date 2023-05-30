@@ -1,14 +1,14 @@
 import { Grid } from "@mui/material";
-import BagImage from "../../../figma_Images/backpack-icon-main.png";
-import GraduationImage from "../../../figma_Images/graduation-cap-icon-main.png";
-import BookIcon from "../../../figma_Images/book-icon.png";
+import BagImage from "../../../FigmaImages/backpack-icon-main.png";
+import GraduationImage from "../../../FigmaImages/graduation-cap-icon-main.png";
+import BookIcon from "../../../FigmaImages/book-icon.png";
 import {
   UtilityIcons,
   MidbarContainer,
   MidbarTextOne,
   MidbarTextTwo,
   MidbarTextThree,
-} from "../../../styling/main/HomepageOverlayStyles";
+} from "../MainStyling/HomepageOverlayStyles";
 
 const MidbarHome = () => {
   return (

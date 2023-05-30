@@ -5,13 +5,13 @@ import {
   NavtitleSubheading,
   ContactNumber,
   ChooseCountries,
-} from "../../styling/main/MainTextStyles";
-import { NavigationBar } from "../../styling/main/MainOverlayStyles";
-import { CallBackButton } from "../../styling/Buttons/ButtonStyles";
+} from "../MainStyling/MainTextStyles";
+import { NavigationBar } from "../MainStyling/MainOverlayStyles";
+import { CallBackButton } from "../../../GeneralStyling/Buttons";
 import {
   GreaterThanIcon,
   GlobeIcon,
-} from "../../styling/Buttons/IconButtonStyles";
+} from "../../../GeneralStyling/IconStyles";
 
 const FormNavbar = () => {
   return (

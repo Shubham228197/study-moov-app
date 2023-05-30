@@ -5,7 +5,7 @@
 // import FormOutput from './components/MainComponent/FormOutput';
 // import FormInput from './components/MainComponent/FormInput';
 // import MidbarHome from './components/MainComponent/Homepage/MidbarHome';
-// import NavbarHome from './components/MainComponent/Homepage/NavbarHome';
+import NavbarHome from './components/MainComponent/Homepage/NavbarHome';
 // import HomepageMain from "./components/MainComponent/Homepage/HomepageMain";
 // import HomepageFiltered from "./components/MainComponent/Homepage/HomepageFiltered";
 // import TransparentNavbar from "./components/MainComponent/Homepage/TransparentNavbar";
@@ -36,7 +36,7 @@
 // import MedicalProgramCard from "./components/IndividualCollegeProfile/MedicalProgramCard";
 // import MedicalSchoolCard from "./components/IndividualCollegeProfile/MedicalSchoolCard";
 // import ReviewAndRating from "./components/IndividualCollegeProfile/ReviewAndRating";
-import CollegeProfilePage from "./components/IndividualCollegeProfile/CollegeProfilePage";
+// import CollegeProfilePage from "./components/IndividualCollegeProfile/CollegeProfilePage";
 
 function App() {
   return (
@@ -50,7 +50,7 @@ function App() {
       {/* <FormOutput/> */}
       {/* <FormInput/> */}
       {/* <MidbarHome/>  */}
-      {/* <NavbarHome/>  */}
+      <NavbarHome/> 
       {/* <HomepageMain /> */}
       {/* <HomepageFiltered/> */}
       {/* <TransparentNavbar/> */}
@@ -78,7 +78,7 @@ function App() {
       {/* <MedicalProgramCard/> */}
       {/* <MedicalSchoolCard/> */}
       {/* <ReviewAndRating/> */}
-      <CollegeProfilePage/>
+      {/* <CollegeProfilePage/> */}
     </div>
   );
 }

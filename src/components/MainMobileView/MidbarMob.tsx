@@ -1,6 +1,6 @@
 import { Stack } from "@mui/material";
-import { MidbarTextFull } from "./MobileConstant/constant";
-import { BoxFlexMidPad } from "./Styling/MobileStylingOverlays";
+import { MidbarTextFull } from "./MobileConstant/MobileConstant";
+import { BoxFlexMidPad } from "./MobileStyling/MobileStylingOverlays";
 const MidbarMob = () => {
   return (
     <Stack sx={{backgroundColor:'lightgray'}}>

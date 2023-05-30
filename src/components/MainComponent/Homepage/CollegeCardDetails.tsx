@@ -15,17 +15,17 @@ import {
   ContentContainer,
   CollegePriceSection,
   VienaaCollegeImage,
-} from "../../../styling/main/HomepageOverlayStyles";
-import CollegeBuiding from "../../../figma_Images/Rectangle-cropped.jpg";
+} from "../MainStyling/HomepageOverlayStyles";
+import CollegeBuiding from "../../../FigmaImages/Rectangle-cropped.jpg";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CollegeCardMoreDetails from "./CollegeCardMoreDetails";
 import { useState } from "react";
-import { StarIconLogo, InfoIconLogo } from "../../../styling/Buttons/IconButtons";
-import { InfoBullets, InfoPoints } from "../../../styling/main/HomepageTextStyles";
-import VienaaImage from "../../../figma_Images/vienna-logo.jpg";
+import { StarIconLogo, InfoIconLogo } from "../../../GeneralStyling/Icons";
+import { InfoBullets, InfoPoints } from "../MainStyling/HomepageTextStyles";
+import VienaaImage from "../../../FigmaImages/vienna-logo.jpg";
 import CollegeFee from "./CollegeFee";
-import { CommonButton } from "../../../styling/Buttons/ButtonStyles";
+import { CommonButton } from "../../../GeneralStyling/Buttons";
 
 const CollegeCardOpen = () => {
   const [dropdown, setDropdown] = useState(false);

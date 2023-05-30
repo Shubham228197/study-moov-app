@@ -1,8 +1,8 @@
 import { Tooltip, Typography } from "@mui/material";
-import { StarIconLogo, InfoIconLogo } from "../../styling/Buttons/IconButtons";
+import { StarIconLogo, InfoIconLogo } from "../../GeneralStyling/Icons";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
-import { CountryFlagImages } from "./MobileConstant/constant";
-import CollegeImage from "../../figma_Images/College-card-Dark.jpg";
+import { CountryFlagImages } from "./MobileConstant/MobileConstant";
+import CollegeImage from "../../FigmaImages/College-card-Dark.jpg";
 import {
   AddressNdRating,
   PriceBox,
@@ -10,8 +10,8 @@ import {
   RatingButton,
   SubmitAppSmallButton,
   UniversityCardContainer,
-} from "./Styling/MobileStylingOverlays";
-import { BoldText } from "./Styling/MobileStylingText";
+} from "./MobileStyling/MobileStylingOverlays";
+import { BoldText } from "./MobileStyling/MobileStylingText";
 
 const UniversityCard = () => {
   return (

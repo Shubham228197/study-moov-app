@@ -10,7 +10,7 @@ import {
   CrossButtonIcon,
   StarIconLogo,
   InfoIconLogo,
-} from "./IconButtonStyles";
+} from "./IconStyles";
 export {
   FaceBookIcon,
   InstaGramIcon,

@@ -1,4 +1,4 @@
-import ReviewLogo from "../../figma_Images/qs_university_rankings_logo_removebg.png";
+import ReviewLogo from "../../FigmaImages/qs_university_rankings_logo_removebg.png";
 import { ReviewRank } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { RankChart } from "./CollegeProfileConstant/CollegeProfileConstants";
 import {

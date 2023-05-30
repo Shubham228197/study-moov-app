@@ -6,16 +6,16 @@ import {
 } from "@mui/material";
 import {
   HomeFilterCard,
-} from "../../../styling/main/HomepageOverlayStyles";
+} from "../MainStyling/HomepageOverlayStyles";
 import {
   FilterDegreeInput,
   FilterFeeRangeInput,
-} from "../../../styling/main/HomepageTextStyles";
+} from "../MainStyling/HomepageTextStyles";
 import {
   FieldText,
   FieldNumber,
   SelectLanguages,
-} from "../../../constants/constants";
+} from "../../../GeneralConstants/Constants";
 
 export const FilterFieldHome = () => {
   return (

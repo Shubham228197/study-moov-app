@@ -108,7 +108,7 @@ export const MidbarTextThree = Styles(Grid)`
 `;
 
 export const NavigationContainer = Styles.div`
-    background-image: url('../../figma_Images/vadim-sherbakov-darked.jpg');
+    background-image: url('../../FigmaImages/vadim-sherbakov-darked.jpg');
     background-repeat: no-repeat ! important;
     background-size: cover ! important;
 `;

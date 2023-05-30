@@ -1,18 +1,18 @@
 import MainNavbar from "../MainNavbar";
 import FilterFieldHome from "./FilterFieldHome";
 import CollegeCardOpen from "./CollegeCardDetails";
-import FooterIcon from "../footer/FooterIcon";
-import FooterText from "../footer/FooterText";
+import FooterIcon from "../MainPage/FooterIcon";
+import FooterText from "../MainPage/FooterText";
 import {
   FilterBoxMain,
   ShowMoreButtonContainer,
-} from "../../../styling/main/HomepageOverlayStyles";
+} from "../MainStyling/HomepageOverlayStyles";
 import {
   FilterMainHeadline,
   FilterMainSubheading,
-} from "../../../styling/main/HomepageTextStyles";
-import { HomepageFilterSubheadingText } from "../../../constants/constants.js";
-import { ShowMoreButton } from "../../../styling/Buttons/ButtonStyles";
+} from "../MainStyling/HomepageTextStyles";
+import { HomepageFilterSubheadingText } from "../../../GeneralConstants/Constants.js";
+import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 
 const HomepageFiltered = () => {
   return (

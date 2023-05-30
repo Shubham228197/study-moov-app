@@ -1,13 +1,13 @@
 import React from "react";
 import MainNavbar from "../MainComponent/MainNavbar";
-import PNF404 from "../../figma_Images/PNF404-removebg.png";
-import FooterIcon from "../MainComponent/footer/FooterIcon";
-import FooterText from "../MainComponent/footer/FooterText";
+import PNF404 from "../../FigmaImages/PNF404-removebg.png";
+import FooterIcon from "../MainComponent/MainPage/FooterIcon";
+import FooterText from "../MainComponent/MainPage/FooterText";
 import {
   BoxCenterLowPad,
   StackCenterLowPad,
-} from "./Styling/ErrorPageStylingOverlays";
-import { LowPadText } from "./Styling/ErrorPageStylingText";
+} from "./ErrorPageStyling/ErrorPageStylingOverlays";
+import { LowPadText } from "./ErrorPageStyling/ErrorPageStylingText";
 
 const PageNotFound = () => {
   return (

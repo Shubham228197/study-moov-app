@@ -1,7 +1,7 @@
 import { Grid, Stack } from "@mui/material";
-import FooterIcon from "../MainComponent/footer/FooterIcon";
-import FooterText from "../MainComponent/footer/FooterText";
-import { overlayData } from "../../constants/constants.js";
+import FooterIcon from "./FooterIcon";
+import FooterText from "./FooterText";
+import { overlayData } from "../../../GeneralConstants/Constants.js";
 // import FormInput from './FormInput';
 import FormOutput from "./FormOutput";
 import {
@@ -9,9 +9,9 @@ import {
   FormHomePointers,
   FormHomeResponse,
   FormHomeFooter,
-} from "../../styling/main/MainOverlayStyles";
-import { PageTitle, ListHeadline } from "../../styling/main/MainTextStyles";
-import { ListContent, ListNumbers } from "../../styling/main/MainOverlayStyles";
+} from "../MainStyling/MainOverlayStyles";
+import { PageTitle, ListHeadline } from "../MainStyling/MainTextStyles";
+import { ListContent, ListNumbers } from "../MainStyling/MainOverlayStyles";
 
 const FormOverlay = () => {
   return (

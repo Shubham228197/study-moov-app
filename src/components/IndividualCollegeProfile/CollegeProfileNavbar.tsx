@@ -1,12 +1,12 @@
 import TransparentNavbar from "../MainComponent/Homepage/TransparentNavbar";
-import CollegeImage from "../../figma_Images/Harward.jpg";
+import CollegeImage from "../../FigmaImages/Harward.jpg";
 import { Box, Button, Grid, Tooltip, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import { CollegeNavbarInfo } from "./CollegeProfileConstant/CollegeProfileConstants";
-import { StarIconLogo, InfoIconLogo } from "../../styling/Buttons/IconButtons";
+import { StarIconLogo, InfoIconLogo } from "../../GeneralStyling/Icons";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
-import LightIcon from "../../figma_Images/College-light-white-80.png";
-import BookmarkIcon from "../../figma_Images/college-bookmark-white-100.png";
+import LightIcon from "../../FigmaImages/College-light-white-80.png";
+import BookmarkIcon from "../../FigmaImages/college-bookmark-white-100.png";
 import {
   AddressNdRating,
   CollegeNavText,

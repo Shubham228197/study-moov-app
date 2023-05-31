@@ -1,12 +1,19 @@
 import { FormControl, FormGroup, FormControlLabel } from "@mui/material";
-import { CheckboxLabel, FormHeading } from "../MainComponent/MainStyling/MainTextStyles";
-import { CheckBox, FormFields } from "../MainComponent/MainStyling/MainOverlayStyles";
+import {
+  CheckboxLabel,
+  FormHeading,
+} from "../MainComponent/MainStyling/MainTextStyles";
+import {
+  CheckBox,
+  FormFields,
+} from "../MainComponent/MainStyling/MainOverlayStyles";
 import { FormSubmit } from "../../GeneralStyling/Buttons";
 import { FormTnC } from "../../GeneralConstants/Constants";
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
-import { BoxCenter, PaperMidPad } from "./MobileStyling/MobileStylingOverlays";
-import { CenterTextHighMar } from "./MobileStyling/MobileStylingText";
+import { PaperMidPad } from "./MobileStyling/MobileStylingOverlays";
+import { CenterTextHighMar } from "../../GeneralStyling/Texts";
+import { BoxCenter } from "../../GeneralStyling/Overlays";
 
 export const FieldStyle = {
   style: {

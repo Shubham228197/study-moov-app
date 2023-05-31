@@ -1,12 +1,7 @@
 import { Accordion, AppBar, Box, Button, Grid } from "@mui/material";
 import Styles from "styled-components";
 
-export const Box30margin = Styles(Box)`
-    margin: 30px ! important;
-`;
-export const Box30padding = Styles(Box)`
-    padding: 30px;
-`;
+
 export const AccordionBox = Styles(Accordion)`
     margin: 30px 0px ! important;
 `;
@@ -38,13 +33,11 @@ export const AcceptCookieButton = Styles(Button)`
     margin: 10px ! important;
     color: white ! important;
 `;
-
 export const BoxFlexHighPad = Styles(Box)`
     display: flex ! important; 
     flex-direction: column ! important;  
     padding: 20px;
 `;
-
 export const BoxFlex = Styles(Box)`
     display: flex ! important;
 `;

@@ -3,7 +3,6 @@ import { CookieList } from "./CookieConstants/CookieConstant";
 import { useState } from "react";
 import EssentialCookieDetails from "./EssentialCookieDetails";
 import {
-  Box30padding,
   BoxCenterHighMar,
   BoxFlex,
   BoxFlexHighPad,
@@ -18,6 +17,7 @@ import {
   UlineFlexText,
   UlineSpan,
 } from "./CookiesStyling/CookieStylingText";
+import { Box30padding } from "../../GeneralStyling/Overlays";
 
 const CookieListContent = () => {
   const [essentialCookie, setEssentialCookie] = useState(true);

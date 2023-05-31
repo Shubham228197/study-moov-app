@@ -6,10 +6,10 @@ import FooterIcon from "../MainPage/FooterIcon";
 import FooterText from "../MainPage/FooterText";
 import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 import {
-  HomepageContent,
-  BoxCenterHighMar,
+  HomepageContent
 } from "../MainStyling/HomepageOverlayStyles";
 import { HomepageHeading } from "../MainStyling/HomepageTextStyles";
+import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
 
 const HomepageMain = () => {
   return (

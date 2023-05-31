@@ -1,6 +1,5 @@
 import { Toolbar, Stack } from "@mui/material";
 import {
-  BoldBlueSpan,
   NavtitleSubheading,
   ContactNumberWhite,
   NavtitleWhite,
@@ -14,6 +13,7 @@ import {
   TranspNav,
   SelecteCountries,
 } from "../MainStyling/HomepageOverlayStyles";
+import { BoldBlueSpan } from "../../../GeneralStyling/Texts";
 
 const TransparentNavbar = () => {
   return (

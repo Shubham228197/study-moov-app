@@ -1,7 +1,8 @@
 import { Typography } from '@mui/material'
 import { AdmissionPoints } from './CollegeProfileConstant/CollegeProfileConstants'
 import { AddmissionContainer } from './CollegeProfileStyling/ProfileStylingOverlays'
-import { BoldText, LiLowPadNoLR, TextMidPadNoLR } from './CollegeProfileStyling/ProfileStylingText'
+import { LiLowPadNoLR, TextMidPadNoLR } from './CollegeProfileStyling/ProfileStylingText'
+import { BoldText } from '../../GeneralStyling/Texts'
 
 const AdmissionsDetails = () => {
   return (

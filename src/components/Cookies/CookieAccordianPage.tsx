@@ -4,12 +4,9 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { AccordianInput } from "./CookieConstants/CookieConstant";
 import SwitchToggle from "./SwitchToggle";
-import {
-  AccordionBox,
-  Box30margin,
-  TableRow,
-} from "./CookiesStyling/CookieStylingOverlays";
+import { AccordionBox, TableRow } from "./CookiesStyling/CookieStylingOverlays";
 import { TableTextMidPad } from "./CookiesStyling/CookieStylingText";
+import { Box30margin } from "../../GeneralStyling/Overlays";
 
 const CookieAccordianPage = () => (
   <Box30margin>

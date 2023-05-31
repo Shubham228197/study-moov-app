@@ -8,9 +8,6 @@ export const AboutContainerMob = Styles(Paper)`
 export const PaperMidPad = Styles(Paper)`
     padding: 10px;
 `;
-export const BoxCenter = Styles(Box)`
-    text-align: center;
-`;
 export const ConfettiImageContainer = Styles(Stack)`
     padding: 40px 0px 80px 0px;
 `;
@@ -34,11 +31,9 @@ export const StackCenterMidPad = Styles(Stack)`
     text-align: center; 
     padding: 10px;
 `;
-
 export const ButtonMidMar = Styles(Button)`
 margin: 10px !important;
 `;
-
 export const BoxBoldHighPadNoLR = Styles(Box)`
     font-weight: bold; 
     padding: 20px 0px;
@@ -46,7 +41,6 @@ export const BoxBoldHighPadNoLR = Styles(Box)`
 export const ButtonNoPad = Styles(Button)`
 padding: 0px;
 `;
-
 export const ButtonCap = Styles(Button)`
     text-transform: capitalize ! important;
 `;
@@ -54,18 +48,15 @@ export const BoxCenterButton = Styles(Box)`
     display: flex; 
     margin: auto ! important;
 `;
-
 export const SubmitAppLargeButton = Styles(Button)`
     text-transform: capitalize ! important;
     padding: 15px 75px !important;
     font-size: large ! important;
     border-radius: 10px ! important;
 `;
-
 export const ProgramDetailsContainer = Styles(Grid)`
 padding: 10px 10px 10px 0px;
 `;
-
 export const UniversityCardContainer = Styles(Paper)`
     margin: 10px;
     border-radius: 20px !important;
@@ -84,7 +75,6 @@ export const RatingButton = Styles(Button)`
 export const PriceBox = Styles(Box)`
     margin: 20px 0px ! important;
 `;
-
 export const SubmitAppSmallButton = Styles(Button)`
     text-transform: capitalize ! important;
     margin: 0px 10px ! important;

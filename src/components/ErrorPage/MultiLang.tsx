@@ -1,6 +1,7 @@
 import multiLangImage from ".././../FigmaImages/multiLang-removebg.png";
-import { BoxCenter, MultiLangCard } from "./ErrorPageStyling/ErrorPageStylingOverlays";
-import { BoldText } from "./ErrorPageStyling/ErrorPageStylingText";
+import { MultiLangCard } from "./ErrorPageStyling/ErrorPageStylingOverlays";
+import { BoldText } from "../../GeneralStyling/Texts";
+import { BoxCenter } from "../../GeneralStyling/Overlays";
 
 const MultiLang = () => {
   return (

@@ -9,7 +9,7 @@ import {
 import {
   BoldTextCenter,
   FormSecondaryText,
-} from "../MainStyling/MainTextStyles";
+} from "../../../GeneralStyling/Texts";
 
 const FormOutput = () => {
   return (

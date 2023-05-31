@@ -1,17 +1,13 @@
 import { Toolbar, Stack } from "@mui/material";
 import {
   Navtitle,
-  BoldBlueSpan,
   NavtitleSubheading,
-  ContactNumber,
   ChooseCountries,
 } from "../MainStyling/MainTextStyles";
 import { NavigationBar } from "../MainStyling/MainOverlayStyles";
 import { CallBackButton } from "../../../GeneralStyling/Buttons";
-import {
-  GreaterThanIcon,
-  GlobeIcon,
-} from "../../../GeneralStyling/IconStyles";
+import { GreaterThanIcon, GlobeIcon } from "../../../GeneralStyling/IconStyles";
+import { ContactNumber, BoldBlueSpan } from "../../../GeneralStyling/Texts";
 
 const FormNavbar = () => {
   return (

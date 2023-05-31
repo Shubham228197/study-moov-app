@@ -3,7 +3,7 @@ import MidbarMob from "./MidbarMob";
 import { Box, Typography } from "@mui/material";
 import UniversityCard from "./UniversityCard";
 import { ShowMoreButton } from "../../GeneralStyling/Buttons";
-import { BoxCenterHighMar } from "../MainComponent/MainStyling/HomepageOverlayStyles";
+import { BoxCenterHighMar } from '../../GeneralStyling/Overlays';
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
 

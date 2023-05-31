@@ -4,9 +4,6 @@ import Styles from 'styled-components'
 export const TableTextMidPad = Styles.td`
     padding: 10px;
 `;
-export const TextLowPad = Styles(Typography)`
-    padding: 5px
-`;
 export const TextSelfAlignBold = Styles(Typography)`
     align-self: center ! important; 
     font-weight: bold ! important;
@@ -42,10 +39,6 @@ export const MontBoldTextLarge = Styles(Typography)`
     font-size: x-large ! important;
     color: black ! important;
     display: inline-block ! important;
-`;
-export const BoldBlueSpan = Styles.span`
-    color: blue;
-    font-weight: bolder;
 `;
 export const EssTextNoTBPad = Styles(Typography)`
     padding: 0px 16px;

@@ -1,22 +1,14 @@
 import { Button, Stack, Toolbar } from "@mui/material";
-import {
-  GlobeIcon,
-  GreaterThanIcon,
-} from "../../GeneralStyling/IconStyles";
+import { GlobeIcon, GreaterThanIcon } from "../../GeneralStyling/IconStyles";
 import {
   CapBlackButton,
   CookieNavSelect,
   TranspNavNoShadow,
 } from "./CookiesStyling/CookieStylingOverlays";
-import {
-  BoldBlueSpan,
-  MontBoldTextLarge,
-} from "./CookiesStyling/CookieStylingText";
-import {
-  ContactNumber,
-  NavtitleSubheading,
-} from "../MainComponent/MainStyling/MainTextStyles";
+import { MontBoldTextLarge } from "./CookiesStyling/CookieStylingText";
+import { NavtitleSubheading } from "../MainComponent/MainStyling/MainTextStyles";
 import { SelectCount } from "../MainComponent/MainStyling/HomepageOverlayStyles";
+import { BoldBlueSpan, ContactNumber } from "../../GeneralStyling/Texts";
 
 const CookieNavbar = () => (
   <TranspNavNoShadow>

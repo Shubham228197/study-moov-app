@@ -11,11 +11,11 @@ import {
   MultiLanguBox,
 } from "./ErrorPageStyling/ErrorPageStylingOverlays";
 import {
-  BoldText,
   CenterBoldTextHighMar,
   HomeButtonText,
   MultiLangHeading,
 } from "./ErrorPageStyling/ErrorPageStylingText";
+import { BoldText } from "../../GeneralStyling/Texts";
 
 const CookieErrorPage = () => {
   return (

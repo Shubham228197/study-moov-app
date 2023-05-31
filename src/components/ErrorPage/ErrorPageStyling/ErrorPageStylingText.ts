@@ -19,9 +19,3 @@ export const MultiLangHeading = Styles(Typography)`
     text-align: center ! important; 
     margin: 80px 0px 40px 0px ! important;
 `;
-export const BoldText = Styles(Typography)`
-    font-weight: bold ! important;
-`;
-export const TextLowPad = Styles(Typography)`
-    padding: 5px;
-`;

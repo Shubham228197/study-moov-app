@@ -13,7 +13,6 @@ import {
   CollegeBuildingImage,
   CollegeInfoSection,
   ContentContainer,
-  GridMidPad,
   VienaaCollegeImage,
 } from "../MainStyling/HomepageOverlayStyles";
 import CollegeBuiding from "../../../FigmaImages/Rectangle-cropped.jpg";
@@ -26,6 +25,7 @@ import { InfoBullets, InfoPoints } from "../MainStyling/HomepageTextStyles";
 import VienaaImage from "../../../FigmaImages/vienna-logo.jpg";
 import CollegeFee from "./CollegeFee";
 import { CommonButton } from "../../../GeneralStyling/Buttons";
+import { GridMidPad } from "../../../GeneralStyling/Overlays";
 
 const CollegeCardOpen = () => {
   const [dropdown, setDropdown] = useState(false);

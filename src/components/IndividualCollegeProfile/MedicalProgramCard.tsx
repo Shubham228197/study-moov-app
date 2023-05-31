@@ -11,7 +11,7 @@ import {
   BoldTextLowPad,
   BoldTextLowPadNoTB,
   GrayText,
-} from "./CollegeProfileStyling/ProfileStylingText";
+} from "../../GeneralStyling/Texts";
 
 const MedicalCollegeCard = () => (
   <CollegeCard elevation={4}>

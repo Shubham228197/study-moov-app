@@ -4,8 +4,9 @@ import {
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FAQ } from "./CollegeProfileConstant/CollegeProfileConstants";
-import { Box30MarginNoLR, FAQAccordion } from "./CollegeProfileStyling/ProfileStylingOverlays";
-import { BoldText } from "./CollegeProfileStyling/ProfileStylingText";
+import { FAQAccordion } from "./CollegeProfileStyling/ProfileStylingOverlays";
+import { BoldText } from '../../GeneralStyling/Texts';
+import { Box30MarginNoLR } from "../../GeneralStyling/Overlays";
 
 const FAQAboutCollege = () => {
   return (

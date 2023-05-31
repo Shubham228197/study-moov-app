@@ -14,7 +14,7 @@ import {
   GridCenterWhite,
   RatingButton,
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
-import { BoldText } from "./CollegeProfileStyling/ProfileStylingText";
+import { BoldText } from "../../GeneralStyling/Texts";
 
 const CollegeProfileNavbar = () => {
   return (

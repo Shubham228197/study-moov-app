@@ -1,5 +1,5 @@
 import { aboutData } from "../../GeneralConstants/Constants";
-import { BoldTextLowPad, TextLowPad } from "./MobileStyling/MobileStylingText";
+import { BoldTextLowPad, TextLowPad } from '../../GeneralStyling/Texts';
 import { AboutContainerMob } from "./MobileStyling/MobileStylingOverlays";
 
 const AboutMobView = () => {

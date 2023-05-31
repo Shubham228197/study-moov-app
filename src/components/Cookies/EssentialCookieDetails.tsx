@@ -2,12 +2,12 @@ import { Typography } from "@mui/material";
 import { FC } from "react";
 import { CookieTableContent } from "./CookieConstants/CookieConstant";
 import {
-  Box30padding,
   EssBoxNoTBPad,
   TDataHighPad,
   THeadingHighpad,
 } from "./CookiesStyling/CookieStylingOverlays";
 import { EssButton, EssTextNoTBPad } from "./CookiesStyling/CookieStylingText";
+import { Box30padding } from "../../GeneralStyling/Overlays";
 
 type cookie = {
   setEssentialCookie: (value: boolean) => void;

@@ -2,11 +2,11 @@ import { Button, ImageList, ImageListItem } from "@mui/material";
 import { HarwardCampusImageList } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { HarwardRoomsImageList } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { useState } from "react";
-import { BoldText } from "./CollegeProfileStyling/ProfileStylingText";
+import { BoldText } from '../../GeneralStyling/Texts';
 import {
-  ToggleButton,
-  ToggleContainer,
-} from "./CollegeProfileStyling/ProfileStylingOverlays";
+  ToggleContainer
+} from '../../GeneralStyling/Overlays';
+import { ToggleButton } from '../../GeneralStyling/Buttons';
 
 const CollegeImages = () => {
   const [ImagePreview, setImagePreview] = useState("campus");

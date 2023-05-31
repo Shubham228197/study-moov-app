@@ -11,7 +11,7 @@ import {
   SubmitAppSmallButton,
   UniversityCardContainer,
 } from "./MobileStyling/MobileStylingOverlays";
-import { BoldText } from "./MobileStyling/MobileStylingText";
+import { BoldText } from '../../GeneralStyling/Texts';
 
 const UniversityCard = () => {
   return (

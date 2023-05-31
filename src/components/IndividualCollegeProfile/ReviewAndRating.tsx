@@ -2,7 +2,6 @@ import ReviewLogo from "../../FigmaImages/qs_university_rankings_logo_removebg.p
 import { ReviewRank } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { RankChart } from "./CollegeProfileConstant/CollegeProfileConstants";
 import {
-  BoldText,
   RakingWrapper,
 } from "./CollegeProfileStyling/ProfileStylingText";
 import {
@@ -14,6 +13,7 @@ import {
   RatingOrg,
   StackHighPadNoLR,
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
+import { BoldText } from "../../GeneralStyling/Texts";
 
 const ReviewAndRating = () => (
   <BoxHighMarPad>

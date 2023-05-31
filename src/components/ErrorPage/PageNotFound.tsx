@@ -1,4 +1,4 @@
-import MainNavbar from '../MainComponent/MainPage/MainNavbar'
+import MainNavbar from "../MainComponent/MainPage/MainNavbar";
 import PNF404 from "../../FigmaImages/PNF404-removebg.png";
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
@@ -6,7 +6,7 @@ import {
   BoxCenterLowPad,
   StackCenter40Pad,
 } from "./ErrorPageStyling/ErrorPageStylingOverlays";
-import { TextLowPad } from "./ErrorPageStyling/ErrorPageStylingText";
+import { TextLowPad } from "../../GeneralStyling/Texts";
 
 const PageNotFound = () => {
   return (

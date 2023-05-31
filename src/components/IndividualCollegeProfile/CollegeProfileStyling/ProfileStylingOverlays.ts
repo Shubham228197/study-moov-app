@@ -5,18 +5,6 @@ export const AddmissionContainer = Styles(Paper)`
     padding: 50px;
     margin: 30px 0px 30px 0px ! important;
 `;
-export const ToggleContainer = Styles(Box)`
-    background-color: #cbcbcb;
-    display: inline-block;
-    border-radius: 10px;
-    margin: 10px 0px;
-`;
-export const ToggleButton = Styles(Button)`
-    color: white ! important;
-    background-color: black ! important;
-    margin: 5px ! important;
-`;
-
 export const CollegeNavbar = Styles(Box)`
     color: white;
     background-repeat: no-repeat;
@@ -48,9 +36,6 @@ export const BlackTextButton = Styles(Button)`
 `;
 export const ArticlesBox = Styles(Box)`
     padding: 20px 80px 40px 80px;
-`;
-export const Box30MarginNoLR = Styles(Box)`
-    margin: 30px 0px ! important;
 `;
 export const BoxCenterText = Styles(Box)`
     text-align: center;

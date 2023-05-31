@@ -7,7 +7,7 @@ import {
   GridColMidPad,
   ManageCookieButton,
 } from "./CookiesStyling/CookieStylingOverlays";
-import { TextLowPad } from "./CookiesStyling/CookieStylingText";
+import { TextLowPad } from "../../GeneralStyling/Texts";
 
 const CookieFooter = () => (
   <Grid container sx={{ backgroundColor: "#E5E5E5" }}>

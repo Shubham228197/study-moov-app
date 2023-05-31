@@ -2,18 +2,18 @@ import { Button, Grid } from "@mui/material";
 import { ProgramEntryRequirements } from "./CollegeProfileConstant/CollegeProfileConstants";
 import Divider from "@mui/material/Divider";
 import {
-  Box30MarginNoLR,
   BoxCenterText,
   GridLightGray,
   GridLighterGray,
   GridLowPad,
-  ToggleButton,
-  ToggleContainer,
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
+import { AdmissionHeadline } from "./CollegeProfileStyling/ProfileStylingText";
+import { BoldText } from "../../GeneralStyling/Texts";
 import {
-  AdmissionHeadline,
-  BoldText,
-} from "./CollegeProfileStyling/ProfileStylingText";
+  ToggleContainer,
+  Box30MarginNoLR,
+} from "../../GeneralStyling/Overlays";
+import { ToggleButton } from "../../GeneralStyling/Buttons";
 
 const EntryRequirements = () => (
   <Box30MarginNoLR>

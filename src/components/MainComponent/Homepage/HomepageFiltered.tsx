@@ -5,7 +5,6 @@ import FooterIcon from "../MainPage/FooterIcon";
 import FooterText from "../MainPage/FooterText";
 import {
   FilterBoxMain,
-  BoxCenterHighMar,
 } from "../MainStyling/HomepageOverlayStyles";
 import {
   BoldText30Mar,
@@ -13,6 +12,7 @@ import {
 } from "../MainStyling/HomepageTextStyles";
 import { HomepageFilterSubheadingText } from "../../../GeneralConstants/Constants.js";
 import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
+import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
 
 const HomepageFiltered = () => {
   return (

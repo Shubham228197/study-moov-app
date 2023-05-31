@@ -11,10 +11,10 @@ import {
 import {
   CollegeInfoExtended,
   ExtendedInfoButtonContainer,
-  UtilityIcons,
-  GridHighPad,
+  UtilityIcons
 } from "../MainStyling/HomepageOverlayStyles";
 import { CollegeDegreeDetails } from "../../../GeneralConstants/Constants";
+import { GridHighPad } from "../../../GeneralStyling/Overlays";
 
 const CollegeCardMoreDetails = () => {
   return (

@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 import MainNavbar from "../MainComponent/MainPage/MainNavbar";
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import CookieFooter from "./CookieFooter";
-import { Box30margin } from "./CookiesStyling/CookieStylingOverlays";
+import { Box30margin } from "../../GeneralStyling/Overlays";
 import { BoldTextNoLRMidPad } from "./CookiesStyling/CookieStylingText";
 
 const CookieManagement = () => {

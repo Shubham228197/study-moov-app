@@ -1,12 +1,12 @@
 import { Button } from "@mui/material";
 import MedicalProgramCard from "./MedicalProgramCard";
 import MedicalSchoolCard from "./MedicalSchoolCard";
+import { ToggleButton } from '../../GeneralStyling/Buttons';
+import { BoldText } from "../../GeneralStyling/Texts";
 import {
   Box30MarginNoLR,
-  ToggleButton,
   ToggleContainer,
-} from "./CollegeProfileStyling/ProfileStylingOverlays";
-import { BoldText } from "./CollegeProfileStyling/ProfileStylingText";
+} from "../../GeneralStyling/Overlays";
 
 const CollegeProgramInfo = () => {
   return (

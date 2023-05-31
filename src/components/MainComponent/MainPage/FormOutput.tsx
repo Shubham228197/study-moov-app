@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import image from "../../FigmaImages/confetti_1-removebg-preview.png";
+import image from "../../../FigmaImages/confetti_1-removebg-preview.png";
 import {
   Formbox,
   MessageBox,

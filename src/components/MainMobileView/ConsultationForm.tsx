@@ -13,7 +13,6 @@ import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
 import { PaperMidPad } from "./MobileStyling/MobileStylingOverlays";
 import { CenterTextHighMar } from "../../GeneralStyling/Texts";
-import { BoxCenter } from "../../GeneralStyling/Overlays";
 
 export const FieldStyle = {
   style: {
@@ -45,10 +44,8 @@ const ConsultationForm = () => {
           <FormSubmit variant="contained">Submit your application</FormSubmit>
         </FormControl>
       </PaperMidPad>
-      <BoxCenter>
-        <FooterIcon />
-        <FooterText />
-      </BoxCenter>
+      <FooterIcon />
+      <FooterText />
     </>
   );
 };

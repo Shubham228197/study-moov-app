@@ -2,21 +2,18 @@ import { Paper } from "@mui/material";
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
 import image from "../../FigmaImages/confetti_1-removebg-preview.png";
-import {
-  FormSecondaryText,
-  BoldTextCenter,
-  CenterTextHighMar,
-} from "../../GeneralStyling/Texts";
-import { BoxCenter } from "../../GeneralStyling/Overlays";
+import { FormSecondaryText, BoldTextCenter } from "../../GeneralStyling/Texts";
 import {
   ConfettiImage,
   ConfettiImageContainer,
 } from "./MobileStyling/MobileStylingOverlays";
+import { CenterTextHighPad } from "./MobileStyling/MobileStylingText";
+
 const ConsultationResult = () => {
   return (
     <>
       <Paper elevation={8}>
-        <CenterTextHighMar>Study &gt; Moov</CenterTextHighMar>
+        <CenterTextHighPad>Study &gt; Moov</CenterTextHighPad>
         <ConfettiImageContainer>
           <ConfettiImage src={image} alt="confetti" />
           <BoldTextCenter variant="h5">
@@ -27,10 +24,8 @@ const ConsultationResult = () => {
           </FormSecondaryText>
         </ConfettiImageContainer>
       </Paper>
-      <BoxCenter>
-        <FooterIcon />
-        <FooterText />
-      </BoxCenter>
+      <FooterIcon />
+      <FooterText />
     </>
   );
 };

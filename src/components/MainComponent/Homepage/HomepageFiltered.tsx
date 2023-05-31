@@ -10,7 +10,7 @@ import {
   BoldText30Mar,
   FilterMainSubheading,
 } from "../MainStyling/HomepageTextStyles";
-import { HomepageFilterSubheadingText } from "../../../GeneralConstants/Constants.js";
+import { HomepageFilterSubheadingText } from "../../../GeneralConstants/Constants";
 import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
 

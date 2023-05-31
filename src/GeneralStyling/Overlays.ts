@@ -8,8 +8,8 @@ export const Box30padding = Styles(Box)`
     padding: 30px;
 `;
 export const BoxCenter = Styles(Box)`
-    display: flex; 
-    justify-content: center;
+    display: flex ! important; 
+    justify-content: center ! important;
 `;
 export const ToggleContainer = Styles(Box)`
     background-color: #cbcbcb;

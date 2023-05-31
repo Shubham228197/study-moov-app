@@ -5,7 +5,7 @@ import FooterIcon from "../MainPage/FooterIcon";
 import FooterText from "../MainPage/FooterText";
 import {
   FilterBoxMain,
-  ShowMoreButtonContainer,
+  BoxCenterHighMar,
 } from "../MainStyling/HomepageOverlayStyles";
 import {
   BoldText30Mar,
@@ -30,9 +30,9 @@ const HomepageFiltered = () => {
         <CollegeCardOpen />
         <CollegeCardOpen />
         <CollegeCardOpen />
-        <ShowMoreButtonContainer>
+        <BoxCenterHighMar>
           <ShowMoreButton variant="outlined">Show more</ShowMoreButton>
-        </ShowMoreButtonContainer>
+        </BoxCenterHighMar>
         <FooterIcon />
         <FooterText />
       </FilterBoxMain>

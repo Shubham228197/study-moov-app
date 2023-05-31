@@ -78,7 +78,7 @@ export const CollegeCard = Styles(Paper)`
 export const CollegeCardData = Styles(Grid)`
     padding: 10px 10px 10px 0px;
 `;
-export const QuickBox = Styles(Box)`
+export const QuickAppBox = Styles(Box)`
     text-align: end ! important;
     padding: 20px 60px;
 `;

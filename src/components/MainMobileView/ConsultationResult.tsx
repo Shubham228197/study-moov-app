@@ -3,7 +3,7 @@ import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
 import image from "../../FigmaImages/confetti_1-removebg-preview.png";
 import { FormSecondaryText } from "../MainComponent/MainStyling/MainTextStyles";
-import { CenterBoldText, CenterTextHighMar } from "./MobileStyling/MobileStylingText";
+import { BoldTextCenter, CenterTextHighMar } from "./MobileStyling/MobileStylingText";
 import {
   BoxCenter,
   ConfettiImage,
@@ -17,9 +17,9 @@ const ConsultationResult = () => {
         <CenterTextHighMar>Study &gt; Moov</CenterTextHighMar>
         <ConfettiImageContainer>
           <ConfettiImage src={image} alt="confetti" />
-          <CenterBoldText variant="h5">
+          <BoldTextCenter variant="h5">
             Thank you! Your application has been sent
-          </CenterBoldText>
+          </BoldTextCenter>
           <FormSecondaryText variant="body1">
             We will call you back as soon as possible to arrange a consultation.
           </FormSecondaryText>

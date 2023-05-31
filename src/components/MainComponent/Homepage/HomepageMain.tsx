@@ -7,7 +7,7 @@ import FooterText from "../MainPage/FooterText";
 import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 import {
   HomepageContent,
-  ShowMoreButtonContainer,
+  BoxCenterHighMar,
 } from "../MainStyling/HomepageOverlayStyles";
 import { HomepageHeading } from "../MainStyling/HomepageTextStyles";
 
@@ -25,9 +25,9 @@ const HomepageMain = () => {
         <CollegeCardOpen />
         <CollegeCardOpen />
         <CollegeCardOpen />
-        <ShowMoreButtonContainer>
+        <BoxCenterHighMar>
           <ShowMoreButton variant="outlined">Show more</ShowMoreButton>
-        </ShowMoreButtonContainer>
+        </BoxCenterHighMar>
         <FooterIcon />
         <FooterText />
       </HomepageContent>

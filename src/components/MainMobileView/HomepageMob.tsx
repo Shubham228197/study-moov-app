@@ -3,7 +3,7 @@ import MidbarMob from "./MidbarMob";
 import { Box, Typography } from "@mui/material";
 import UniversityCard from "./UniversityCard";
 import { ShowMoreButton } from "../../GeneralStyling/Buttons";
-import { ShowMoreButtonContainer } from "../MainComponent/MainStyling/HomepageOverlayStyles";
+import { BoxCenterHighMar } from "../MainComponent/MainStyling/HomepageOverlayStyles";
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
 
@@ -17,9 +17,9 @@ const HomepageMob = () => {
       <UniversityCard />
       <UniversityCard />
       <UniversityCard />
-      <ShowMoreButtonContainer>
+      <BoxCenterHighMar>
         <ShowMoreButton>Show More</ShowMoreButton>
-      </ShowMoreButtonContainer>
+      </BoxCenterHighMar>
       <FooterIcon />
       <Box sx={{padding: '-50px'}}>
         <FooterText />

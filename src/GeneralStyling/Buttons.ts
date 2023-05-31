@@ -41,3 +41,8 @@ export const CommonButton = Styles(Button)`
   margin: 30px auto 5px auto ! important;
   text-transform: capitalize ! important;
 `;
+export const ToggleButton = Styles(Button)`
+    color: white ! important;
+    background-color: black ! important;
+    margin: 5px ! important;
+`;

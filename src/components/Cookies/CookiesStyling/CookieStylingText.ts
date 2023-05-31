@@ -4,7 +4,7 @@ import Styles from 'styled-components'
 export const TableTextMidPad = Styles.td`
     padding: 10px;
 `;
-export const LowPadText = Styles(Typography)`
+export const TextLowPad = Styles(Typography)`
     padding: 5px
 `;
 export const TextSelfAlignBold = Styles(Typography)`

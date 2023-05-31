@@ -74,6 +74,10 @@ export const TranspNavNoShadow = Styles(AppBar)`
     background-color: transparent ! important;
     box-shadow: none ! important;
 `;
+export const TranspNav = Styles(AppBar)`
+    position: static ! important;
+    background: transparent ! important;
+`;
 export const CookieNavSelect = Styles.select`
     border: none;
     padding: 0px 10px;

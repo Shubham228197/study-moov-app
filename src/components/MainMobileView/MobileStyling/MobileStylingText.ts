@@ -12,7 +12,7 @@ export const CenterTextHighMar = Styles(Typography)`
     text-align: center ! important;
     margin: 20px ! important;
 `
-export const FormPrimaryText = Styles(Typography)`
+export const BoldTextCenter = Styles(Typography)`
     font-weight: bold ! important;
     text-align: center;
 `;

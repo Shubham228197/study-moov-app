@@ -1,14 +1,14 @@
 // import AboutMoov from './components/MainComponent/AboutMoov';
 // import AboutMobView from "./components/MainMobileView/AboutMobView";
-// import MainNavbar from './components/MainComponent/MainNavbar';
+import MainNavbar from './components/MainComponent//MainPage/MainNavbar';
 // import FormOverlay from './components/MainComponent/FormOverlay';
 // import FormOutput from './components/MainComponent/FormOutput';
 // import FormInput from './components/MainComponent/FormInput';
 // import MidbarHome from './components/MainComponent/Homepage/MidbarHome';
-import NavbarHome from './components/MainComponent/Homepage/NavbarHome';
+// import NavbarHome from './components/MainComponent/Homepage/NavbarHome';
 // import HomepageMain from "./components/MainComponent/Homepage/HomepageMain";
 // import HomepageFiltered from "./components/MainComponent/Homepage/HomepageFiltered";
-// import TransparentNavbar from "./components/MainComponent/Homepage/TransparentNavbar";
+import TransparentNavbar from "./components/MainComponent/Homepage/TransparentNavbar";
 // import NavbarMob from "./components/MainMobileView/NavbarMob";
 // import MidbarMob from "./components/MainMobileView/MidbarMob";
 // import HomepageMob from "./components/MainMobileView/HomepageMob";
@@ -45,15 +45,15 @@ function App() {
       {/* <AboutMobView/> */}
       {/* <NavbarMob/> */}
       {/* <MidbarMob/> */}
-      {/* <MainNavbar/> */}
+      <MainNavbar/>
       {/* <FormOverlay/>      */}
       {/* <FormOutput/> */}
       {/* <FormInput/> */}
       {/* <MidbarHome/>  */}
-      <NavbarHome/> 
+      {/* <NavbarHome/>  */}
       {/* <HomepageMain /> */}
       {/* <HomepageFiltered/> */}
-      {/* <TransparentNavbar/> */}
+      <TransparentNavbar/>
       {/* <HomepageMob/> */}
       {/* <ConsultationForm/> */}
       {/* <ConsultationResult/> */}

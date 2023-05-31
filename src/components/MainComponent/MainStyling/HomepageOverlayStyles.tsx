@@ -1,7 +1,7 @@
 import { AppBar, Box, Grid, Paper } from "@mui/material";
 import Styles from "styled-components";
 
-export const TransparentNavConatiner = Styles(AppBar)`
+export const TranspNav = Styles(AppBar)`
     position: static ! important;
     background: transparent ! important;
 `;
@@ -20,7 +20,6 @@ export const SelectCount = Styles.select`
     margin: 0;
     font-family: 'Inter', sans-serif;
     background: transparent; 
-    // boxShadow: none;
 `;
 
 export const FilterBoxMain = Styles(Box)`
@@ -75,10 +74,9 @@ export const UtilityIcons = Styles.img`
     width: 30px ! important;
 `;
 
-export const UtilityContainer = Styles(Grid)`
-    padding: 20px ! important;
+export const GridHighPad = Styles(Grid)`
+    padding: 20px;
 `;
-
 export const HomeFilterCard = Styles(Paper)`
     padding: 20px 40px 20px 40px ! important;
     display: flex ! important;

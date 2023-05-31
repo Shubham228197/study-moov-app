@@ -12,7 +12,7 @@ import {
   CollegeInfoExtended,
   ExtendedInfoButtonContainer,
   UtilityIcons,
-  UtilityContainer,
+  GridHighPad,
 } from "../MainStyling/HomepageOverlayStyles";
 import { CollegeDegreeDetails } from "../../../GeneralConstants/Constants";
 
@@ -27,75 +27,75 @@ const CollegeCardMoreDetails = () => {
       <Box>
         <Grid container>
           
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <UtilityIcons src={GradImage} alt="Graduation-icon" />
             Program
-          </UtilityContainer>
+          </GridHighPad>
 
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <UtilityIcons src={PencilImage} alt="Pencil-icon" />
             Submission to
-          </UtilityContainer>
+          </GridHighPad>
 
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <UtilityIcons src={BellImage} alt="Bell-icon" />
             Start date
-          </UtilityContainer>
+          </GridHighPad>
 
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <UtilityIcons src={AppleImage} alt="Apple-icon" />
             Age
-          </UtilityContainer>
+          </GridHighPad>
 
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <UtilityIcons src={SandClockImage} alt="Sand-watch-icon" />
             Price
-          </UtilityContainer>
+          </GridHighPad>
 
-          <UtilityContainer item xs={2}></UtilityContainer>
+          <GridHighPad item xs={2}></GridHighPad>
         </Grid>
         <Divider variant="middle" />
 
         <Grid container>
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             Bachelor's degree
-          </UtilityContainer>
+          </GridHighPad>
           {CollegeDegreeDetails.map((items) => (
-            <UtilityContainer item xs={2}>
+            <GridHighPad item xs={2}>
               {items}
-            </UtilityContainer>
+            </GridHighPad>
           ))}
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <Button variant="contained">Submit your application</Button>
-          </UtilityContainer>
+          </GridHighPad>
         </Grid>
 
         <Grid container>
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             Master's Degree
-          </UtilityContainer>
+          </GridHighPad>
           {CollegeDegreeDetails.map((items) => (
-            <UtilityContainer item xs={2}>
+            <GridHighPad item xs={2}>
               {items}
-            </UtilityContainer>
+            </GridHighPad>
           ))}
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <Button variant="contained">Submit your application</Button>
-          </UtilityContainer>
+          </GridHighPad>
         </Grid>
 
         <Grid container>
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             Bachelor's preparation
-          </UtilityContainer>
+          </GridHighPad>
           {CollegeDegreeDetails.map((items) => (
-            <UtilityContainer item xs={2}>
+            <GridHighPad item xs={2}>
               {items}
-            </UtilityContainer>
+            </GridHighPad>
           ))}
-          <UtilityContainer item xs={2}>
+          <GridHighPad item xs={2}>
             <Button variant="contained">Submit your application</Button>
-          </UtilityContainer>
+          </GridHighPad>
         </Grid>
 
       </Box>

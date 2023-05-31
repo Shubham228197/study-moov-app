@@ -1,5 +1,4 @@
-import React from "react";
-import MainNavbar from "../MainComponent/MainNavbar";
+import MainNavbar from '../MainComponent/MainPage/MainNavbar'
 import PNF404 from "../../FigmaImages/PNF404-removebg.png";
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";

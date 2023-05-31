@@ -1,7 +1,7 @@
 import { Toolbar, Stack } from "@mui/material";
 import {
   Navtitle,
-  NavSpan,
+  BoldBlueSpan,
   NavtitleSubheading,
   ContactNumber,
   ChooseCountries,
@@ -20,7 +20,7 @@ const FormNavbar = () => {
         <Navtitle>
           Study
           <GreaterThanIcon sx={{ color: "#2047B6" }} />
-          <NavSpan>Moov</NavSpan>
+          <BoldBlueSpan>Moov</BoldBlueSpan>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
         </Navtitle>
         <Stack direction="row" spacing={2}>

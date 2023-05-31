@@ -1,4 +1,4 @@
-import MainNavbar from "../MainNavbar";
+import MainNavbar from "../MainPage/MainNavbar";
 import FilterFieldHome from "./FilterFieldHome";
 import CollegeCardOpen from "./CollegeCardDetails";
 import FooterIcon from "../MainPage/FooterIcon";
@@ -8,7 +8,7 @@ import {
   ShowMoreButtonContainer,
 } from "../MainStyling/HomepageOverlayStyles";
 import {
-  FilterMainHeadline,
+  BoldText30Mar,
   FilterMainSubheading,
 } from "../MainStyling/HomepageTextStyles";
 import { HomepageFilterSubheadingText } from "../../../GeneralConstants/Constants.js";
@@ -19,12 +19,12 @@ const HomepageFiltered = () => {
     <>
       <MainNavbar />
       <FilterBoxMain>
-        <FilterMainHeadline variant="h4">
+        <BoldText30Mar variant="h4">
           Education at world universities
           <FilterMainSubheading>
             {HomepageFilterSubheadingText}
           </FilterMainSubheading>
-        </FilterMainHeadline>
+        </BoldText30Mar>
         <FilterFieldHome />
         <CollegeCardOpen />
         <CollegeCardOpen />

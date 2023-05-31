@@ -1,6 +1,6 @@
 import { Toolbar, Stack } from "@mui/material";
 import {
-  NavSpan,
+  BoldBlueSpan,
   NavtitleSubheading,
   ContactNumberWhite,
   NavtitleWhite,
@@ -11,18 +11,18 @@ import {
   GlobeIconBlue,
 } from "../../../GeneralStyling/IconStyles";
 import {
-  TransparentNavConatiner,
+  TranspNav,
   SelecteCountries,
 } from "../MainStyling/HomepageOverlayStyles";
 
 const TransparentNavbar = () => {
   return (
-    <TransparentNavConatiner sx={{ boxShadow: "none" }}>
+    <TranspNav sx={{ boxShadow: "none" }}>
       <Toolbar>
         <NavtitleWhite>
           Study
           <GreaterThanIcon sx={{ color: "#2047B6" }} />
-          <NavSpan>Moov</NavSpan>
+          <BoldBlueSpan>Moov</BoldBlueSpan>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
         </NavtitleWhite>
         <Stack direction="row" spacing={2}>
@@ -40,7 +40,7 @@ const TransparentNavbar = () => {
           </Stack>
         </Stack>
       </Toolbar>
-    </TransparentNavConatiner>
+    </TranspNav>
   );
 };
 

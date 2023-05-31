@@ -24,11 +24,11 @@ export const FormHeading = Styles(Typography)`
 
 export const CheckboxLabel = Styles(Typography)`
     font-size: 12px !important; 
-    padding: 5px !important; 
+    padding: 5px; 
     color: gray;
 `;
 
-export const FormPrimaryText = Styles(Typography)`
+export const BoldTextCenter = Styles(Typography)`
     font-weight: bold ! important;
     text-align: center;
 `;
@@ -53,7 +53,7 @@ export const NavtitleWhite = Styles(Typography)`
     color: #ffffff !important;
 `;
 
-export const NavSpan = Styles.span`
+export const BoldBlueSpan = Styles.span`
     color: blue;
     font-weight: bolder ! important;
 `;

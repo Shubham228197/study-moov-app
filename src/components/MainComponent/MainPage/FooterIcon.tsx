@@ -5,7 +5,7 @@ import {
   LinkedinIcon,
   YoutubeIcon,
 } from "../../../GeneralStyling/Icons";
-import { StudyMoovDesc, IconTray } from "../MainStyling/MainOverlayStyles";
+import { StackCenter, IconTray } from "../MainStyling/MainOverlayStyles";
 import { FooterLink } from "../../../GeneralStyling/Buttons";
 
 const FooterIcon = () => {
@@ -18,12 +18,12 @@ const FooterIcon = () => {
         <TwitteRIcon />
         <LinkedinIcon />
       </IconTray>
-      <StudyMoovDesc direction="row">
+      <StackCenter direction="row">
         <FooterLink>About Us</FooterLink>
         <FooterLink>Privacy Policy</FooterLink>
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
-      </StudyMoovDesc>
+      </StackCenter>
     </div>
   );
 };

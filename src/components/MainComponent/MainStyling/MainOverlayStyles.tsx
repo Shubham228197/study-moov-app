@@ -75,7 +75,7 @@ export const NavigationBar = Styles(AppBar)`
     background: #FFF ! important;
 `;
 
-export const FormHomeHeading = Styles(Grid)`
+export const GridItemCenter = Styles(Grid)`
     display: flex;
     align-items: center;
     justify-content: center;

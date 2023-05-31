@@ -3,7 +3,7 @@ import { ProgramDegreeDetails, ProgramOffers } from "./MobileConstant/MobileCons
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import { CenterTextHighPad } from "./MobileStyling/MobileStylingText";
 import {
-  BoxBoldHighPad,
+  BoxBoldHighPadNoLR,
   BoxCenterButton,
   ButtonCap,
   ButtonNoPad,
@@ -16,12 +16,12 @@ const ProgramDetails = () => {
   return (
     <>
       <CenterTextHighPad bgcolor="#ebe0e0">Study &gt; Moov</CenterTextHighPad>
-      <BoxBoldHighPad>
+      <BoxBoldHighPadNoLR>
         <ButtonNoPad size="small">
           <KeyboardArrowLeftIcon color="disabled" />
         </ButtonNoPad>
         Vienne University
-      </BoxBoldHighPad>
+      </BoxBoldHighPadNoLR>
       <Stack direction="row" sx={{ backgroundColor: "#ebe0e0" }}>
         {ProgramOffers.map((item) => (
           <ButtonCap>{item.value}</ButtonCap>

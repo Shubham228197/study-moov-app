@@ -26,7 +26,7 @@ export const FilterBoxMain = Styles(Box)`
     margin: 20px 150px 20px 150px ! important;
 `;
 
-export const ShowMoreButtonContainer = Styles(Box)`
+export const BoxCenterHighMar = Styles(Box)`
     display: flex ! important; 
     justify-content: center ! important; 
     margin: 20px ! important;
@@ -52,8 +52,8 @@ export const ContentContainer = Styles(Box)`
     padding: 0px 15px ! important;
 `;
 
-export const CollegePriceSection = Styles(Grid)`
-    padding: 10px ! important;
+export const GridMidPad = Styles(Grid)`
+    padding: 10px;
 `;
 
 export const HomepageContent = Styles(Grid)`

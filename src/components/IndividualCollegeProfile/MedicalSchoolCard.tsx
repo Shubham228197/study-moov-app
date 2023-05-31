@@ -5,7 +5,7 @@ import { SOMS } from "./CollegeProfileConstant/CollegeProfileConstants";
 import {
   CollegeCard,
   CollegeCardData,
-  QuickBox,
+  QuickAppBox,
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
 import {
   BoldText,
@@ -31,9 +31,9 @@ const MedicalSchoolCard = () => (
       </Grid>
       <Grid item xs={3}>
         <CollegeFee />
-        <QuickBox>
+        <QuickAppBox>
           <Button variant="contained">Quick application</Button>
-        </QuickBox>
+        </QuickAppBox>
       </Grid>
     </Grid>
   </CollegeCard>

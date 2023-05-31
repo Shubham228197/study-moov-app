@@ -39,7 +39,7 @@ export const ButtonMidMar = Styles(Button)`
 margin: 10px !important;
 `;
 
-export const BoxBoldHighPad = Styles(Box)`
+export const BoxBoldHighPadNoLR = Styles(Box)`
     font-weight: bold; 
     padding: 20px 0px;
 `;

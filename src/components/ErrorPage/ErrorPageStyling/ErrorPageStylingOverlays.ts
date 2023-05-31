@@ -41,7 +41,7 @@ export const BoxCenterLowPad = Styles(Box)`
     justify-content: center;
     padding: 5%;
 `;
-export const StackCenterLowPad = Styles(Stack)`
+export const StackCenter40Pad = Styles(Stack)`
     justify-content: center;
     padding: 40px;
 `;

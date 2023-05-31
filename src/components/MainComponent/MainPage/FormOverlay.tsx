@@ -5,7 +5,7 @@ import { overlayData } from "../../../GeneralConstants/Constants.js";
 // import FormInput from './FormInput';
 import FormOutput from "./FormOutput";
 import {
-  FormHomeHeading,
+  GridItemCenter,
   FormHomePointers,
   FormHomeResponse,
   FormHomeFooter,
@@ -17,9 +17,9 @@ const FormOverlay = () => {
   return (
     <div>
       <Grid container>
-        <FormHomeHeading item sm={12} xs={12}>
+        <GridItemCenter item sm={12} xs={12}>
           <PageTitle>Free consultation with an academic advisor</PageTitle>
-        </FormHomeHeading>
+        </GridItemCenter>
         <FormHomePointers item sm={5} xs={12}>
           <Stack padding={2} direction="column">
             <ListHeadline>During the consultation, you:</ListHeadline>

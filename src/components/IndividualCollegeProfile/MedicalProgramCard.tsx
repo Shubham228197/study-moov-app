@@ -4,7 +4,7 @@ import CollegeFee from "../MainComponent/Homepage/CollegeFee";
 import {
   CollegeCard,
   CollegeCardData,
-  QuickBox,
+  QuickAppBox,
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
 import {
   BoldText,
@@ -30,9 +30,9 @@ const MedicalCollegeCard = () => (
       </Grid>
       <Grid item xs={3}>
         <CollegeFee />
-        <QuickBox>
+        <QuickAppBox>
           <Button variant="contained">Quick application</Button>
-        </QuickBox>
+        </QuickAppBox>
       </Grid>
     </Grid>
   </CollegeCard>

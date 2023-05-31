@@ -1,7 +1,7 @@
 import Styles from "styled-components";
 import { Typography, TextField } from "@mui/material";
 
-export const FilterMainHeadline = Styles(Typography)`
+export const BoldText30Mar = Styles(Typography)`
     font-weight: bolder ! important ; 
     margin: 30px ! important;
 `;

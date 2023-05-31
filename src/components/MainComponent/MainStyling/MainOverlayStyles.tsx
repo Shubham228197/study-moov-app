@@ -10,12 +10,12 @@ import {
   AppBar,
 } from "@mui/material";
 
-export const FooterTextConatiner = Styles(Stack)`
-    align-items: center;
+export const CenterStackHighPad = Styles(Stack)`
+    align-items: center ! important;
     padding: 20px;
 `;
 
-export const StudyMoovDesc = Styles(Stack)`
+export const StackCenter = Styles(Stack)`
     justify-content: center;
 `;
 

@@ -1,5 +1,5 @@
 import { Typography } from "@mui/material";
-import { FooterTextConatiner } from "../MainStyling/MainOverlayStyles";
+import { CenterStackHighPad } from "../MainStyling/MainOverlayStyles";
 import { FooterTextTitle } from "../MainStyling/MainTextStyles";
 import {
   HeartIcon,
@@ -8,7 +8,7 @@ import {
 
 const FooterText = () => {
   return (
-    <FooterTextConatiner>
+    <CenterStackHighPad>
       <FooterTextTitle>
         Study
         <GreaterThanIcon />
@@ -20,7 +20,7 @@ const FooterText = () => {
         <HeartIcon />
         in Switzerland
       </Typography>
-    </FooterTextConatiner>
+    </CenterStackHighPad>
   );
 };
 

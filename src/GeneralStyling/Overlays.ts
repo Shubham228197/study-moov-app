@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Box, Grid, Stack } from "@mui/material";
 import Styles from "styled-components";
 
 export const Box30margin = Styles(Box)`
@@ -30,4 +30,14 @@ export const GridMidPad = Styles(Grid)`
 `;
 export const GridHighPad = Styles(Grid)`
     padding: 20px;
+`;
+export const IconTray = Styles(Stack)`
+    padding: 16px;
+    justify-content: center;
+`;
+export const StackCenter = Styles(Stack)`
+    justify-content: center;
+`;
+export const BoxMidPad = Styles(Box)`
+padding: 10px;
 `;

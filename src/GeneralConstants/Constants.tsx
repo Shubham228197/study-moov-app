@@ -64,7 +64,8 @@ export const SelectLanguages = [
     label: "English",
     tag: (
       <MenuItem key="english" value="english">
-        <UtilityIcons src={BritainFlag} alt="flag"/>English
+        <UtilityIcons src={BritainFlag} alt="flag" />
+        English
       </MenuItem>
     ),
   },
@@ -104,7 +105,9 @@ export const FieldText = {
   },
   endAdornment: (
     <InputAdornment position="start">
-      <ClearIcon sx={{ color: "blue" }} />
+      <ClearIcon
+        sx={{ color: "blue", cursor: "pointer" }}
+      />
     </InputAdornment>
   ),
 };
@@ -117,7 +120,7 @@ export const FieldNumber = {
   startAdornment: <InputAdornment position="start">{`<€`}</InputAdornment>,
   endAdornment: (
     <InputAdornment position="end">
-      <ClearIcon sx={{ color: "blue" }} />
+      <ClearIcon sx={{ color: "blue", cursor: "pointer" }} />
     </InputAdornment>
   ),
 };

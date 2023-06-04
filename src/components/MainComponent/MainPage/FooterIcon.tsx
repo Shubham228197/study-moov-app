@@ -5,12 +5,13 @@ import {
   LinkedinIcon,
   YoutubeIcon,
 } from "../../../GeneralStyling/Icons";
-import { StackCenter, IconTray } from "../MainStyling/MainOverlayStyles";
+import { StackCenter, IconTray } from '../../../GeneralStyling/Overlays'
 import { FooterLink } from "../../../GeneralStyling/Buttons";
+import { Box30margin } from "../../../GeneralStyling/Overlays";
 
 const FooterIcon = () => {
   return (
-    <div style={{ margin: "30px" }}>
+    <Box30margin>
       <IconTray direction="row">
         <FaceBookIcon />
         <YoutubeIcon />
@@ -24,7 +25,7 @@ const FooterIcon = () => {
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
       </StackCenter>
-    </div>
+    </Box30margin>
   );
 };
 

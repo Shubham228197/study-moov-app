@@ -2,8 +2,8 @@ import { Grid, Stack } from "@mui/material";
 import FooterIcon from "./FooterIcon";
 import FooterText from "./FooterText";
 import { overlayData } from "../../../GeneralConstants/Constants";
-// import FormInput from "./FormInput";
-import FormOutput from "./FormOutput";
+import FormInput from "./FormInput";
+// import FormOutput from "./FormOutput";
 import {
   GridItemCenter,
   FormHomePointers,
@@ -37,7 +37,7 @@ const FormOverlay = () => {
         </Stack>
       </FormHomePointers>
       <FormHomeResponse item sm={7} xs={12}>
-        <FormOutput />
+        <FormInput />
       </FormHomeResponse>
       <FormHomeFooter item sm={12} xs={12}>
         <Stack direction="column">

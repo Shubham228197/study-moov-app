@@ -1,7 +1,9 @@
 import { Grid, Stack, Typography } from "@mui/material";
-import { ProgramDegreeDetails, ProgramOffers } from "./MobileConstant/MobileConstant";
+import {
+  ProgramDegreeDetails,
+  ProgramOffers,
+} from "./MobileConstant/MobileConstant";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
-import { CenterTextHighPad } from "./MobileStyling/MobileStylingText";
 import {
   BoxBoldHighPadNoLR,
   BoxCenterButton,
@@ -10,12 +12,13 @@ import {
   ProgramDetailsContainer,
   SubmitAppLargeButton,
 } from "./MobileStyling/MobileStylingOverlays";
+import MobNavTextBlue from "./MobNavTextBlue";
 
 const ProgramDetails = () => {
   let Program = "Bachelor";
   return (
     <>
-      <CenterTextHighPad bgcolor="#ebe0e0">Study &gt; Moov</CenterTextHighPad>
+      <MobNavTextBlue />
       <BoxBoldHighPadNoLR>
         <ButtonNoPad size="small">
           <KeyboardArrowLeftIcon color="disabled" />

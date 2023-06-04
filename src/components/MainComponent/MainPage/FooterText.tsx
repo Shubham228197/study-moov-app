@@ -1,10 +1,7 @@
 import { Typography } from "@mui/material";
 import { CenterStackHighPad } from "../MainStyling/MainOverlayStyles";
 import { FooterTextTitle } from "../MainStyling/MainTextStyles";
-import {
-  HeartIcon,
-  GreaterThanIcon,
-} from "../../../GeneralStyling/IconStyles";
+import { HeartIcon, GreaterThanIcon } from "../../../GeneralStyling/IconStyles";
 
 const FooterText = () => {
   return (

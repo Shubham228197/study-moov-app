@@ -11,7 +11,8 @@ export const AboutContent = Styles.p`
     margin-bottom: 5px;
 `;
 export const FooterTextTitle = Styles(Typography)`
-    color: #2047B6
+    color: #2047B6;
+    font-weight: bold ! important;
 `;
 export const FormHeading = Styles(Typography)`
     font-size: x-large !important;

@@ -1,18 +1,23 @@
 import NavbarMob from "./NavbarMob";
 import MidbarMob from "./MidbarMob";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import UniversityCard from "./UniversityCard";
 import { ShowMoreButton } from "../../GeneralStyling/Buttons";
-import { BoxCenterHighMar } from '../../GeneralStyling/Overlays';
-import FooterIcon from "../MainComponent/MainPage/FooterIcon";
+import { BoxCenterHighMar, BoxMidPad } from "../../GeneralStyling/Overlays";
+import FooterIconMob from "../MainMobileView/FooterIconMob";
 import FooterText from "../MainComponent/MainPage/FooterText";
+import SearchFilterMob from "./SearchFilterMob";
+import { BoldText } from "../../GeneralStyling/Texts";
 
 const HomepageMob = () => {
   return (
     <div>
       <NavbarMob />
       <MidbarMob />
-      <Typography variant="h5" fontWeight='bold' sx={{padding: '10px'}}>318 study programs in 11 countries</Typography>
+      <BoxMidPad>
+        <BoldText variant="h5">318 study programs in 11 countries</BoldText>
+        <SearchFilterMob />
+      </BoxMidPad>
       <UniversityCard />
       <UniversityCard />
       <UniversityCard />
@@ -20,8 +25,8 @@ const HomepageMob = () => {
       <BoxCenterHighMar>
         <ShowMoreButton>Show More</ShowMoreButton>
       </BoxCenterHighMar>
-      <FooterIcon />
-      <Box sx={{padding: '-50px'}}>
+      <FooterIconMob />
+      <Box sx={{ padding: "-50px" }}>
         <FooterText />
       </Box>
     </div>

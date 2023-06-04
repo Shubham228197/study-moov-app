@@ -12,7 +12,11 @@
 // import AboutMobView from "./components/MainMobileView/AboutMobView";
 // import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 // import ConsultationForm from "./components/MainMobileView/ConsultationForm";
-import ConsultationResult from "./components/MainMobileView/ConsultationResult";
+// import ConsultationResult from "./components/MainMobileView/ConsultationResult";
+// import MobNavTextBlack from "./components/MainMobileView/MobNavTextBlack";
+// import SearchFilterMob from "./components/MainMobileView/SearchFilterMob";
+// import FormInput from "./components/MainComponent/MainPage/FormInput";
+import FilterFieldHome from "./components/MainComponent/Homepage/FilterFieldHome";
 
 function App() {
   return (
@@ -24,15 +28,19 @@ function App() {
       <PageNotFound /> */}
       {/* <CollegeProfilePage/> */}
       {/* <HomepageMain/> */}
-      {/* <MainNavbar/>
-      <FormOverlay/>
-      <AboutMoov/> */}
-      {/* <HomepageFiltered/> */}
+      {/* <MainNavbar/> */}
+      {/* <FormOverlay/> */}
+      {/* <AboutMoov/> */}
+      {/* <HomepageFiltered/>  */}
       {/* <HomepageMob /> */}
       {/* <AboutMobView/> */}
       {/* <ProgramDetails/> */}
       {/* <ConsultationForm /> */}
-      <ConsultationResult />
+      {/* <ConsultationResult /> */}
+      {/* <MobNavTextBlack/> */}
+      {/* <SearchFilterMob/> */}
+      <FilterFieldHome/>
+      {/* <FormInput /> */}
     </div>
   );
 }

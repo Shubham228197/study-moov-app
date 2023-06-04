@@ -65,6 +65,11 @@ export const CrossButtonIcon = Styles(CloseIcon)`
     left: 421px;
     top: -35px;
 `;
+export const CrossButtonIconMob = Styles(CloseIcon)`
+    position: relative;
+    left: 284px;
+    top: 3px;
+`;
 export const StarIconLogo = Styles(StarIcon)`
     padding: 0px 5px;
 `;

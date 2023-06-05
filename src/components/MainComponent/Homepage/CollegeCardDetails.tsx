@@ -26,6 +26,7 @@ import VienaaImage from "../../../FigmaImages/vienna-logo.jpg";
 import CollegeFee from "./CollegeFee";
 import { CommonButton } from "../../../GeneralStyling/Buttons";
 import { GridMidPad } from "../../../GeneralStyling/Overlays";
+import { Link } from "react-router-dom";
 
 const CollegeCardOpen = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -93,7 +94,9 @@ const CollegeCardOpen = () => {
         <GridMidPad item xs={3}>
           <VienaaCollegeImage src={VienaaImage} alt="VinennaUniversityImage" />
           <CollegeFee />
-          <CommonButton variant="contained">View University</CommonButton>
+          <Link to="/college-profile" style={{textDecoration: 'none'}}>
+            <CommonButton variant="contained">View University</CommonButton>
+          </Link>
         </GridMidPad>
       </Grid>
       {dropdown && <CollegeCardMoreDetails />}

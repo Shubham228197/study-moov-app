@@ -8,7 +8,6 @@ import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 import { HomepageContent } from "../MainStyling/HomepageOverlayStyles";
 import { HomepageHeading } from "../MainStyling/HomepageTextStyles";
 import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
-// import { Box } from "@mui/material";
 import { useState } from "react";
 
 const HomepageMain = () => {
@@ -33,9 +32,7 @@ const HomepageMain = () => {
         <FilterFieldHome />
         {UniversityCards}
         <BoxCenterHighMar>
-          <ShowMoreButton variant="outlined" onClick={AddMoreCards}>
-            Show more
-          </ShowMoreButton>
+          <ShowMoreButton variant="outlined" onClick={AddMoreCards}>Show more</ShowMoreButton>
         </BoxCenterHighMar>
         <FooterIcon />
         <FooterText />

@@ -24,16 +24,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomepageMain/>}/>
-        <Route path="/consulation" element={<FormOverlay/>}/>
-        <Route path="/cookie" element={<CookieListPage/>}/>
-        <Route path="/college-profile" element={<CollegeProfilePage />} />
+        <Routes>
+          <Route path="/" element={<HomepageMain />} />
+          <Route path="/consulation" element={<FormOverlay />} />
+          <Route path="/cookie" element={<CookieListPage />} />
+          <Route path="/college-profile" element={<CollegeProfilePage />} />
           <Route path="*" element={<PageNotFound />} />
-          <Route path="/manage-cookie" element={<CookieManagement/>}/>
-          <Route path="/about" element={<AboutMoov/>}/>
-          <Route path="aboutus" element={<AboutMobView/>}/>
-      </Routes>
+          <Route path="/manage-cookie" element={<CookieManagement />} />
+          <Route path="/about" element={<AboutMoov />} />
+          <Route path="/aboutus" element={<AboutMobView />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );

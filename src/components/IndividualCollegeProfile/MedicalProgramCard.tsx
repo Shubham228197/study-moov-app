@@ -21,7 +21,7 @@ const MedicalCollegeCard = () => (
         <GrayText variant="subtitle2">Full-time</GrayText>
         <Grid container>
           {BOMS.map((data) => (
-            <CollegeCardData item xs={3}>
+            <CollegeCardData item xs={3} key={data.id}>
               <BoldTextLowPad>{data.title}</BoldTextLowPad>
               <BoldTextLowPadNoTB variant="h6">{data.value}</BoldTextLowPadNoTB>
             </CollegeCardData>

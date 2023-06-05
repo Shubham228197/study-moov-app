@@ -68,7 +68,7 @@ const CollegeProfileNavbar = () => {
         <Divider light color="white" />
         <GridCenterWhite container>
           {CollegeNavbarInfo.map((info) => (
-            <Grid item xs={3}>
+            <Grid item xs={3} key={info.id}>
               <Typography>{info.title}</Typography>
               <Typography>{info.value}</Typography>
             </Grid>

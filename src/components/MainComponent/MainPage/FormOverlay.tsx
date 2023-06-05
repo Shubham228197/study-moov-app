@@ -29,7 +29,7 @@ const FormOverlay = () => {
             <ListHeadline>During the consultation, you:</ListHeadline>
             <Grid container>
               {overlayData.map((item) => (
-                <Grid container>
+                <Grid container key={item.sno}>
                   <ListNumbers item xs={4}>
                     {item.sno}
                   </ListNumbers>

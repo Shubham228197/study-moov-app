@@ -29,15 +29,15 @@ const EntryRequirements = () => (
     </ToggleContainer>
     <BoxCenterText>
       <GridLightGray container>
-        {ProgramEntryRequirements.TableTitle.map((title) => (
-          <GridLowPad item xs={3}>
+        {ProgramEntryRequirements.TableTitle.map((title, index) => (
+          <GridLowPad item xs={3} key={index}>
             <BoldText>{title}</BoldText>
           </GridLowPad>
         ))}
       </GridLightGray>
       {ProgramEntryRequirements.TableData.map((data) => (
         <>
-          <GridLighterGray container>
+          <GridLighterGray container key={data.id}>
             <Grid item xs={3}>
               {data.Pname}
             </Grid>

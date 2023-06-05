@@ -45,7 +45,7 @@ const CookieListContent = () => {
           </BoxFlex>
           <Stack>
             {CookieList.map((list_value) => (
-              <Stack direction="row" padding={2}>
+              <Stack direction="row" padding={2} key={list_value.id}>
                 <UlineFlexText>{list_value.value}</UlineFlexText>
                 <OnOffButton size="small">{list_value.option.on}</OnOffButton>
                 <OnOffButton size="small">{list_value.option.off}</OnOffButton>

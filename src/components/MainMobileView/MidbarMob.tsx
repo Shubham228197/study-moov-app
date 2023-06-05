@@ -3,9 +3,9 @@ import { MidbarTextFull } from "./MobileConstant/MobileConstant";
 import { BoxFlexMidPad } from "./MobileStyling/MobileStylingOverlays";
 const MidbarMob = () => {
   return (
-    <Stack sx={{backgroundColor:'lightgray'}}>
+    <Stack sx={{ backgroundColor: "lightgray" }}>
       {MidbarTextFull.map((item) => (
-        <BoxFlexMidPad>{item}</BoxFlexMidPad>
+        <BoxFlexMidPad key={item.id}>{item.imageTag}</BoxFlexMidPad>
       ))}
     </Stack>
   );

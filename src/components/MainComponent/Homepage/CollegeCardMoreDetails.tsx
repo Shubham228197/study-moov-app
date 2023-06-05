@@ -11,7 +11,7 @@ import {
 import {
   CollegeInfoExtended,
   ExtendedInfoButtonContainer,
-  UtilityIcons
+  UtilityIcons,
 } from "../MainStyling/HomepageOverlayStyles";
 import { CollegeDegreeDetails } from "../../../GeneralConstants/Constants";
 import { GridHighPad } from "../../../GeneralStyling/Overlays";
@@ -26,7 +26,6 @@ const CollegeCardMoreDetails = () => {
       </ExtendedInfoButtonContainer>
       <Box>
         <Grid container>
-          
           <GridHighPad item xs={2}>
             <UtilityIcons src={GradImage} alt="Graduation-icon" />
             Program
@@ -60,8 +59,8 @@ const CollegeCardMoreDetails = () => {
           <GridHighPad item xs={2}>
             Bachelor's degree
           </GridHighPad>
-          {CollegeDegreeDetails.map((items) => (
-            <GridHighPad item xs={2}>
+          {CollegeDegreeDetails.map((items, index) => (
+            <GridHighPad item xs={2} key={index}>
               {items}
             </GridHighPad>
           ))}
@@ -74,8 +73,8 @@ const CollegeCardMoreDetails = () => {
           <GridHighPad item xs={2}>
             Master's Degree
           </GridHighPad>
-          {CollegeDegreeDetails.map((items) => (
-            <GridHighPad item xs={2}>
+          {CollegeDegreeDetails.map((items, index) => (
+            <GridHighPad item xs={2} key={index}>
               {items}
             </GridHighPad>
           ))}
@@ -88,8 +87,8 @@ const CollegeCardMoreDetails = () => {
           <GridHighPad item xs={2}>
             Bachelor's preparation
           </GridHighPad>
-          {CollegeDegreeDetails.map((items) => (
-            <GridHighPad item xs={2}>
+          {CollegeDegreeDetails.map((items, index) => (
+            <GridHighPad item xs={2} key={index}>
               {items}
             </GridHighPad>
           ))}
@@ -97,7 +96,6 @@ const CollegeCardMoreDetails = () => {
             <Button variant="contained">Submit your application</Button>
           </GridHighPad>
         </Grid>
-
       </Box>
     </CollegeInfoExtended>
   );

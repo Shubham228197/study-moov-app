@@ -22,7 +22,7 @@ const MedicalSchoolCard = () => (
         <GrayText variant="subtitle2">Full-time</GrayText>
         <Grid container>
           {SOMS.map((data) => (
-            <CollegeCardData item xs={2.4}>
+            <CollegeCardData item xs={2.4} key={data.id}>
               <BoldTextLowPad>{data.title}</BoldTextLowPad>
               <BoldTextLowPadNoTB variant="h6">{data.value}</BoldTextLowPadNoTB>
             </CollegeCardData>

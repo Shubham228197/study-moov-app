@@ -9,15 +9,18 @@ import { MontBoldTextLarge } from "./CookiesStyling/CookieStylingText";
 import { NavtitleSubheading } from "../MainComponent/MainStyling/MainTextStyles";
 import { SelectCount } from "../MainComponent/MainStyling/HomepageOverlayStyles";
 import { BoldBlueSpan, ContactNumber } from "../../GeneralStyling/Texts";
+import { Link } from "react-router-dom";
 
 const CookieNavbar = () => (
   <TranspNavNoShadow>
     <Toolbar>
       <Stack direction="row" sx={{ flexGrow: 1 }}>
         <MontBoldTextLarge>
-          Study
-          <GreaterThanIcon />
-          <BoldBlueSpan>Moov</BoldBlueSpan>
+          <Link to="/" style={{textDecoration: 'none', color: 'none'}}>
+            Study
+            <GreaterThanIcon />
+            <BoldBlueSpan>Moov</BoldBlueSpan>
+          </Link>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
         </MontBoldTextLarge>
         <Stack direction="row" sx={{ padding: "16px 20px" }}>

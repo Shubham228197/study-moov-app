@@ -5,10 +5,10 @@ import {
   LinkedinIcon,
   YoutubeIcon,
 } from "../../../GeneralStyling/Icons";
-import { StackCenter, IconTray } from '../../../GeneralStyling/Overlays'
+import { StackCenter, IconTray } from "../../../GeneralStyling/Overlays";
 import { FooterLink } from "../../../GeneralStyling/Buttons";
 import { Box30margin } from "../../../GeneralStyling/Overlays";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const FooterIcon = () => {
   return (
@@ -21,12 +21,14 @@ const FooterIcon = () => {
         <LinkedinIcon />
       </IconTray>
       <StackCenter direction="row">
-        <FooterLink>About Us</FooterLink>
+        <Link to="/cookie" style={{ textDecoration: "none" }}>
+          <FooterLink>About Us</FooterLink>
+        </Link>
         <FooterLink>Privacy Policy</FooterLink>
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
-        <Link to='/cookie' style={{textDecoration: 'none'}}>
-        <FooterLink>Cookies</FooterLink>
+        <Link to="/about" style={{ textDecoration: "none" }}>
+          <FooterLink>Cookies</FooterLink>
         </Link>
       </StackCenter>
     </Box30margin>

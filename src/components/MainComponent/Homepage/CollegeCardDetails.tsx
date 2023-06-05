@@ -93,7 +93,7 @@ const CollegeCardOpen = () => {
         <GridMidPad item xs={3}>
           <VienaaCollegeImage src={VienaaImage} alt="VinennaUniversityImage" />
           <CollegeFee />
-          <CommonButton variant="contained">Quick application</CommonButton>
+          <CommonButton variant="contained">View University</CommonButton>
         </GridMidPad>
       </Grid>
       {dropdown && <CollegeCardMoreDetails />}

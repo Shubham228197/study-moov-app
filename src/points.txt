@@ -12,3 +12,5 @@ const Wrapper = styled.div`
 <Wrapper>
   <Button className="my__unique__button__class-asdf123" />
 </Wrapper>
+
+Disable colorings in Link Buttons

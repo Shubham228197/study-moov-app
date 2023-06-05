@@ -8,6 +8,7 @@ import {
 import { StackCenter, IconTray } from '../../../GeneralStyling/Overlays'
 import { FooterLink } from "../../../GeneralStyling/Buttons";
 import { Box30margin } from "../../../GeneralStyling/Overlays";
+import {Link} from 'react-router-dom'
 
 const FooterIcon = () => {
   return (
@@ -24,6 +25,9 @@ const FooterIcon = () => {
         <FooterLink>Privacy Policy</FooterLink>
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
+        <Link to='/cookie' style={{textDecoration: 'none'}}>
+        <FooterLink>Cookies</FooterLink>
+        </Link>
       </StackCenter>
     </Box30margin>
   );

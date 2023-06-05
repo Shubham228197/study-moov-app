@@ -8,8 +8,18 @@ import FooterIconMob from "../MainMobileView/FooterIconMob";
 import FooterText from "../MainComponent/MainPage/FooterText";
 import SearchFilterMob from "./SearchFilterMob";
 import { BoldText } from "../../GeneralStyling/Texts";
+import { useState } from "react";
 
 const HomepageMob = () => {
+  const [CardCount, setCardCount] = useState(3);
+
+  function AddMoreCards() {
+    setCardCount((prev) => prev + 5);
+  }
+
+  const UniversityCards = Array.from({ length: CardCount }, (_, index) => (
+    <UniversityCard key={index} />
+  ));
   return (
     <div>
       <NavbarMob />
@@ -18,12 +28,9 @@ const HomepageMob = () => {
         <BoldText variant="h5">318 study programs in 11 countries</BoldText>
         <SearchFilterMob />
       </BoxMidPad>
-      <UniversityCard />
-      <UniversityCard />
-      <UniversityCard />
-      <UniversityCard />
+      {UniversityCards}
       <BoxCenterHighMar>
-        <ShowMoreButton>Show More</ShowMoreButton>
+        <ShowMoreButton onClick={AddMoreCards}>Show More</ShowMoreButton>
       </BoxCenterHighMar>
       <FooterIconMob />
       <Box sx={{ padding: "-50px" }}>

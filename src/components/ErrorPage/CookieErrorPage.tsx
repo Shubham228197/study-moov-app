@@ -3,7 +3,6 @@ import CookieNavbar from "../Cookies/CookieNavbar";
 import { Box, Grid } from "@mui/material";
 import { langVariations } from "./ErrorPageConstant/ErrorPageConstant";
 import MultiLang from "./MultiLang";
-import CookieFooter from "../Cookies/CookieFooter";
 import {
   GridCenterLowMargin,
   GridColumn,
@@ -45,7 +44,6 @@ const CookieErrorPage = () => {
           <MultiLang />
         </MultiLanguBox>
       </Box>
-      <CookieFooter />
     </div>
   );
 };

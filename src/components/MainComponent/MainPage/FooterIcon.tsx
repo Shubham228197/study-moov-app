@@ -21,7 +21,7 @@ const FooterIcon = () => {
         <LinkedinIcon />
       </IconTray>
       <StackCenter direction="row">
-        <Link to="/cookie" style={{ textDecoration: "none" }}>
+        <Link to="/about" style={{ textDecoration: "none" }}>
           <FooterLink>About Us</FooterLink>
         </Link>
         <FooterLink>Privacy Policy</FooterLink>

@@ -2,9 +2,9 @@ import CookieAccordianPage from "./CookieAccordianPage";
 import { Typography } from "@mui/material";
 import MainNavbar from "../MainComponent/MainPage/MainNavbar";
 import FooterIcon from "../MainComponent/MainPage/FooterIcon";
-import CookieFooter from "./CookieFooter";
 import { Box30margin } from "../../GeneralStyling/Overlays";
 import { BoldTextNoLRMidPad } from "./CookiesStyling/CookieStylingText";
+import FooterText from "../MainComponent/MainPage/FooterText";
 
 const CookieManagement = () => {
   return (
@@ -21,7 +21,7 @@ const CookieManagement = () => {
       </Box30margin>
       <CookieAccordianPage />
       <FooterIcon />
-      <CookieFooter />
+      <FooterText />
     </>
   );
 };

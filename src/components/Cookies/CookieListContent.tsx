@@ -18,6 +18,7 @@ import {
   UlineSpan,
 } from "./CookiesStyling/CookieStylingText";
 import { Box30padding } from "../../GeneralStyling/Overlays";
+import { Link } from "react-router-dom";
 
 const CookieListContent = () => {
   const [essentialCookie, setEssentialCookie] = useState(true);
@@ -58,7 +59,9 @@ const CookieListContent = () => {
             <UlineSpan>Full list of cookies.</UlineSpan>
           </Typography>
           <BoxCenterHighMar>
-            <PrefButtton variant="contained">Save preferences</PrefButtton>
+            <Link to="/cookie-error" style={{ textDecoration: "none" }}>
+              <PrefButtton variant="contained">Save preferences</PrefButtton>
+            </Link>
           </BoxCenterHighMar>
         </Box30padding>
       ) : (

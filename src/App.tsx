@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CookieListPage from "./components/Cookies/CookieListPage";
 import CookieManagement from "./components/Cookies/CookieManagement";
-// import CookieErrorPage from "./components/ErrorPage/CookieErrorPage";
+import CookieErrorPage from "./components/ErrorPage/CookieErrorPage";
 import PageNotFound from "./components/ErrorPage/PageNotFound";
 import CollegeProfilePage from "./components/IndividualCollegeProfile/CollegeProfilePage";
 import HomepageMain from "./components/MainComponent/Homepage/HomepageMain";
@@ -33,6 +33,7 @@ function App() {
           <Route path="/manage-cookie" element={<CookieManagement />} />
           <Route path="/about" element={<AboutMoov />} />
           <Route path="/aboutus" element={<AboutMobView />} />
+          <Route path="/cookie-error" element={<CookieErrorPage />} />
         </Routes>
       </BrowserRouter>
     </div>

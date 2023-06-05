@@ -32,7 +32,7 @@ function App() {
           <Route path="*" element={<PageNotFound />} />
           <Route path="/manage-cookie" element={<CookieManagement />} />
           <Route path="/about" element={<AboutMoov />} />
-          <Route path="aboutus" element={<AboutMobView />} />
+          <Route path="/aboutus" element={<AboutMobView />} />
         </Routes>
       </BrowserRouter>
     </div>

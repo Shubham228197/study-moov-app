@@ -27,7 +27,7 @@ const FooterIcon = () => {
         <FooterLink>Privacy Policy</FooterLink>
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
-        <Link to="/about" style={{ textDecoration: "none" }}>
+        <Link to="/cookie" style={{ textDecoration: "none" }}>
           <FooterLink>Cookies</FooterLink>
         </Link>
       </StackCenter>

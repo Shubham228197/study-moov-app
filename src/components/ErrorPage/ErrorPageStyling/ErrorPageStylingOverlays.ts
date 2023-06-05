@@ -16,7 +16,6 @@ export const MultiLanguBox = Styles(Box)`
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    margin: 20px;
 `;
 export const GridCenterLowMargin = Styles(Grid)`
     text-align: center;
@@ -26,6 +25,7 @@ export const MultiLangCard = Styles(Paper)`
     max-width: 500px; 
     padding: 30px; 
     border-radius: 20px ! important;
+    margin: 30px ! important;
 `;
 export const BoxCenterLowPad = Styles(Box)`
     display: flex; 

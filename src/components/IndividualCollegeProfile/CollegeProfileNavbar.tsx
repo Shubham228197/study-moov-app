@@ -1,6 +1,6 @@
 import TransparentNavbar from "../MainComponent/Homepage/TransparentNavbar";
 import CollegeImage from "../../FigmaImages/Harward.jpg";
-import { Box, Button, Grid, Tooltip, Typography } from "@mui/material";
+import { Box, Grid, Tooltip, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import { CollegeNavbarInfo } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { StarIconLogo, InfoIconLogo } from "../../GeneralStyling/Icons";
@@ -15,6 +15,8 @@ import {
   RatingButton,
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
 import { BoldText } from "../../GeneralStyling/Texts";
+import { CommonButton } from "../../GeneralStyling/Buttons";
+import { Link } from "react-router-dom";
 
 const CollegeProfileNavbar = () => {
   return (
@@ -48,7 +50,9 @@ const CollegeProfileNavbar = () => {
             </Box>
           </Grid>
           <Grid item xs={3}>
-            <Button variant="contained">Free Conssultation</Button>
+            <Link to="/consulation">
+              <CommonButton variant="contained">Free Consultation</CommonButton>
+            </Link>
           </Grid>
           <Grid item xs={3}>
             <Box>

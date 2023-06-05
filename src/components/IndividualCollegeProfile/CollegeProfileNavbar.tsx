@@ -50,7 +50,7 @@ const CollegeProfileNavbar = () => {
             </Box>
           </Grid>
           <Grid item xs={3}>
-            <Link to="/consulation">
+            <Link to="/consulation" style={{textDecoration: 'none'}}>
               <CommonButton variant="contained">Free Consultation</CommonButton>
             </Link>
           </Grid>

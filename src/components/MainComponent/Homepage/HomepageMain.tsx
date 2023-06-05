@@ -5,9 +5,7 @@ import CollegeCardOpen from "./CollegeCardDetails";
 import FooterIcon from "../MainPage/FooterIcon";
 import FooterText from "../MainPage/FooterText";
 import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
-import {
-  HomepageContent
-} from "../MainStyling/HomepageOverlayStyles";
+import { HomepageContent } from "../MainStyling/HomepageOverlayStyles";
 import { HomepageHeading } from "../MainStyling/HomepageTextStyles";
 import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
 import { useState } from "react";

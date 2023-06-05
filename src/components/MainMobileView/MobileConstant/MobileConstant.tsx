@@ -21,54 +21,87 @@ export const MidbarText = [
   },
 ];
 export const MidbarTextFull = [
-  <>
-    <img
-      src={BagImage}
-      alt="bag"
-      style={{ height: "30px", width: "30px", padding: "0px 10px" }}
-    />
-    <Typography variant="subtitle2" sx={{ padding: "0px 10px" }}>
-      Full support: visa, application submission, motivation letter, interview
-    </Typography>
-  </>,
-  <>
-    <img
-      src={GraduationImage}
-      alt="cap"
-      style={{ height: "30px", width: "30px", padding: "0px 10px" }}
-    />
-    <Typography variant="subtitle2" sx={{ padding: "0px 10px" }}>
-      Preparation for admission to the TOP-50 universities and TOP-100 schools
-    </Typography>
-  </>,
-  <>
-    <img
-      src={BookIcon}
-      alt="book"
-      style={{ height: "30px", width: "30px", padding: "0px 10px" }}
-    />
-    <Typography variant="subtitle2" sx={{ padding: "0px 10px" }}>
-      Preparation for IELTS, GMAT, TOEFL, GRE, UKiset, SAT
-    </Typography>
-  </>,
+  {
+    id: "1",
+    imageTag: (
+      <>
+        <img
+          src={BagImage}
+          alt="bag"
+          style={{ height: "30px", width: "30px", padding: "0px 10px" }}
+        />
+        <Typography variant="subtitle2" sx={{ padding: "0px 10px" }}>
+          Full support: visa, application submission, motivation letter,
+          interview
+        </Typography>
+      </>
+    ),
+  },
+  {
+    id: "2",
+    imageTag: (
+      <>
+        <img
+          src={GraduationImage}
+          alt="cap"
+          style={{ height: "30px", width: "30px", padding: "0px 10px" }}
+        />
+        <Typography variant="subtitle2" sx={{ padding: "0px 10px" }}>
+          Preparation for admission to the TOP-50 universities and TOP-100
+          schools
+        </Typography>
+      </>
+    ),
+  },
+  {
+    id: "3",
+    imageTag: (
+      <>
+        <img
+          src={BookIcon}
+          alt="book"
+          style={{ height: "30px", width: "30px", padding: "0px 10px" }}
+        />
+        <Typography variant="subtitle2" sx={{ padding: "0px 10px" }}>
+          Preparation for IELTS, GMAT, TOEFL, GRE, UKiset, SAT
+        </Typography>
+      </>
+    ),
+  },
 ];
 export const CountryFlagImages = [
-  <img src={EnglandFlagImage} alt="london" style={{ height: "20px" }} />,
-  <img src={SpainFlagImage} alt="spain" style={{ height: "20px" }} />,
-  <img src={FranceFlagImage} alt="france" style={{ height: "20px" }} />,
+  {
+    id: "1",
+    imageTag: (
+      <img src={EnglandFlagImage} alt="london" style={{ height: "20px" }} />
+    ),
+  },
+  {
+    id: "2",
+    imageTag: (
+      <img src={SpainFlagImage} alt="spain" style={{ height: "20px" }} />
+    ),
+  },
+  {
+    id: "3",
+    imageTag: (
+      <img src={FranceFlagImage} alt="france" style={{ height: "20px" }} />
+    ),
+  },
 ];
 export const ProgramDegreeDetails = [
-  { title: "Admission Before", value: `11 Oct - 13 Dec` },
-  { title: "Start Date", value: `November 1, 2021` },
-  { title: "Age", value: `22-23 years old` },
-  { title: "Price", value: `€ 22,989/year` },
+  { id: "4", title: "Admission Before", value: `11 Oct - 13 Dec` },
+  { id: "5", title: "Start Date", value: `November 1, 2021` },
+  { id: "6", title: "Age", value: `22-23 years old` },
+  { id: "7", title: "Price", value: `€ 22,989/year` },
 ];
 type Poffers = {
+  id: string;
   value: string;
   type: string;
-}[]
+}[];
 export const ProgramOffers: Poffers = [
-    {value: `Bachelor's degree`, type: 'contained'},
-    {value: `Master's Degree`, type: 'text'},
-    {value: `Under 18`, type: 'text'},
-]
+  { id: "1", value: `Bachelor's degree`, type: "contained" },
+  { id: "2", value: `Master's Degree`, type: "text" },
+  { id: "3", value: `Under 18`, type: "text" },
+];

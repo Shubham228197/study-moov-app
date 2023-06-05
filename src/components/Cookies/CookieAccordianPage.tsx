@@ -12,7 +12,7 @@ const CookieAccordianPage = () => (
   <Box30margin>
     {AccordianInput.map((accordian_data) => (
       <>
-        <AccordionBox>
+        <AccordionBox key={accordian_data.id}>
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -35,7 +35,7 @@ const CookieAccordianPage = () => (
               <tbody>
                 {accordian_data.table.map((table_data) => (
                   <>
-                    <TableRow>
+                    <TableRow key={table_data.id}>
                       <TableTextMidPad>{table_data.name}</TableTextMidPad>
                       <TableTextMidPad>{table_data.service}</TableTextMidPad>
                       <TableTextMidPad>{table_data.domain}</TableTextMidPad>

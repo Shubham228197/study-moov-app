@@ -27,7 +27,7 @@ const ProgramDetails = () => {
       </BoxBoldHighPadNoLR>
       <Stack direction="row" sx={{ backgroundColor: "#ebe0e0" }}>
         {ProgramOffers.map((item) => (
-          <ButtonCap>{item.value}</ButtonCap>
+          <ButtonCap key={item.id}>{item.value}</ButtonCap>
         ))}
       </Stack>
       <Grid container sx={{ padding: "15px" }}>
@@ -37,7 +37,7 @@ const ProgramDetails = () => {
         </Grid>
         {ProgramDegreeDetails.map((item) => (
           <>
-            <ProgramDetailsContainer item xs={6}>
+            <ProgramDetailsContainer item xs={6} key={item.id}>
               <Typography>{item.title}</Typography>
               <Typography>{item.value}</Typography>
             </ProgramDetailsContainer>

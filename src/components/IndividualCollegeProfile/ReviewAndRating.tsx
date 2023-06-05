@@ -21,7 +21,7 @@ const ReviewAndRating = () => (
     <StackHighPadNoLR direction="row">
       <RatingOrg src={ReviewLogo} alt="QS_Review_LOGO" />
       {ReviewRank.map((rank) => (
-        <RakingWrapper>
+        <RakingWrapper key={rank.id}>
           <BoldText>{rank.ranking}</BoldText>
           {rank.topic}
         </RakingWrapper>
@@ -39,7 +39,7 @@ const ReviewAndRating = () => (
       </BoldGridHighPadNoLR>
     </RankContainerHeading>
     {RankChart.map((ChartData) => (
-      <RankDataContainer container>
+      <RankDataContainer container key={ChartData.id}>
         <GridHighPadNoLR item xs={4}>
           {ChartData.University}
         </GridHighPadNoLR>

@@ -8,8 +8,10 @@ const AboutMobView = () => {
     <AboutContainerMob elevation={6}>
       <CrossButtonIconMob />
       <BoldTextLowPad variant="h4">About Us</BoldTextLowPad>
-      {aboutData.map((item) => (
-        <TextLowPad variant="body2">{item}</TextLowPad>
+      {aboutData.map((item, index) => (
+        <TextLowPad variant="body2" key={index}>
+          {item}
+        </TextLowPad>
       ))}
     </AboutContainerMob>
   );

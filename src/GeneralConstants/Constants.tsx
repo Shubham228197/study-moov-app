@@ -51,6 +51,7 @@ in the world open their doors to children of five years of age.`;
 
 export const SelectLanguages = [
   {
+    id: '0', 
     value: "all-languages",
     label: "All languages",
     tag: (
@@ -60,6 +61,7 @@ export const SelectLanguages = [
     ),
   },
   {
+    id: '1', 
     value: "english",
     label: "English",
     tag: (
@@ -70,6 +72,7 @@ export const SelectLanguages = [
     ),
   },
   {
+    id: '2', 
     value: "german",
     label: "German",
     tag: (
@@ -79,6 +82,7 @@ export const SelectLanguages = [
     ),
   },
   {
+    id: '3', 
     value: "russian",
     label: "Russian",
     tag: (
@@ -88,6 +92,7 @@ export const SelectLanguages = [
     ),
   },
   {
+    id: '4', 
     value: "spanish",
     label: "Spanish",
     tag: (

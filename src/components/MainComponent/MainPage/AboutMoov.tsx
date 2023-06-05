@@ -8,8 +8,8 @@ const AboutMoov = () => {
     <AboutCardContainer elevation={15}>
       <CrossButtonIcon />
       <AboutHeadline>About Us</AboutHeadline>
-      {aboutData.map((item) => (
-        <AboutContent>{item}</AboutContent>
+      {aboutData.map((item, index) => (
+        <AboutContent key={index}>{item}</AboutContent>
       ))}
     </AboutCardContainer>
   );

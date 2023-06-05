@@ -11,7 +11,7 @@ import {
   SubmitAppSmallButton,
   UniversityCardContainer,
 } from "./MobileStyling/MobileStylingOverlays";
-import { BoldText } from '../../GeneralStyling/Texts';
+import { BoldText } from "../../GeneralStyling/Texts";
 
 const UniversityCard = () => {
   return (
@@ -36,7 +36,7 @@ const UniversityCard = () => {
       <Typography>
         Language of instruction:
         {CountryFlagImages.map((flags) => (
-          <>{flags}</>
+          <div key={flags.id}>{flags.imageTag}</div>
         ))}
       </Typography>
       <PriceBox>

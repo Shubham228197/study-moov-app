@@ -55,7 +55,7 @@ const EssentialCookieDetails: FC<cookie> = (props): JSX.Element => {
                 </TDataHighPad>
               </tr>
               {CookieTableContent.map((rowDetails) => (
-                <tr>
+                <tr key={rowDetails.id}>
                   <td>{rowDetails.name}</td>
                   <td>{rowDetails.service}</td>
                   <td> {rowDetails.domain}</td>

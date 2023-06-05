@@ -28,7 +28,7 @@ const CookieErrorPage = () => {
         <Grid container>
           <GridColumn item xs={6}>
             {langVariations.map((lines) => (
-              <BoldText variant="h5">{lines}</BoldText>
+              <BoldText variant="h5" key={lines.id}>{lines.value}</BoldText>
             ))}
           </GridColumn>
           <GridCenterLowMargin item xs={6}>

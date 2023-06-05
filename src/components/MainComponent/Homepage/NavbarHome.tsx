@@ -9,11 +9,17 @@ import {
 } from "../MainStyling/HomepageOverlayStyles";
 import { NaviagtionHeading } from "../MainStyling/HomepageTextStyles";
 import { CommonButton } from "../../../GeneralStyling/Buttons";
-import DarkedCollegeImage from '../../../FigmaImages/vadim-sherbakov-darked.jpg'
-
+import DarkedCollegeImage from "../../../FigmaImages/vadim-sherbakov-darked.jpg";
+import { Link } from "react-router-dom";
 const NavbarHome = () => {
   return (
-    <Box sx={{backgroundImage: `url(${DarkedCollegeImage})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover'}}>
+    <Box
+      sx={{
+        backgroundImage: `url(${DarkedCollegeImage})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <TransparentNavbar />
       <Box>
         <BritainFlagImage src={BritainFlag} alt="great-britain-flag-icon" />
@@ -22,7 +28,9 @@ const NavbarHome = () => {
         Study abroad in the UK, Switzerland and Austria
       </NaviagtionHeading>
       <NaviagtionFooter>
-        <CommonButton variant="contained">Select University</CommonButton>
+        <Link to="/consulation" style={{textDecoration: 'none'}}>
+          <CommonButton variant="contained">Book Consultation</CommonButton>
+        </Link>
         <ScotlandFlagImage src={ScotlandFlag} alt="scotland-flag-icon" />
       </NaviagtionFooter>
     </Box>

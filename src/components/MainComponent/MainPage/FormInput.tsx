@@ -9,7 +9,7 @@ import { FormHeading, CheckboxLabel } from "../MainStyling/MainTextStyles";
 import { FormSubmit } from "../../../GeneralStyling/Buttons";
 import { FormTnC } from "../../../GeneralConstants/Constants";
 import { useForm } from "react-hook-form";
-import { useState } from "react";
+import { FC, useState } from "react";
 
 const FieldStyle = {
   style: {
@@ -25,7 +25,11 @@ type FormValues = {
   TNC: boolean;
 };
 
-const FormInput = () => {
+type FormSubmission = {
+  setIsSubmitted: (value: boolean) => void;
+}
+
+const FormInput: FC<FormSubmission> = (props): JSX.Element => {
   const [privacy, setPrivacy] = useState(false);
   const form = useForm<FormValues>({
     defaultValues: {
@@ -43,6 +47,7 @@ const FormInput = () => {
   const onSubmit = (data: FormValues) => {
     console.log("FORM DATA: ", data);
     setPrivacy(!privacy);
+    props.setIsSubmitted(true)
     reset();
   };
   return (

@@ -15,7 +15,7 @@ import {
   MultiLangHeading,
 } from "./ErrorPageStyling/ErrorPageStylingText";
 import { BoldText } from "../../GeneralStyling/Texts";
-import { Link } from "react-router-dom";
+import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const CookieErrorPage = () => {
   return (
@@ -33,9 +33,9 @@ const CookieErrorPage = () => {
           </GridColumn>
           <GridCenterLowMargin item xs={6}>
             <HomePageButton size="large">
-              <Link to="/cookie" style={{ textDecoration: "none" }}>
+              <RouteLink to="/cookie">
                 <HomeButtonText variant="h5">to Home Page</HomeButtonText>
-              </Link>
+              </RouteLink>
             </HomePageButton>
           </GridCenterLowMargin>
         </Grid>

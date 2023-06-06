@@ -9,7 +9,7 @@ import {
 } from "./CookiesStyling/CookieStylingOverlays";
 import { TextLowPad } from "../../GeneralStyling/Texts";
 import { FC } from "react";
-import { Link } from "react-router-dom";
+import { RouteLink } from "../../GeneralStyling/Overlays";
 
 type AcceptCookie = {
   setIsAccepted: (value: boolean) => void;
@@ -28,11 +28,11 @@ const CookieFooter: FC<AcceptCookie> = (props): JSX.Element => {
       <GridColMidPad item xs={6}>
         <Typography>{CookieFooterText}</Typography>
         <Stack direction="row">
-          <Link to="/manage-cookie" style={{ textDecoration: "none" }}>
+          <RouteLink to="/manage-cookie">
             <ManageCookieButton variant="outlined">
               Manage Your cookies
             </ManageCookieButton>
-          </Link>
+          </RouteLink>
           <AcceptCookieButton
             color="inherit"
             variant="contained"

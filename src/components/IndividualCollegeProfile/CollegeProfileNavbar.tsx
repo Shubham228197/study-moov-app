@@ -16,7 +16,7 @@ import {
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
 import { BoldText } from "../../GeneralStyling/Texts";
 import { CommonButton } from "../../GeneralStyling/Buttons";
-import { Link } from "react-router-dom";
+import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const CollegeProfileNavbar = () => {
   return (
@@ -50,9 +50,9 @@ const CollegeProfileNavbar = () => {
             </Box>
           </Grid>
           <Grid item xs={3}>
-            <Link to="/consulation" style={{textDecoration: 'none'}}>
+            <RouteLink to="/consulation">
               <CommonButton variant="contained">Free Consultation</CommonButton>
-            </Link>
+            </RouteLink>
           </Grid>
           <Grid item xs={3}>
             <Box>

@@ -14,15 +14,18 @@ import {
   SelecteCountries,
 } from "../MainStyling/HomepageOverlayStyles";
 import { BoldBlueSpan } from "../../../GeneralStyling/Texts";
+import { RouteLinkWhite } from "../../../GeneralStyling/Overlays";
 
 const TransparentNavbar = () => {
   return (
     <TranspNav sx={{ boxShadow: "none" }}>
       <Toolbar>
         <NavtitleWhite>
-          Study
-          <GreaterThanIcon sx={{ color: "#2047B6" }} />
-          <BoldBlueSpan>Moov</BoldBlueSpan>
+          <RouteLinkWhite to="/">
+            Study
+            <GreaterThanIcon sx={{ color: "#2047B6" }} />
+            <BoldBlueSpan>Moov</BoldBlueSpan>
+          </RouteLinkWhite>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
         </NavtitleWhite>
         <Stack direction="row" spacing={2}>

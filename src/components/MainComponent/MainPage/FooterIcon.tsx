@@ -8,7 +8,7 @@ import {
 import { StackCenter, IconTray } from "../../../GeneralStyling/Overlays";
 import { FooterLink } from "../../../GeneralStyling/Buttons";
 import { Box30margin } from "../../../GeneralStyling/Overlays";
-import { Link } from "react-router-dom";
+import { RouteLink } from "../../../GeneralStyling/Overlays";
 
 const FooterIcon = () => {
   return (
@@ -21,15 +21,15 @@ const FooterIcon = () => {
         <LinkedinIcon />
       </IconTray>
       <StackCenter direction="row">
-        <Link to="/about" style={{ textDecoration: "none" }}>
+        <RouteLink to="/about">
           <FooterLink>About Us</FooterLink>
-        </Link>
+        </RouteLink>
         <FooterLink>Privacy Policy</FooterLink>
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
-        <Link to="/cookie" style={{ textDecoration: "none" }}>
+        <RouteLink to="/cookie">
           <FooterLink>Cookies</FooterLink>
-        </Link>
+        </RouteLink>
       </StackCenter>
     </Box30margin>
   );

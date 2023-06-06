@@ -98,10 +98,21 @@ export const ProgramDegreeDetails = [
 type Poffers = {
   id: string;
   value: string;
-  type: string;
+  label: string;
+  title: string;
 }[];
 export const ProgramOffers: Poffers = [
-  { id: "1", value: `Bachelor's degree`, type: "contained" },
-  { id: "2", value: `Master's Degree`, type: "text" },
-  { id: "3", value: `Under 18`, type: "text" },
+  {
+    id: "1",
+    title: `Bachelor's degree`,
+    label: "bachelor-degree",
+    value: "bachelor",
+  },
+  {
+    id: "2",
+    title: `Master's Degree`,
+    label: "master-degree",
+    value: "master",
+  },
+  { id: "3", title: `Under 18`, label: "under18-degree", value: "under18" },
 ];

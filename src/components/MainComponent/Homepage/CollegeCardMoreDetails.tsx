@@ -5,24 +5,52 @@ import BellImage from "../../../FigmaImages/bell-icon.png";
 import AppleImage from "../../../FigmaImages/apple-icon.png";
 import SandClockImage from "../../../FigmaImages/sandwatch-icon.png";
 import {
-  ExtendedButton,
-  ExtendedButtonSelected,
-} from "../../../GeneralStyling/Buttons";
-import {
   CollegeInfoExtended,
   ExtendedInfoButtonContainer,
   UtilityIcons,
 } from "../MainStyling/HomepageOverlayStyles";
 import { CollegeDegreeDetails } from "../../../GeneralConstants/Constants";
 import { GridHighPad } from "../../../GeneralStyling/Overlays";
+import { StyledToggleButtonGroupV3 } from "../../../GeneralConstants/Constants";
+import ToggleButton from "@mui/material/ToggleButton";
+import { useState } from "react";
 
 const CollegeCardMoreDetails = () => {
+  const [programChoice, setProgramChoice] = useState("bachelor");
+  let ButtonHistory = "";
+
+  const handleAlignment = (
+    event: React.MouseEvent<HTMLElement>,
+    newAlignment: string
+  ) => {
+    ButtonHistory = programChoice;
+    setProgramChoice(newAlignment);
+    if (newAlignment === null) {
+      setProgramChoice(ButtonHistory);
+    }
+  };
+
   return (
     <CollegeInfoExtended elevation={6}>
       <ExtendedInfoButtonContainer>
-        <ExtendedButtonSelected>Bachelor's degree</ExtendedButtonSelected>
-        <ExtendedButton>Master's Degree</ExtendedButton>
-        <ExtendedButton>Programs under 18</ExtendedButton>
+        <StyledToggleButtonGroupV3
+          size="small"
+          value={programChoice}
+          exclusive
+          onChange={handleAlignment}
+          aria-label="text alignment"
+          sx={{padding: '0px', margin: '0px'}}
+        >
+          <ToggleButton value="bachelor" aria-label="bachelor-degree">
+            <Button color="inherit">Bachelor's degree</Button>
+          </ToggleButton>
+          <ToggleButton value="master" aria-label="master-degree">
+            <Button color="inherit">Master's Degree</Button>
+          </ToggleButton>
+          <ToggleButton value="under18" aria-label="under18-degree">
+            <Button color="inherit">Programs Under 18</Button>
+          </ToggleButton>
+        </StyledToggleButtonGroupV3>
       </ExtendedInfoButtonContainer>
       <Box>
         <Grid container>

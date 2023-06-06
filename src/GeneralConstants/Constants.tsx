@@ -53,7 +53,7 @@ in the world open their doors to children of five years of age.`;
 
 export const SelectLanguages = [
   {
-    id: '0', 
+    id: "0",
     value: "all-languages",
     label: "All languages",
     tag: (
@@ -63,7 +63,7 @@ export const SelectLanguages = [
     ),
   },
   {
-    id: '1', 
+    id: "1",
     value: "english",
     label: "English",
     tag: (
@@ -74,7 +74,7 @@ export const SelectLanguages = [
     ),
   },
   {
-    id: '2', 
+    id: "2",
     value: "german",
     label: "German",
     tag: (
@@ -84,7 +84,7 @@ export const SelectLanguages = [
     ),
   },
   {
-    id: '3', 
+    id: "3",
     value: "russian",
     label: "Russian",
     tag: (
@@ -94,7 +94,7 @@ export const SelectLanguages = [
     ),
   },
   {
-    id: '4', 
+    id: "4",
     value: "spanish",
     label: "Spanish",
     tag: (
@@ -112,9 +112,7 @@ export const FieldText = {
   },
   endAdornment: (
     <InputAdornment position="start">
-      <ClearIcon
-        sx={{ color: "blue", cursor: "pointer" }}
-      />
+      <ClearIcon sx={{ color: "blue", cursor: "pointer" }} />
     </InputAdornment>
   ),
 };
@@ -137,18 +135,39 @@ export const CollegeDegreeDetails = [
   `22-23 years old`,
   `€ 22,989/year`,
 ];
-export const StyledToggleButtonGroupV2 = styled(ToggleButtonGroup)(({ theme }) => ({
-  "& .MuiToggleButtonGroup-grouped": {
-    //   margin: theme.spacing(0.5), makes the button separate
-    backgroundColor: "white",
-    border: 0,
-    "&.Mui-disabled": {
-      backgroundColor: "pink",
+export const StyledToggleButtonGroupV2 = styled(ToggleButtonGroup)(
+  ({ theme }) => ({
+    "& .MuiToggleButtonGroup-grouped": {
+      //   margin: theme.spacing(0.5), makes the button separate
+      backgroundColor: "white",
       border: 0,
+      "&.Mui-disabled": {
+        backgroundColor: "pink",
+        border: 0,
+      },
+      "&.css-1x4vipr-MuiButtonBase-root-MuiToggleButton-root.Mui-selected": {
+        backgroundColor: "black",
+        color: "white",
+      },
     },
-    "&.css-1x4vipr-MuiButtonBase-root-MuiToggleButton-root.Mui-selected": {
-      backgroundColor: "black",
-      color: "white",
+  })
+);
+export const StyledToggleButtonGroupV3 = styled(ToggleButtonGroup)(
+  ({ theme }) => ({
+    "& .MuiToggleButtonGroup-grouped": {
+      //   margin: theme.spacing(0.5), makes the button separate
+      backgroundColor: "transparent",
+      border: 0,
+      padding: 0,
+      margin: '5px',
+      "&.Mui-disabled": {
+        border: 0,
+      },
+      // take the class for narrow down the comp from inspect
+      "&.css-1x4vipr-MuiButtonBase-root-MuiToggleButton-root.Mui-selected": {
+        backgroundColor: "black",
+        color: "white",
+      },
     },
-  },
-}));
+  })
+);

@@ -64,6 +64,7 @@ export const CrossButtonIcon = Styles(CloseIcon)`
     position: relative;
     left: 421px;
     top: -35px;
+    cursor: pointer;
 `;
 export const CrossButtonIconMob = Styles(CloseIcon)`
     position: relative;

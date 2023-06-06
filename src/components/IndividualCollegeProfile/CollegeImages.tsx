@@ -2,11 +2,11 @@ import { Button, ImageList, ImageListItem } from "@mui/material";
 import { HarwardCampusImageList } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { HarwardRoomsImageList } from "./CollegeProfileConstant/CollegeProfileConstants";
 import { useState } from "react";
-import { BoldText } from '../../GeneralStyling/Texts';
-import {
-  ToggleContainer
-} from '../../GeneralStyling/Overlays';
-import { ToggleButton } from '../../GeneralStyling/Buttons';
+import { BoldText } from "../../GeneralStyling/Texts";
+import { ToggleContainer } from "../../GeneralStyling/Overlays";
+// import { ToggleButton } from '../../GeneralStyling/Buttons';
+import ToggleButton from "@mui/material/ToggleButton";
+import { StyledToggleButtonGroupV2 } from "../../GeneralConstants/Constants";
 
 const CollegeImages = () => {
   const [ImagePreview, setImagePreview] = useState("campus");
@@ -16,21 +16,41 @@ const CollegeImages = () => {
   const ShowRoomsImages = () => {
     setImagePreview("rooms");
   };
+  const [programChoice, setProgramChoice] = useState("bachelor");
+  let ButtonHistory = "";
+
+  const handleAlignment = (
+    event: React.MouseEvent<HTMLElement>,
+    newAlignment: string
+  ) => {
+    ButtonHistory = programChoice;
+    setProgramChoice(newAlignment);
+    if (newAlignment === null) {
+      setProgramChoice(ButtonHistory);
+    }
+  };
   return (
     <>
       <BoldText variant="h4">Gallery</BoldText>
       <ToggleContainer>
-        <ToggleButton
+        <StyledToggleButtonGroupV2
           size="small"
-          variant="contained"
-          color="inherit"
-          onClick={ShowCampusImages}
+          value={programChoice}
+          exclusive
+          onChange={handleAlignment}
+          aria-label="text alignment"
         >
-          Campus
-        </ToggleButton>
-        <Button color="inherit" size="small" onClick={ShowRoomsImages}>
-          Rooms
-        </Button>
+          <ToggleButton value="bachelor" aria-label="bachelor-degree">
+            <Button color="inherit" onClick={ShowCampusImages}>
+              Campus
+            </Button>
+          </ToggleButton>
+          <ToggleButton value="master" aria-label="master-degree">
+            <Button color="inherit" onClick={ShowRoomsImages}>
+              Rooms
+            </Button>
+          </ToggleButton>
+        </StyledToggleButtonGroupV2>
       </ToggleContainer>
       {ImagePreview === "campus" ? (
         <ImageList

@@ -9,8 +9,15 @@ import { StackCenter, IconTray } from "../../../GeneralStyling/Overlays";
 import { FooterLink } from "../../../GeneralStyling/Buttons";
 import { Box30margin } from "../../../GeneralStyling/Overlays";
 import { RouteLink } from "../../../GeneralStyling/Overlays";
+import { useState } from "react";
+import AboutMoov from "./AboutMoov";
+import { ModalOverlay } from "../../../GeneralStyling/Overlays";
 
 const FooterIcon = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const OpenModal = () => {
+    setIsOpen(true);
+  };
   return (
     <Box30margin>
       <IconTray direction="row">
@@ -21,9 +28,7 @@ const FooterIcon = () => {
         <LinkedinIcon />
       </IconTray>
       <StackCenter direction="row">
-        <RouteLink to="/about">
-          <FooterLink>About Us</FooterLink>
-        </RouteLink>
+        <FooterLink onClick={OpenModal}>About Us</FooterLink>
         <FooterLink>Privacy Policy</FooterLink>
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
@@ -31,6 +36,11 @@ const FooterIcon = () => {
           <FooterLink>Cookies</FooterLink>
         </RouteLink>
       </StackCenter>
+      {isOpen && (
+        <ModalOverlay>
+          <AboutMoov setIsOpen={setIsOpen} />
+        </ModalOverlay>
+      )}
     </Box30margin>
   );
 };

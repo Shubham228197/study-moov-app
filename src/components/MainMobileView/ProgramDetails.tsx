@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography } from "@mui/material";
+import { Button, Grid, Stack, Typography } from "@mui/material";
 import {
   ProgramDegreeDetails,
   ProgramOffers,
@@ -7,15 +7,30 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import {
   BoxBoldHighPadNoLR,
   BoxCenterButton,
-  ButtonCap,
   ButtonNoPad,
   ProgramDetailsContainer,
   SubmitAppLargeButton,
 } from "./MobileStyling/MobileStylingOverlays";
 import MobNavTextBlue from "./MobNavTextBlue";
+import { StyledToggleButtonGroupV3 } from "../../GeneralConstants/Constants";
+import ToggleButton from "@mui/material/ToggleButton";
+import { useState } from "react";
 
 const ProgramDetails = () => {
-  let Program = "Bachelor";
+  const [programChoice, setProgramChoice] = useState("bachelor");
+  let ButtonHistory = "";
+
+  const handleAlignment = (
+    event: React.MouseEvent<HTMLElement>,
+    newAlignment: string
+  ) => {
+    ButtonHistory = programChoice;
+    setProgramChoice(newAlignment);
+    if (newAlignment === null) {
+      setProgramChoice(ButtonHistory);
+    }
+  };
+
   return (
     <>
       <MobNavTextBlue />
@@ -27,13 +42,30 @@ const ProgramDetails = () => {
       </BoxBoldHighPadNoLR>
       <Stack direction="row" sx={{ backgroundColor: "#ebe0e0" }}>
         {ProgramOffers.map((item) => (
-          <ButtonCap key={item.id}>{item.value}</ButtonCap>
+          <StyledToggleButtonGroupV3
+            size="small"
+            value={programChoice}
+            exclusive
+            onChange={handleAlignment}
+            aria-label="text alignment"
+            sx={{ padding: "0px", margin: "0px" }}
+          >
+            <ToggleButton value={item.value} aria-label={item.label}>
+              <Button
+                color="inherit"
+                size="small"
+                sx={{ textTransform: "capitalize" }}
+              >
+                {item.title}
+              </Button>
+            </ToggleButton>
+          </StyledToggleButtonGroupV3>
         ))}
       </Stack>
       <Grid container sx={{ padding: "15px" }}>
         <Grid item xs={12}>
           <Typography>Speciality</Typography>
-          <Typography variant="h4">{Program} of Design</Typography>
+          <Typography variant="h4">Bachelor of Design</Typography>
         </Grid>
         {ProgramDegreeDetails.map((item) => (
           <>

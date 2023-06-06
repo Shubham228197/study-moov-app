@@ -5,6 +5,8 @@ import BritainFlag from "../FigmaImages/great-britain-flag-icon.png";
 import SpainImage from "../FigmaImages/spain-flag-icon.png";
 import GermanImage from "../FigmaImages/icons8-germany-48.png";
 import RussiaImage from "../FigmaImages/russia-flag-icon.png";
+import { styled } from "@mui/material/styles";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 export const overlayData = [
   {
@@ -135,3 +137,18 @@ export const CollegeDegreeDetails = [
   `22-23 years old`,
   `€ 22,989/year`,
 ];
+export const StyledToggleButtonGroupV2 = styled(ToggleButtonGroup)(({ theme }) => ({
+  "& .MuiToggleButtonGroup-grouped": {
+    //   margin: theme.spacing(0.5), makes the button separate
+    backgroundColor: "white",
+    border: 0,
+    "&.Mui-disabled": {
+      backgroundColor: "pink",
+      border: 0,
+    },
+    "&.css-1x4vipr-MuiButtonBase-root-MuiToggleButton-root.Mui-selected": {
+      backgroundColor: "black",
+      color: "white",
+    },
+  },
+}));

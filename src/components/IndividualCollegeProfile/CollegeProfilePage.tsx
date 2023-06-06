@@ -13,6 +13,7 @@ import {
   ArticlesBox,
   BlackTextButton,
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
+import CollegeAddressMap from "./CollegeAddressMap";
 
 const CollegeProfilePage = () => {
   return (
@@ -26,9 +27,9 @@ const CollegeProfilePage = () => {
           <a href="#admission">
             <BlackTextButton>📚 Admission</BlackTextButton>
           </a>
-          {/* <a href="#location">
-            <Button>📍 Location</Button>
-          </a> */}
+          <a href="#location">
+            <BlackTextButton>📍 Location</BlackTextButton>
+          </a>
           <a href="#ranking">
             <BlackTextButton>📊 Ranking</BlackTextButton>
           </a>
@@ -43,6 +44,9 @@ const CollegeProfilePage = () => {
       <ArticlesBox>
         <Box id="programs">
           <CollegeProgramInfo />
+        </Box>
+        <Box id="location">
+          <CollegeAddressMap />
         </Box>
         <Box id="admission">
           <EntryRequirements />

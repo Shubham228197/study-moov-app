@@ -8,7 +8,7 @@ import {
 import { StackCenter, IconTray } from "../../GeneralStyling/Overlays";
 import { FooterLink } from "../../GeneralStyling/Buttons";
 import { Box30margin } from "../../GeneralStyling/Overlays";
-import { Link } from "react-router-dom";
+import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const FooterIcon = () => (
   <Box30margin>
@@ -20,9 +20,9 @@ const FooterIcon = () => (
       <LinkedinIcon />
     </IconTray>
     <StackCenter direction="column">
-      <Link to="/aboutus" style={{ textDecoration: "none" }}>
+      <RouteLink to="/aboutus">
         <FooterLink>About Us</FooterLink>
-      </Link>
+      </RouteLink>
       <FooterLink>Privacy Policy</FooterLink>
       <FooterLink>Terms of Use</FooterLink>
       <FooterLink>Contacts</FooterLink>

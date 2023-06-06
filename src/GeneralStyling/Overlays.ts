@@ -1,5 +1,6 @@
 import { Box, Grid, Stack } from "@mui/material";
 import Styles from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Box30margin = Styles(Box)`
     margin: 30px ! important;
@@ -40,4 +41,28 @@ export const StackCenter = Styles(Stack)`
 `;
 export const BoxMidPad = Styles(Box)`
 padding: 10px;
+`;
+export const RouteLink = Styles(Link)`
+    text-decoration: none;
+    &:active {
+        color: black;
+    }
+    &:hover {
+        color: black;
+    }
+     &:visited {
+        color: black;
+    }
+`;
+export const RouteLinkWhite = Styles(Link)`
+    text-decoration: none;
+    &:active {
+        color: white;
+    }
+    &:hover {
+        color: white;
+    }
+     &:visited {
+        color: white;
+    }
 `;

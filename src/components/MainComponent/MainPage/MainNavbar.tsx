@@ -8,18 +8,18 @@ import { NavigationBar } from "../MainStyling/MainOverlayStyles";
 import { CallBackButton } from "../../../GeneralStyling/Buttons";
 import { GreaterThanIcon, GlobeIcon } from "../../../GeneralStyling/IconStyles";
 import { ContactNumber, BoldBlueSpan } from "../../../GeneralStyling/Texts";
-import { Link } from "react-router-dom";
+import { RouteLink } from "../../../GeneralStyling/Overlays";
 
 const FormNavbar = () => {
   return (
     <NavigationBar elevation={0}>
       <Toolbar>
         <Navtitle>
-          <Link to="/" style={{textDecoration: 'none', color: 'none'}}>
+          <RouteLink to="/">
             Study
             <GreaterThanIcon sx={{ color: "#2047B6" }} />
             <BoldBlueSpan>Moov</BoldBlueSpan>
-          </Link>
+          </RouteLink>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
         </Navtitle>
         <Stack direction="row" spacing={2}>

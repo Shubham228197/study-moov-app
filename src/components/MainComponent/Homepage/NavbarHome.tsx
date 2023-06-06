@@ -10,7 +10,8 @@ import {
 import { NaviagtionHeading } from "../MainStyling/HomepageTextStyles";
 import { CommonButton } from "../../../GeneralStyling/Buttons";
 import DarkedCollegeImage from "../../../FigmaImages/vadim-sherbakov-darked.jpg";
-import { Link } from "react-router-dom";
+import { RouteLink } from "../../../GeneralStyling/Overlays";
+
 const NavbarHome = () => {
   return (
     <Box
@@ -28,9 +29,9 @@ const NavbarHome = () => {
         Study abroad in the UK, Switzerland and Austria
       </NaviagtionHeading>
       <NaviagtionFooter>
-        <Link to="/consulation" style={{textDecoration: 'none'}}>
+        <RouteLink to="/consulation">
           <CommonButton variant="contained">Book Consultation</CommonButton>
-        </Link>
+        </RouteLink>
         <ScotlandFlagImage src={ScotlandFlag} alt="scotland-flag-icon" />
       </NaviagtionFooter>
     </Box>

@@ -21,6 +21,9 @@ export const ToggleContainer = Styles(Box)`
 export const Box30MarginNoLR = Styles(Box)`
     margin: 30px 0px ! important;
 `;
+export const Box20MarginNoLR = Styles(Box)`
+    margin: 20px 0px ! important;
+`;
 export const BoxCenterHighMar = Styles(Box)`
     display: flex ! important; 
     justify-content: center ! important; 

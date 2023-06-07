@@ -5,7 +5,7 @@ const CollegeFee = () => {
   return (
     <FeeContainer sx={{ padding: "5px 50px" }}>
       <FeeText variant="subtitle2">Price from</FeeText>
-      <FeeText variant="h4">€ 25 538/year</FeeText>
+      <FeeText fontSize='xx-large'>€ 25 538/year</FeeText>
     </FeeContainer>
   );
 };

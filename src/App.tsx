@@ -6,8 +6,8 @@ import PageNotFound from "./components/ErrorPage/PageNotFound";
 import CollegeProfilePage from "./components/IndividualCollegeProfile/CollegeProfilePage";
 import HomepageMain from "./components/MainComponent/Homepage/HomepageMain";
 import FormOverlay from "./components/MainComponent/MainPage/FormOverlay";
-import AboutMobView from "./components/MainMobileView/AboutMobView";
 import HomepageFiltered from "./components/MainComponent/Homepage/HomepageFiltered";
+import PrivacyPolicy from "./components/MainComponent/MainPage/PrivacyPolicy";
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
           <Route path="/college-profile" element={<CollegeProfilePage />} />
           <Route path="*" element={<PageNotFound />} />
           <Route path="/manage-cookie" element={<CookieManagement />} />
-          <Route path="/aboutus" element={<AboutMobView />} />
           <Route path="/cookie-error" element={<CookieErrorPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </BrowserRouter>
     </div>

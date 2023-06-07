@@ -30,7 +30,9 @@ type FormSubmission = {
 }
 
 const FormInput: FC<FormSubmission> = (props): JSX.Element => {
+
   const [privacy, setPrivacy] = useState(false);
+
   const form = useForm<FormValues>({
     defaultValues: {
       username: "",
@@ -50,6 +52,7 @@ const FormInput: FC<FormSubmission> = (props): JSX.Element => {
     props.setIsSubmitted(true)
     reset();
   };
+  
   return (
     <Formbox elevation={15}>
       <form onSubmit={handleSubmit(onSubmit)} noValidate>

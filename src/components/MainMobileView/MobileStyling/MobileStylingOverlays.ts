@@ -1,9 +1,10 @@
-import { AppBar, Box, Button, Grid, Paper, Stack } from "@mui/material";
+import { AppBar, Box, Button, Grid, ImageList, Paper, Stack } from "@mui/material";
 import Styles from "styled-components";
 
 export const AboutContainerMob = Styles(Paper)`
-    margin: 20px ! important;
     padding: 15px 20px 30px 20px;
+    height: 300px ! important;
+    margin: auto ! important;
 `;
 export const PaperMidPad = Styles(Paper)`
     padding: 10px;
@@ -41,7 +42,7 @@ export const BoxBoldHighPadNoLR = Styles(Box)`
 export const ButtonNoPad = Styles(Button)`
 padding: 0px;
 `;
-export const ButtonCap = Styles(Button)`
+export const ButtonCptzd = Styles(Button)`
     text-transform: capitalize ! important;
 `;
 export const BoxCenterButton = Styles(Box)`
@@ -84,4 +85,12 @@ export const ProgramListButton = Styles(Button)`
     color: white ! important;
     font-weight: bold ! important;
     border: 1.5px solid blue ! important;
+`;
+export const PrgmListGrid = Styles(Grid)`
+    padding: 15px;
+`;
+export const MobSearchContainer = Styles(ImageList)`
+width: 380 ! important;
+position: -webkit-sticky ! important;
+row-height: 164 ! important;
 `;

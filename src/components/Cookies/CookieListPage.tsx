@@ -1,20 +1,20 @@
 import CookieFooter from "./CookieFooter";
 import CookieNavbar from "./CookieNavbar";
 import CookieListContent from "./CookieListContent";
-import { Box } from "@mui/material";
 import { CookieListContainer } from "./CookiesStyling/CookieStylingOverlays";
 import { useState } from "react";
+import { CookiePage } from "./CookiesStyling/CookieStylingOverlays";
 
 const CookieListPage = () => {
   const [isAccepted, setIsAccepted] = useState(true)
   return (
-    <Box sx={{ backgroundColor: "#f2efce", height: '100vh' }}>
+    <CookiePage>
       <CookieNavbar />
       <CookieListContainer>
         <CookieListContent />
       </CookieListContainer>
       {isAccepted && <CookieFooter setIsAccepted={setIsAccepted}/>}
-    </Box>
+    </CookiePage>
   );
 };
 

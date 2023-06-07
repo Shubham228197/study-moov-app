@@ -1,5 +1,4 @@
 import { Grid, Stack, Typography } from "@mui/material";
-import CookieIcon from "@mui/icons-material/Cookie";
 import { CookieFooterText } from "./CookieConstants/CookieConstant";
 import {
   AcceptCookieButton,
@@ -10,6 +9,7 @@ import {
 import { TextLowPad } from "../../GeneralStyling/Texts";
 import { FC } from "react";
 import { RouteLink } from "../../GeneralStyling/Overlays";
+import { CookieIconStyled } from "../../GeneralStyling/IconStyles";
 
 type AcceptCookie = {
   setIsAccepted: (value: boolean) => void;
@@ -22,7 +22,7 @@ const CookieFooter: FC<AcceptCookie> = (props): JSX.Element => {
   return (
     <Grid container sx={{ backgroundColor: "#E5E5E5" }}>
       <GridCenter item xs={6}>
-        <CookieIcon fontSize="large" sx={{ padding: "5px" }} />
+        <CookieIconStyled fontSize="large" />
         <TextLowPad variant="h6">Fresh Cookie Update</TextLowPad>
       </GridCenter>
       <GridColMidPad item xs={6}>

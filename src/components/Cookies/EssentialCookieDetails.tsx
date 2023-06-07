@@ -29,6 +29,7 @@ const EssentialCookieDetails: FC<cookie> = (props): JSX.Element => {
             Here is the list of cookies we use on our Website and Messenger and
             why:
           </Typography>
+          {/* style comp. is not working on table border/Collapse property */}
           <table border={1} style={{ borderCollapse: "collapse" }}>
             <thead>
               <tr>

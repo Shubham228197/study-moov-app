@@ -4,9 +4,14 @@ import Typography from "@mui/material/Typography";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { AccordianInput } from "./CookieConstants/CookieConstant";
 import SwitchToggle from "./SwitchToggle";
-import { AccordionBox, TableRow } from "./CookiesStyling/CookieStylingOverlays";
+import {
+  AccordionBox,
+  EssThead,
+  TableRow,
+} from "./CookiesStyling/CookieStylingOverlays";
 import { TableTextMidPad } from "./CookiesStyling/CookieStylingText";
 import { Box30margin } from "../../GeneralStyling/Overlays";
+import { TableCollapse } from "./CookiesStyling/CookieStylingOverlays";
 
 const CookieAccordianPage = () => (
   <Box30margin>
@@ -22,8 +27,8 @@ const CookieAccordianPage = () => (
             <Typography>{accordian_data.title}</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <table style={{ borderCollapse: "collapse" }}>
-              <thead>
+            <TableCollapse>
+              <EssThead>
                 <tr>
                   <th>Name</th>
                   <th>Services</th>
@@ -31,7 +36,7 @@ const CookieAccordianPage = () => (
                   <th>Duration</th>
                   <th>Description</th>
                 </tr>
-              </thead>
+              </EssThead>
               <tbody>
                 {accordian_data.table.map((table_data) => (
                   <>
@@ -47,7 +52,7 @@ const CookieAccordianPage = () => (
                   </>
                 ))}
               </tbody>
-            </table>
+            </TableCollapse>
           </AccordionDetails>
         </AccordionBox>
       </>

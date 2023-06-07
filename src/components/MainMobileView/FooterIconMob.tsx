@@ -9,6 +9,7 @@ import {
   StackCenter,
   IconTray,
   ModalOverlay,
+  RouteLinkGray,
 } from "../../GeneralStyling/Overlays";
 import { FooterLink } from "../../GeneralStyling/Buttons";
 import { Box30margin } from "../../GeneralStyling/Overlays";
@@ -42,9 +43,11 @@ const FooterIcon = () => {
       </IconTray>
       <StackCenter direction="column">
         <FooterLink onClick={OpenModal}>About Us</FooterLink>
-        <RouteLink to="/privacy-policy">
-          <FooterLink>Privacy Policy</FooterLink>
-        </RouteLink>
+        <FooterLink>
+          <RouteLinkGray to="/privacy-policy">
+            Privacy Policy
+          </RouteLinkGray>
+        </FooterLink>
         <FooterLink>Terms of Use</FooterLink>
         <FooterLink>Contacts</FooterLink>
       </StackCenter>

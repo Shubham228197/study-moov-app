@@ -1,13 +1,13 @@
-import { Accordion, AppBar, Box, Button, Grid } from "@mui/material";
+import { Accordion, AppBar, Box, Button, Grid, Stack } from "@mui/material";
 import Styles from "styled-components";
-
 
 export const AccordionBox = Styles(Accordion)`
     margin: 30px 0px ! important;
 `;
 export const TableRow = Styles.tr`
-    border: 1px solid black;
+    border: 1px solid #cccccc;
     border-collapse: collapse;
+    background-color: #e8e6e6;
 `;
 export const GridCenter = Styles(Grid)`
     display: flex;
@@ -88,5 +88,22 @@ export const THeadingHighpad = Styles.th`
     padding: 20px;
 `;
 export const TDataHighPad = Styles.td`
-padding: 20px;
+    padding: 20px;
+`;
+export const TableCollapse = Styles.table`
+    border-collapse: collapse ! important;
+`;
+export const CookiePage = Styles(Box)`
+    background-color: #f2efce; 
+    height: 100vh;
+`;
+export const CookieError = Styles(Box)`
+    background-color: #f2efce
+`;
+export const NavMidOptions = Styles(Stack)`
+    padding: 16px 20px;
+`;
+export const EssThead = Styles.thead`
+    background-color: #cccccc; 
+    border: 1px solid #b5b2b2;
 `;

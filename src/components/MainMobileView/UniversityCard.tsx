@@ -33,7 +33,7 @@ const UniversityCard = () => {
         <FmdGoodIcon fontSize="small" />
         Austria, Vienna
       </AddressNdRating>
-      <Typography>
+      <Typography sx={{display: 'flex'}}>
         Language of instruction:
         {CountryFlagImages.map((flags) => (
           <div key={flags.id}>{flags.imageTag}</div>

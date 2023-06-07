@@ -40,3 +40,23 @@ export const CenterTextHighMar = Styles(Typography)`
     text-align: center ! important;
     margin: 20px ! important;
 `;
+export const BoldBlueText = Styles(Typography)`
+    font-weight: bold ! important;
+    color: blue ;
+`;
+export const BoldRedText = Styles(Typography)`
+    font-weight: bold ! important;
+    color: red ;
+`;
+export const BoldTextHighMarNoLR = Styles(Typography)`
+    font-weight: bold ! important;
+    margin: 20px 0px ! important;
+`;
+export const MobNavTitle = Styles(Typography)`
+    font-weight: bold ! important; 
+    text-align: center ! important; 
+    padding: 20px;
+`;
+export const BolderSpan = Styles.span`
+    font-weight: bolder;
+`;

@@ -1,6 +1,7 @@
 import { Box, Grid, Stack } from "@mui/material";
 import Styles from "styled-components";
 import { Link } from "react-router-dom";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 export const Box30margin = Styles(Box)`
     margin: 30px ! important;
@@ -57,6 +58,19 @@ export const RouteLink = Styles(Link)`
         color: black;
     }
 `;
+export const RouteLinkGray = Styles(Link)`
+    text-decoration: none;
+    color: gray !important;
+    &:active {
+        color: black;
+    }
+    &:hover {
+        color: black;
+    }
+     &:visited {
+        color: black;
+    }
+`;
 export const RouteLinkWhite = Styles(Link)`
     text-decoration: none;
     &:active {
@@ -69,18 +83,6 @@ export const RouteLinkWhite = Styles(Link)`
         color: white;
     }
 `;
-// export const ModalOverlay = Styles(Box)`
-//     position: fixed;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0, 0.5);
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-// `;
-
 export const ModalOverlay = Styles(Box)`
     position: fixed;
     top: 0;
@@ -90,4 +92,8 @@ export const ModalOverlay = Styles(Box)`
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     zIndex: 1000;
+`;
+export const ToggleButtonGrp = Styles(ToggleButtonGroup)`
+padding: 0px;
+margin: 0px ! important;
 `;

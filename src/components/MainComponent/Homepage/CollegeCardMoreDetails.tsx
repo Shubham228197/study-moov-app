@@ -14,6 +14,16 @@ import { GridHighPad } from "../../../GeneralStyling/Overlays";
 import { StyledToggleButtonGroupV3 } from "../../../GeneralConstants/Constants";
 import ToggleButton from "@mui/material/ToggleButton";
 import { useState } from "react";
+import { ButtonCptzd } from "../../../GeneralStyling/Buttons";
+import { ProgramToggleButtonInputs } from "../../../GeneralConstants/Constants";
+
+const TableHeadingValues = [
+  { id: 0, img: GradImage, value: "Program", alt: "Graduation-icon" },
+  { id: 1, img: PencilImage, value: "Submission to", alt: "Pencil-icon" },
+  { id: 2, img: BellImage, value: "Start date", alt: "Bell-icon" },
+  { id: 3, img: AppleImage, value: "Age", alt: "Apple-icon" },
+  { id: 4, img: SandClockImage, value: "Price", alt: "Sand-watch-icon" },
+];
 
 const CollegeCardMoreDetails = () => {
   const [programChoice, setProgramChoice] = useState("bachelor");
@@ -39,90 +49,46 @@ const CollegeCardMoreDetails = () => {
           exclusive
           onChange={handleAlignment}
           aria-label="text alignment"
-          sx={{padding: '0px', margin: '0px'}}
         >
-          <ToggleButton value="bachelor" aria-label="bachelor-degree">
-            <Button color="inherit">Bachelor's degree</Button>
-          </ToggleButton>
-          <ToggleButton value="master" aria-label="master-degree">
-            <Button color="inherit">Master's Degree</Button>
-          </ToggleButton>
-          <ToggleButton value="under18" aria-label="under18-degree">
-            <Button color="inherit">Programs Under 18</Button>
-          </ToggleButton>
+          {ProgramToggleButtonInputs.map((buttonInputs) => (
+            <ToggleButton
+              value={buttonInputs.value}
+              aria-label={buttonInputs.aria_label}
+              key={buttonInputs.id}
+            >
+              <ButtonCptzd color="inherit">{buttonInputs.label}</ButtonCptzd>
+            </ToggleButton>
+          ))}
         </StyledToggleButtonGroupV3>
       </ExtendedInfoButtonContainer>
       <Box>
         <Grid container>
-          <GridHighPad item xs={2}>
-            <UtilityIcons src={GradImage} alt="Graduation-icon" />
-            Program
-          </GridHighPad>
-
-          <GridHighPad item xs={2}>
-            <UtilityIcons src={PencilImage} alt="Pencil-icon" />
-            Submission to
-          </GridHighPad>
-
-          <GridHighPad item xs={2}>
-            <UtilityIcons src={BellImage} alt="Bell-icon" />
-            Start date
-          </GridHighPad>
-
-          <GridHighPad item xs={2}>
-            <UtilityIcons src={AppleImage} alt="Apple-icon" />
-            Age
-          </GridHighPad>
-
-          <GridHighPad item xs={2}>
-            <UtilityIcons src={SandClockImage} alt="Sand-watch-icon" />
-            Price
-          </GridHighPad>
-
+          {TableHeadingValues.map((tableValues) => (
+            <GridHighPad item xs={2} key={tableValues.id}>
+              <UtilityIcons src={tableValues.img} alt={tableValues.alt} />
+              {tableValues.value}
+            </GridHighPad>
+          ))}
           <GridHighPad item xs={2}></GridHighPad>
         </Grid>
         <Divider variant="middle" />
 
         <Grid container>
-          <GridHighPad item xs={2}>
-            Bachelor's degree
-          </GridHighPad>
-          {CollegeDegreeDetails.map((items, index) => (
-            <GridHighPad item xs={2} key={index}>
-              {items}
-            </GridHighPad>
+          {CollegeDegreeDetails.map((clgDetails) => (
+            <>
+              <GridHighPad item xs={2}>
+                {clgDetails.program}
+              </GridHighPad>
+              {clgDetails.value.map((programInfo, index) => (
+                <GridHighPad item xs={2} key={index}>
+                  {programInfo}
+                </GridHighPad>
+              ))}
+              <GridHighPad item xs={2}>
+                <Button variant="contained">Submit your application</Button>
+              </GridHighPad>
+            </>
           ))}
-          <GridHighPad item xs={2}>
-            <Button variant="contained">Submit your application</Button>
-          </GridHighPad>
-        </Grid>
-
-        <Grid container>
-          <GridHighPad item xs={2}>
-            Master's Degree
-          </GridHighPad>
-          {CollegeDegreeDetails.map((items, index) => (
-            <GridHighPad item xs={2} key={index}>
-              {items}
-            </GridHighPad>
-          ))}
-          <GridHighPad item xs={2}>
-            <Button variant="contained">Submit your application</Button>
-          </GridHighPad>
-        </Grid>
-
-        <Grid container>
-          <GridHighPad item xs={2}>
-            Bachelor's preparation
-          </GridHighPad>
-          {CollegeDegreeDetails.map((items, index) => (
-            <GridHighPad item xs={2} key={index}>
-              {items}
-            </GridHighPad>
-          ))}
-          <GridHighPad item xs={2}>
-            <Button variant="contained">Submit your application</Button>
-          </GridHighPad>
         </Grid>
       </Box>
     </CollegeInfoExtended>

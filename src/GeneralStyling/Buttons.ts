@@ -2,9 +2,9 @@ import Styles from "styled-components";
 import { Button } from "@mui/material";
 
 export const FooterLink = Styles(Button)`
-font-size: 13px !important;
-text-transform: capitalize !important; 
-color: gray !important;
+font-size: 13px ! important;
+text-transform: capitalize ! important; 
+color: gray ! important;
 `;
 
 export const FormSubmit = Styles(Button)`
@@ -45,4 +45,11 @@ export const ToggleButton = Styles(Button)`
     color: white ! important;
     background-color: black ! important;
     margin: 5px ! important;
+`;
+export const SuperEllipseButton = Styles(Button)`
+  border-radius: 30px ! important;
+`;
+export const ButtonCptzd = Styles(Button)`
+  text-transform: capitalize ! important;
+  border-radius: 20px ! important;
 `;

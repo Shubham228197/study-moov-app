@@ -51,8 +51,9 @@ export const ExtendedInfoButtonContainer = Styles(Box)`
     padding: 10px ! important;
 `;
 export const UtilityIcons = Styles.img`
-    height: 20px ! important; 
-    width: 20px ! important;
+    height: 20px; 
+    width: 20px;
+    padding: 0px 3px;
 `;
 export const HomeFilterCard = Styles(Paper)`
     padding: 20px 40px 20px 40px ! important;

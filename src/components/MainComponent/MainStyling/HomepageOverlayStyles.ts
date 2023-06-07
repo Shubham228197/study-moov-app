@@ -4,6 +4,7 @@ import Styles from "styled-components";
 export const TranspNav = Styles(AppBar)`
     position: static ! important;
     background: transparent ! important;
+    box-shadow: none ! important;
 `;
 export const SelecteCountries = Styles.select`
     border: 0;
@@ -27,11 +28,6 @@ export const FilterBoxMain = Styles(Box)`
 export const CollegeInfoCard = Styles(Paper)`
     margin-bottom: 20px ! important; 
     border-radius: 20px ! important;
-`;
-export const CollegeBuildingImage = Styles.img`
-    width: 14vw ! important;
-    height: 25vh ! important;
-    border-radius: 10px ! important;
 `;
 export const CollegeInfoSection = Styles(Grid)`
     padding: 10px ! important; 
@@ -112,5 +108,14 @@ export const VienaaCollegeImage = Styles.img`
     margin: auto;
 `;
 export const FeeContainer = Styles(Box)`
-padding: 5px 50px;
+    padding: 5px 50px;
+`;
+export const CollegeBuildingImage = Styles(Grid)`
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px 0px 0px 20px;
+`;
+export const NavbarHomeContainer = Styles(Box)`
+    background-repeat: no-repeat;
+    background-size: cover;
 `;

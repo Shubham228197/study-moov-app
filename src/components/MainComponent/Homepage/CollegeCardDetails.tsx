@@ -1,5 +1,4 @@
 import {
-  Button,
   Grid,
   Typography,
   Tooltip,
@@ -9,6 +8,7 @@ import {
   InputAdornment,
 } from "@mui/material";
 import {
+  CollegeBuildingImage,
   CollegeInfoCard,
   CollegeInfoSection,
   ContentContainer,
@@ -23,7 +23,10 @@ import { StarIconLogo, InfoIconLogo } from "../../../GeneralStyling/Icons";
 import { InfoBullets, InfoPoints } from "../MainStyling/HomepageTextStyles";
 import VienaaImage from "../../../FigmaImages/vienna-logo.jpg";
 import CollegeFee from "./CollegeFee";
-import { CommonButton } from "../../../GeneralStyling/Buttons";
+import {
+  CommonButton,
+  SuperEllipseButton,
+} from "../../../GeneralStyling/Buttons";
 import { GridMidPad } from "../../../GeneralStyling/Overlays";
 import { RouteLink } from "../../../GeneralStyling/Overlays";
 
@@ -37,34 +40,28 @@ const CollegeCardOpen = () => {
   return (
     <CollegeInfoCard elevation={6}>
       <Grid container>
-        <Grid
+        <CollegeBuildingImage
           item
           xs={2}
           sx={{
             backgroundImage: `url(${CollegeBuiding})`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: 'cover',
-            borderRadius: '20px 0px 0px 20px'
           }}
-        >
-          {/* <CollegeBuildingImage src={CollegeBuiding} alt="CollegeBuilding" /> */}
-        </Grid>
+        ></CollegeBuildingImage>
         <CollegeInfoSection item xs={7}>
           <ContentContainer>
             <Typography variant="h5">Vienna Veterinary University</Typography>
             <Box>
-              <Button
+              <SuperEllipseButton
                 color="success"
                 variant="contained"
                 size="small"
-                sx={{ borderRadius: "30px" }}
               >
                 <StarIconLogo fontSize="small" />
                 4.8
                 <Tooltip title="University ranking according to Times magazine">
                   <InfoIconLogo fontSize="small" />
                 </Tooltip>
-              </Button>
+              </SuperEllipseButton>
               <FmdGoodIcon fontSize="small" />
               Austria, Vienna
             </Box>

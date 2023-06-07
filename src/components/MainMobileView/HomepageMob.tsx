@@ -21,7 +21,7 @@ const HomepageMob = () => {
     <UniversityCard key={index} />
   ));
   return (
-    <div>
+    <>
       <NavbarMob />
       <MidbarMob />
       <BoxMidPad>
@@ -36,7 +36,7 @@ const HomepageMob = () => {
       <Box sx={{ padding: "-50px" }}>
         <FooterText />
       </Box>
-    </div>
+    </>
   );
 };
 

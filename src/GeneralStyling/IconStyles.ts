@@ -10,6 +10,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import LanguageIcon from "@mui/icons-material/Language";
 import StarIcon from "@mui/icons-material/Star";
 import InfoIcon from "@mui/icons-material/Info";
+import CookieIcon from "@mui/icons-material/Cookie";
 
 const IconPadding = "0px 10px";
 const fontSize = "35px";
@@ -67,8 +68,8 @@ export const CrossButtonIcon = Styles(CloseIcon)`
     cursor: pointer;
 `;
 export const CrossButtonIconMob = Styles(CloseIcon)`
-    position: relative;
-    left: 284px;
+    position: sticky;
+    left: 1160px;
     top: 3px;
 `;
 export const StarIconLogo = Styles(StarIcon)`
@@ -76,4 +77,8 @@ export const StarIconLogo = Styles(StarIcon)`
 `;
 export const InfoIconLogo = Styles(InfoIcon)`
     padding: 0px 5px;
+`;
+
+export const CookieIconStyled = Styles(CookieIcon)`
+    padding: 5px;
 `;

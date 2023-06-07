@@ -1,4 +1,4 @@
-import { InputAdornment, MenuItem } from "@mui/material";
+import { InputAdornment, MenuItem, ToggleButtonGroup } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import { UtilityIcons } from "../components/MainComponent/MainStyling/HomepageOverlayStyles";
 import BritainFlag from "../FigmaImages/great-britain-flag-icon.png";
@@ -6,7 +6,7 @@ import SpainImage from "../FigmaImages/spain-flag-icon.png";
 import GermanImage from "../FigmaImages/icons8-germany-48.png";
 import RussiaImage from "../FigmaImages/russia-flag-icon.png";
 import { styled } from "@mui/material/styles";
-import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import { ToggleButtonGrp } from "../GeneralStyling/Overlays";
 
 export const overlayData = [
   {
@@ -126,11 +126,44 @@ export const FieldNumber = {
   ),
 };
 export const CollegeDegreeDetails = [
-  `11 Oct - 13 Dec`,
-  `November 1, 2021`,
-  `22-23 years old`,
-  `€ 22,989/year`,
+  {
+    id: 0,
+    program: "Bachelor's degree",
+    value: [
+      `11 Oct - 13 Dec`,
+      `November 1, 2021`,
+      `22-23 years old`,
+      `€ 22,989/year`,
+    ],
+  },
+  {
+    id: 1,
+    program: "Master's Degree",
+    value: [
+      `11 Oct - 13 Dec`,
+      `November 1, 2021`,
+      `22-23 years old`,
+      `€ 22,989/year`,
+    ],
+  },
+  {
+    id: 2,
+    program: "Bachelor's preparation",
+    value: [
+      `11 Oct - 13 Dec`,
+      `November 1, 2021`,
+      `22-23 years old`,
+      `€ 22,989/year`,
+    ],
+  },
 ];
+export const ProgramDegreeDetails = [
+  { id: 1, title: "Admission Before", value: `11 Oct - 13 Dec` },
+  { id: 2, title: "Start Date", value: `November 1, 2021` },
+  { id: 3, title: "Age", value: `22-23 years old` },
+  { id: 4, title: "Price", value: `€ 22,989/year` },
+];
+
 export const StyledToggleButtonGroupV2 = styled(ToggleButtonGroup)(
   ({ theme }) => ({
     "& .MuiToggleButtonGroup-grouped": {
@@ -148,7 +181,7 @@ export const StyledToggleButtonGroupV2 = styled(ToggleButtonGroup)(
     },
   })
 );
-export const StyledToggleButtonGroupV3 = styled(ToggleButtonGroup)(
+export const StyledToggleButtonGroupV3 = styled(ToggleButtonGrp)(
   ({ theme }) => ({
     "& .MuiToggleButtonGroup-grouped": {
       //   margin: theme.spacing(0.5), makes the button separate
@@ -183,4 +216,25 @@ export const Programs_Option = [
   { value: "under18", label: `Under 18 Degree` },
   { value: "diploma", label: `Diploma` },
   { value: "long-dist", label: `Long Distance` },
+];
+
+export const ProgramToggleButtonInputs = [
+  {
+    id: 0,
+    label: `Bachelor's degree`,
+    aria_label: "bachelor-degree",
+    value: "bachelor",
+  },
+  {
+    id: 1,
+    label: `Master's Degree`,
+    aria_label: "master-degree",
+    value: "master",
+  },
+  {
+    id: 2,
+    label: `Programs Under 18`,
+    aria_label: "under18-degree",
+    value: "under18",
+  },
 ];

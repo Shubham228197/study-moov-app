@@ -15,57 +15,55 @@ import {
 } from "./CollegeProfileStyling/ProfileStylingOverlays";
 import CollegeAddressMap from "./CollegeAddressMap";
 
-const CollegeProfilePage = () => {
-  return (
-    <Box>
-      <CollegeProfileNavbar />
-      <nav>
-        <ArticleLinks direction="row">
-          <a href="#programs">
-            <BlackTextButton>📜 Programs</BlackTextButton>
-          </a>
-          <a href="#admission">
-            <BlackTextButton>📚 Admission</BlackTextButton>
-          </a>
-          <a href="#location">
-            <BlackTextButton>📍 Location</BlackTextButton>
-          </a>
-          <a href="#ranking">
-            <BlackTextButton>📊 Ranking</BlackTextButton>
-          </a>
-          <a href="#gallery">
-            <BlackTextButton>🖼 Gallery</BlackTextButton>
-          </a>
-          <a href="#FAQ">
-            <BlackTextButton>️❓FAQ</BlackTextButton>
-          </a>
-        </ArticleLinks>
-      </nav>
-      <ArticlesBox>
-        <Box id="programs">
-          <CollegeProgramInfo />
-        </Box>
-        <Box id="location">
-          <CollegeAddressMap />
-        </Box>
-        <Box id="admission">
-          <EntryRequirements />
-        </Box>
-        <AdmissionsDetails />
-        <Box id="ranking">
-          <ReviewAndRating />
-        </Box>
-        <Box id="gallery">
-          <CollegeImages />
-        </Box>
-        <Box id="FAQ">
-          <FAQAboutCollege />
-        </Box>
-        <FooterIcon />
-        <FooterText />
-      </ArticlesBox>
-    </Box>
-  );
-};
+const CollegeProfilePage = () => (
+  <Box>
+    <CollegeProfileNavbar />
+    <nav>
+      <ArticleLinks direction="row">
+        <a href="#programs">
+          <BlackTextButton>📜 Programs</BlackTextButton>
+        </a>
+        <a href="#admission">
+          <BlackTextButton>📚 Admission</BlackTextButton>
+        </a>
+        <a href="#location">
+          <BlackTextButton>📍 Location</BlackTextButton>
+        </a>
+        <a href="#ranking">
+          <BlackTextButton>📊 Ranking</BlackTextButton>
+        </a>
+        <a href="#gallery">
+          <BlackTextButton>🖼 Gallery</BlackTextButton>
+        </a>
+        <a href="#FAQ">
+          <BlackTextButton>️❓FAQ</BlackTextButton>
+        </a>
+      </ArticleLinks>
+    </nav>
+    <ArticlesBox>
+      <Box id="programs">
+        <CollegeProgramInfo />
+      </Box>
+      <Box id="location">
+        <CollegeAddressMap />
+      </Box>
+      <Box id="admission">
+        <EntryRequirements />
+      </Box>
+      <AdmissionsDetails />
+      <Box id="ranking">
+        <ReviewAndRating />
+      </Box>
+      <Box id="gallery">
+        <CollegeImages />
+      </Box>
+      <Box id="FAQ">
+        <FAQAboutCollege />
+      </Box>
+      <FooterIcon />
+      <FooterText />
+    </ArticlesBox>
+  </Box>
+);
 
 export default CollegeProfilePage;

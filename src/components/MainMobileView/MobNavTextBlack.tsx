@@ -1,12 +1,12 @@
-import { Typography } from "@mui/material";
 import { GreaterThanIcon } from "../../GeneralStyling/IconStyles";
+import { BolderSpan, MobNavTitle } from "../../GeneralStyling/Texts";
 
 const MobNavTextBlack = () => (
-  <Typography variant="h6" fontWeight="bold" textAlign='center' padding='20px'>
+  <MobNavTitle variant="h6">
     Study
     <GreaterThanIcon />
-    <span style={{ fontWeight: "bolder" }}>Moov</span>
-  </Typography>
+    <BolderSpan>Moov</BolderSpan>
+  </MobNavTitle>
 );
 
 export default MobNavTextBlack;

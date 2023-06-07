@@ -21,6 +21,7 @@ import { Box30padding } from "../../GeneralStyling/Overlays";
 import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const CookieListContent = () => {
+  
   const [essentialCookie, setEssentialCookie] = useState(true);
   const ShowEssentialCookie = () => {
     setEssentialCookie(!essentialCookie);

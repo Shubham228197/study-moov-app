@@ -18,65 +18,57 @@ import { BoldText } from "../../GeneralStyling/Texts";
 import { CommonButton } from "../../GeneralStyling/Buttons";
 import { RouteLink } from "../../GeneralStyling/Overlays";
 
-const CollegeProfileNavbar = () => {
-  return (
-    <CollegeNavbar
-      style={{
-        backgroundImage: `url(${CollegeImage})`,
-      }}
-    >
-      <TransparentNavbar />
-      <CollegeNavText>
-        <Grid container>
-          <Grid item xs={6}>
-            <BoldText variant="h4">
-              <Typography fontSize="small">
-                Study in USA / Colleges /
-              </Typography>
-              Harvard University
-            </BoldText>
-            <Box>
-              <AddressNdRating>
-                <RatingButton color="success" variant="contained" size="small">
-                  <StarIconLogo fontSize="small" />
-                  4.8
-                  <Tooltip title="University ranking according to Times magazine">
-                    <InfoIconLogo fontSize="small" />
-                  </Tooltip>
-                </RatingButton>
-                <FmdGoodIcon fontSize="small" />
-                United States of America, California
-              </AddressNdRating>
-            </Box>
-          </Grid>
-          <Grid item xs={3}>
-            <RouteLink to="/consulation">
-              <CommonButton variant="contained">Free Consultation</CommonButton>
-            </RouteLink>
-          </Grid>
-          <Grid item xs={3}>
-            <Box>
-              <img
-                src={LightIcon}
-                alt="Light_Icon"
-                style={{ color: "white" }}
-              />
-              <img src={BookmarkIcon} alt="Book_Icon" />
-            </Box>
-          </Grid>
+const CollegeProfileNavbar = () => (
+  <CollegeNavbar
+    style={{
+      backgroundImage: `url(${CollegeImage})`,
+    }}
+  >
+    <TransparentNavbar />
+    <CollegeNavText>
+      <Grid container>
+        <Grid item xs={6}>
+          <BoldText variant="h4">
+            <Typography fontSize="small">Study in USA / Colleges /</Typography>
+            Harvard University
+          </BoldText>
+          <Box>
+            <AddressNdRating>
+              <RatingButton color="success" variant="contained" size="small">
+                <StarIconLogo fontSize="small" />
+                4.8
+                <Tooltip title="University ranking according to Times magazine">
+                  <InfoIconLogo fontSize="small" />
+                </Tooltip>
+              </RatingButton>
+              <FmdGoodIcon fontSize="small" />
+              United States of America, California
+            </AddressNdRating>
+          </Box>
         </Grid>
-        <Divider light color="white" />
-        <GridCenterWhite container>
-          {CollegeNavbarInfo.map((info) => (
-            <Grid item xs={3} key={info.id}>
-              <Typography>{info.title}</Typography>
-              <Typography>{info.value}</Typography>
-            </Grid>
-          ))}
-        </GridCenterWhite>
-      </CollegeNavText>
-    </CollegeNavbar>
-  );
-};
+        <Grid item xs={3}>
+          <RouteLink to="/consulation">
+            <CommonButton variant="contained">Free Consultation</CommonButton>
+          </RouteLink>
+        </Grid>
+        <Grid item xs={3}>
+          <Box>
+            <img src={LightIcon} alt="Light_Icon" style={{ color: "white" }} />
+            <img src={BookmarkIcon} alt="Book_Icon" />
+          </Box>
+        </Grid>
+      </Grid>
+      <Divider light color="white" />
+      <GridCenterWhite container>
+        {CollegeNavbarInfo.map((info) => (
+          <Grid item xs={3} key={info.id}>
+            <Typography>{info.title}</Typography>
+            <Typography>{info.value}</Typography>
+          </Grid>
+        ))}
+      </GridCenterWhite>
+    </CollegeNavText>
+  </CollegeNavbar>
+);
 
 export default CollegeProfileNavbar;

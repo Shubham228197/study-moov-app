@@ -14,12 +14,13 @@ import {
   HomeButtonText,
   MultiLangHeading,
 } from "./ErrorPageStyling/ErrorPageStylingText";
+import { CookieError } from "../Cookies/CookiesStyling/CookieStylingOverlays";
 import { BoldText } from "../../GeneralStyling/Texts";
 import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const CookieErrorPage = () => {
   return (
-    <div style={{ backgroundColor: "#f2efce" }}>
+    <CookieError>
       <CookieNavbar />
       <Box>
         <CenterBoldTextHighMar variant="h4">
@@ -28,7 +29,9 @@ const CookieErrorPage = () => {
         <Grid container>
           <GridColumn item xs={6}>
             {langVariations.map((lines) => (
-              <BoldText variant="h5" key={lines.id}>{lines.value}</BoldText>
+              <BoldText variant="h5" key={lines.id}>
+                {lines.value}
+              </BoldText>
             ))}
           </GridColumn>
           <GridCenterLowMargin item xs={6}>
@@ -47,7 +50,7 @@ const CookieErrorPage = () => {
           <MultiLang />
         </MultiLanguBox>
       </Box>
-    </div>
+    </CookieError>
   );
 };
 

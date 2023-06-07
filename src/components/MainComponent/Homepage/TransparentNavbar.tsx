@@ -18,7 +18,7 @@ import { RouteLinkWhite } from "../../../GeneralStyling/Overlays";
 
 const TransparentNavbar = () => {
   return (
-    <TranspNav sx={{ boxShadow: "none" }}>
+    <TranspNav>
       <Toolbar>
         <NavtitleWhite>
           <RouteLinkWhite to="/">

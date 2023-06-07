@@ -6,6 +6,7 @@ import {
   BritainFlagImage,
   ScotlandFlagImage,
   NaviagtionFooter,
+  NavbarHomeContainer,
 } from "../MainStyling/HomepageOverlayStyles";
 import { NaviagtionHeading } from "../MainStyling/HomepageTextStyles";
 import { CommonButton } from "../../../GeneralStyling/Buttons";
@@ -14,11 +15,9 @@ import { RouteLink } from "../../../GeneralStyling/Overlays";
 
 const NavbarHome = () => {
   return (
-    <Box
+    <NavbarHomeContainer
       sx={{
         backgroundImage: `url(${DarkedCollegeImage})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
       }}
     >
       <TransparentNavbar />
@@ -34,7 +33,7 @@ const NavbarHome = () => {
         </RouteLink>
         <ScotlandFlagImage src={ScotlandFlag} alt="scotland-flag-icon" />
       </NaviagtionFooter>
-    </Box>
+    </NavbarHomeContainer>
   );
 };
 

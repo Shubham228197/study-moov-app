@@ -18,7 +18,15 @@ type MainFilter = {
   languages: string;
 };
 
+const FieldNumber = {
+  startAdornment: <InputAdornment position="start">{`<€`}</InputAdornment>,
+  endAdornment: <InputAdornment position="end"></InputAdornment>,
+};
+
+const style = {width: "18%", margin: "0px 30px 0px 0px"};
+
 export const FilterHomepage = () => {
+
   const form = useForm<MainFilter>({
     defaultValues: {
       nativeLand: "",
@@ -36,17 +44,14 @@ export const FilterHomepage = () => {
     console.log("Mian Filter: ", data);
   };
 
-  const FieldNumber = {
-    startAdornment: <InputAdornment position="start">{`<€`}</InputAdornment>,
-    endAdornment: <InputAdornment position="end"></InputAdornment>,
-  };
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <HomeFilterCard elevation={6}>
+        {/* Styling Autocomplete makes options dont work */}
         <Autocomplete
           options={Country_Names}
           getOptionLabel={(option) => option.countries}
-          sx={{ width: "18%", margin: "0px 30px 0px 0px" }}
+          sx={style}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -60,7 +65,7 @@ export const FilterHomepage = () => {
         <Autocomplete
           options={Programs_Option}
           getOptionLabel={(option) => option.label}
-          sx={{ width: "18%", margin: "0px 30px 0px 0px" }}
+          sx={style}
           renderInput={(params) => (
             <TextField
               {...params}
@@ -73,7 +78,7 @@ export const FilterHomepage = () => {
         <Autocomplete
           options={Specialities_Option}
           getOptionLabel={(option) => option.title}
-          sx={{ width: "18%", margin: "0px 30px 0px 0px" }}
+          sx={style}
           renderInput={(params) => (
             <TextField
               {...params}

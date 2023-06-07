@@ -1,4 +1,4 @@
-import { Button, Stack, Toolbar } from "@mui/material";
+import { Stack, Toolbar } from "@mui/material";
 import { GlobeIcon, GreaterThanIcon } from "../../GeneralStyling/IconStyles";
 import {
   CapBlackButton,
@@ -9,7 +9,9 @@ import { MontBoldTextLarge } from "./CookiesStyling/CookieStylingText";
 import { NavtitleSubheading } from "../MainComponent/MainStyling/MainTextStyles";
 import { SelectCount } from "../MainComponent/MainStyling/HomepageOverlayStyles";
 import { BoldBlueSpan, ContactNumber } from "../../GeneralStyling/Texts";
+import { NavMidOptions } from "./CookiesStyling/CookieStylingOverlays";
 import { RouteLink } from "../../GeneralStyling/Overlays";
+import { CallBackButton } from "../../GeneralStyling/Buttons";
 
 const CookieNavbar = () => (
   <TranspNavNoShadow>
@@ -23,7 +25,7 @@ const CookieNavbar = () => (
           </RouteLink>
           <NavtitleSubheading>Education is Austria</NavtitleSubheading>
         </MontBoldTextLarge>
-        <Stack direction="row" sx={{ padding: "16px 20px" }}>
+        <NavMidOptions direction="row">
           <CookieNavSelect name="Service">
             <option value="services">Services</option>
           </CookieNavSelect>
@@ -42,11 +44,11 @@ const CookieNavbar = () => (
           </CookieNavSelect>
           <CapBlackButton>Contacts</CapBlackButton>
           <CapBlackButton>Blog</CapBlackButton>
-        </Stack>
+        </NavMidOptions>
       </Stack>
       <Stack direction="row" spacing={2}>
         <ContactNumber>+7 495 284-44-23</ContactNumber>
-        <Button variant="contained">Call Back</Button>
+        <CallBackButton variant="contained">Call Back</CallBackButton>
         <Stack direction="row">
           <GlobeIcon />
           <SelectCount name="countries">

@@ -11,6 +11,7 @@ import {
   StarIconLogo,
   InfoIconLogo,
   CrossButtonIconMob,
+  CookieIconStyled,
 } from "./IconStyles";
 export {
   FaceBookIcon,
@@ -24,5 +25,6 @@ export {
   CrossButtonIcon,
   StarIconLogo,
   InfoIconLogo,
-  CrossButtonIconMob
+  CrossButtonIconMob,
+  CookieIconStyled,
 };

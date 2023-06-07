@@ -82,3 +82,10 @@ padding: 20px 0px 20px 20px;
 text-align: center;
 color: #ddd5d5;
 `;
+export const PolicyConatiner = Styles(Box)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+`;

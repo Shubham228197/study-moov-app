@@ -9,11 +9,11 @@ import {
 } from "../MainComponent/MainStyling/MainOverlayStyles";
 import { FormSubmit } from "../../GeneralStyling/Buttons";
 import { FormTnC } from "../../GeneralConstants/Constants";
-import FooterIcon from "../MainComponent/MainPage/FooterIcon";
 import FooterText from "../MainComponent/MainPage/FooterText";
 import { PaperMidPad } from "./MobileStyling/MobileStylingOverlays";
 import MobNavTextBlack from "./MobNavTextBlack";
 import { useForm } from "react-hook-form";
+import FooterIconMob from "./FooterIconMob";
 
 export const FieldStyle = {
   style: {
@@ -100,7 +100,7 @@ const ConsultationForm = () => {
           </FormControl>
         </form>
       </PaperMidPad>
-      <FooterIcon />
+      <FooterIconMob />
       <FooterText />
     </>
   );

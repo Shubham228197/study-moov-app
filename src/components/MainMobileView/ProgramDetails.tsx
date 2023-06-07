@@ -1,4 +1,4 @@
-import { Button, Grid, Stack, Typography } from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import {
   ProgramDegreeDetails,
   ProgramOffers,
@@ -7,7 +7,9 @@ import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import {
   BoxBoldHighPadNoLR,
   BoxCenterButton,
+  ButtonCptzd,
   ButtonNoPad,
+  PrgmListGrid,
   ProgramDetailsContainer,
   SubmitAppLargeButton,
 } from "./MobileStyling/MobileStylingOverlays";
@@ -16,19 +18,19 @@ import { StyledToggleButtonGroupV3 } from "../../GeneralConstants/Constants";
 import ToggleButton from "@mui/material/ToggleButton";
 import { useState } from "react";
 import { UtilityIcons } from "../MainComponent/MainStyling/HomepageOverlayStyles";
-import GradCap from '../../FigmaImages/graduation-cap-icon-main.png'
-import PencilIcon from '../../FigmaImages/pencil-icon.png'
-import BellIcon from '../../FigmaImages/bell-icon.png'
-import AppleIcon from '../../FigmaImages/apple-icon.png'
-import ClockIcon from '../../FigmaImages/sandwatch-icon.png'
+import GradCap from "../../FigmaImages/graduation-cap-icon-main.png";
+import PencilIcon from "../../FigmaImages/pencil-icon.png";
+import BellIcon from "../../FigmaImages/bell-icon.png";
+import AppleIcon from "../../FigmaImages/apple-icon.png";
+import ClockIcon from "../../FigmaImages/sandwatch-icon.png";
 
 const ImageMap = [
-  {id: 0, img: GradCap},
-  {id: 1, img: PencilIcon},
-  {id: 2, img: BellIcon},
-  {id: 3, img: AppleIcon},
-  {id: 4, img: ClockIcon},
-]
+  { id: 0, img: GradCap },
+  { id: 1, img: PencilIcon },
+  { id: 2, img: BellIcon },
+  { id: 3, img: AppleIcon },
+  { id: 4, img: ClockIcon },
+];
 
 const ProgramDetails = () => {
   const [programChoice, setProgramChoice] = useState("bachelor");
@@ -62,29 +64,30 @@ const ProgramDetails = () => {
             exclusive
             onChange={handleAlignment}
             aria-label="text alignment"
-            sx={{ padding: "0px", margin: "0px" }}
           >
             <ToggleButton value={item.value} aria-label={item.label}>
-              <Button
-                color="inherit"
-                size="small"
-                sx={{ textTransform: "capitalize" }}
-              >
+              <ButtonCptzd color="inherit" size="small">
                 {item.title}
-              </Button>
+              </ButtonCptzd>
             </ToggleButton>
           </StyledToggleButtonGroupV3>
         ))}
       </Stack>
-      <Grid container sx={{ padding: "15px" }}>
+      <PrgmListGrid container>
         <Grid item xs={12}>
-          <Typography><UtilityIcons src={ImageMap[0].img}/>Speciality</Typography>
+          <Typography>
+            <UtilityIcons src={ImageMap[0].img} />
+            Speciality
+          </Typography>
           <Typography variant="h4">Bachelor of Design</Typography>
         </Grid>
         {ProgramDegreeDetails.map((item) => (
           <>
             <ProgramDetailsContainer item xs={6} key={item.id}>
-              <Typography><UtilityIcons src={ImageMap[item.id].img}/>{item.title}</Typography>
+              <Typography>
+                <UtilityIcons src={ImageMap[item.id].img} />
+                {item.title}
+              </Typography>
               <Typography>{item.value}</Typography>
             </ProgramDetailsContainer>
           </>
@@ -94,7 +97,7 @@ const ProgramDetails = () => {
             Submit Your Application
           </SubmitAppLargeButton>
         </BoxCenterButton>
-      </Grid>
+      </PrgmListGrid>
     </>
   );
 };

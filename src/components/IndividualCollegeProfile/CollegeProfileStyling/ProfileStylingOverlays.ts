@@ -1,5 +1,5 @@
-import { Accordion, Box, Button, Grid, Paper, Stack } from '@mui/material';
-import Styles from 'styled-components'
+import { Accordion, Box, Button, Grid, Paper, Stack } from "@mui/material";
+import Styles from "styled-components";
 
 export const AddmissionContainer = Styles(Paper)`
     padding: 50px;
@@ -92,4 +92,10 @@ export const RankContainerHeading = Styles(Grid)`
 export const RatingOrg = Styles.img`
     max-height: 200px;
     max-width: 200px;
+`;
+export const MapContainer = Styles.iframe`
+    border: 0;
+    border-radius: 25px;
+    width: 100%;
+    height: 600px;
 `;

@@ -1,5 +1,7 @@
-import { ImageList, MenuItem, TextField } from "@mui/material";
+import { MenuItem, Stack } from "@mui/material";
 import { useForm } from "react-hook-form";
+import { FormInputs } from "./MobileStyling/MobileStylingText";
+import { MobSearchContainer } from "./MobileStyling/MobileStylingOverlays";
 
 type CollegeFilter = {
   countries: string;
@@ -20,22 +22,17 @@ const SearchFilterMob = () => {
   };
   const { register, handleSubmit } = form;
   return (
-    <ImageList
-      sx={{ width: 380, position: "-webkit-sticky" }}
-      cols={3}
-      rowHeight={164}
-    >
+    <MobSearchContainer cols={3}>
       <form
         onClick={handleSubmit(onSubmit)}
         noValidate
         style={{ display: "flex" }}
       >
-        <div style={{ padding: "5px" }}>
-          <TextField
+        <Stack padding={1}>
+          <FormInputs
             size="small"
             select
             defaultValue="all-countries"
-            sx={{ border: "1px solid black", borderRadius: "10px" }}
             {...register("countries")}
           >
             <MenuItem value="all-countries">All Countries</MenuItem>
@@ -43,28 +40,26 @@ const SearchFilterMob = () => {
             <MenuItem value="india">India</MenuItem>
             <MenuItem value="spain">Spain</MenuItem>
             <MenuItem value="england">England</MenuItem>
-          </TextField>
-        </div>
-        <div style={{ padding: "5px" }}>
-          <TextField
+          </FormInputs>
+        </Stack>
+        <Stack padding={1}>
+          <FormInputs
             size="small"
             select
             defaultValue="all-program"
-            sx={{ border: "1px solid black", borderRadius: "10px" }}
             {...register("program")}
           >
             <MenuItem value="all-program">All Programs</MenuItem>
             <MenuItem value="bachelors">Bachelor's</MenuItem>
             <MenuItem value="masters">Master's</MenuItem>
             <MenuItem value="under18">Under 18</MenuItem>
-          </TextField>
-        </div>
-        <div style={{ padding: "5px" }}>
-          <TextField
+          </FormInputs>
+        </Stack>
+        <Stack padding={1}>
+          <FormInputs
             size="small"
             select
             defaultValue="all-speciality"
-            sx={{ border: "1px solid black", borderRadius: "10px" }}
             {...register("speciality")}
           >
             <MenuItem value="all-speciality">All Speciality</MenuItem>
@@ -72,10 +67,10 @@ const SearchFilterMob = () => {
             <MenuItem value="maths">Mathametics</MenuItem>
             <MenuItem value="biology">Biology</MenuItem>
             <MenuItem value="chemistry">Chemistry</MenuItem>
-          </TextField>
-        </div>
+          </FormInputs>
+        </Stack>
       </form>
-    </ImageList>
+    </MobSearchContainer>
   );
 };
 

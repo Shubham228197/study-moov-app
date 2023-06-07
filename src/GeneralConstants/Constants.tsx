@@ -118,10 +118,6 @@ export const FieldText = {
 };
 
 export const FieldNumber = {
-  style: {
-    border: "2px solid #287DFC",
-    borderRadius: "10px",
-  },
   startAdornment: <InputAdornment position="start">{`<€`}</InputAdornment>,
   endAdornment: (
     <InputAdornment position="end">
@@ -159,7 +155,7 @@ export const StyledToggleButtonGroupV3 = styled(ToggleButtonGroup)(
       backgroundColor: "transparent",
       border: 0,
       padding: 0,
-      margin: '5px',
+      margin: "5px",
       "&.Mui-disabled": {
         border: 0,
       },
@@ -171,3 +167,20 @@ export const StyledToggleButtonGroupV3 = styled(ToggleButtonGroup)(
     },
   })
 );
+export const Specialities_Option = [
+  { value: "cs", title: "Computer Science" },
+  { value: "doc", title: "Doctorate" },
+  { value: "mngmnt", title: "Management" },
+  { value: "bus", title: "business" },
+  { value: "com", title: "Commerce" },
+  { value: "art", title: "Arts" },
+  { value: "mech", title: "Mechanical" },
+  { value: "bot", title: "Botony" },
+];
+export const Programs_Option = [
+  { value: "bachelor", label: `Bachelor's Degree` },
+  { value: "master", label: `Master's Degree` },
+  { value: "under18", label: `Under 18 Degree` },
+  { value: "diploma", label: `Diploma` },
+  { value: "long-dist", label: `Long Distance` },
+];

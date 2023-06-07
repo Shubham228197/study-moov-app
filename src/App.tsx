@@ -7,6 +7,7 @@ import CollegeProfilePage from "./components/IndividualCollegeProfile/CollegePro
 import HomepageMain from "./components/MainComponent/Homepage/HomepageMain";
 import FormOverlay from "./components/MainComponent/MainPage/FormOverlay";
 import AboutMobView from "./components/MainMobileView/AboutMobView";
+import HomepageFiltered from "./components/MainComponent/Homepage/HomepageFiltered";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomepageMain />} />
+          <Route path="/filtered" element={<HomepageFiltered />} />
           <Route path="/consulation" element={<FormOverlay />} />
           <Route path="/cookie" element={<CookieListPage />} />
           <Route path="/college-profile" element={<CollegeProfilePage />} />

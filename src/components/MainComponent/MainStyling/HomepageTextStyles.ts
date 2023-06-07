@@ -33,7 +33,7 @@ export const FilterDegreeInput = Styles(TextField)`
 `;
 
 export const FilterFeeRangeInput = Styles(TextField)`
-    padding: 0px 30px 0px 30px ! important;
+    padding: 0px 30px 0px 0px ! important;
 `;
 
 export const NaviagtionHeading = Styles(Typography)`

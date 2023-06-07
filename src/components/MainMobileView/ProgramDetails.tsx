@@ -15,6 +15,20 @@ import MobNavTextBlue from "./MobNavTextBlue";
 import { StyledToggleButtonGroupV3 } from "../../GeneralConstants/Constants";
 import ToggleButton from "@mui/material/ToggleButton";
 import { useState } from "react";
+import { UtilityIcons } from "../MainComponent/MainStyling/HomepageOverlayStyles";
+import GradCap from '../../FigmaImages/graduation-cap-icon-main.png'
+import PencilIcon from '../../FigmaImages/pencil-icon.png'
+import BellIcon from '../../FigmaImages/bell-icon.png'
+import AppleIcon from '../../FigmaImages/apple-icon.png'
+import ClockIcon from '../../FigmaImages/sandwatch-icon.png'
+
+const ImageMap = [
+  {id: 0, img: GradCap},
+  {id: 1, img: PencilIcon},
+  {id: 2, img: BellIcon},
+  {id: 3, img: AppleIcon},
+  {id: 4, img: ClockIcon},
+]
 
 const ProgramDetails = () => {
   const [programChoice, setProgramChoice] = useState("bachelor");
@@ -64,13 +78,13 @@ const ProgramDetails = () => {
       </Stack>
       <Grid container sx={{ padding: "15px" }}>
         <Grid item xs={12}>
-          <Typography>Speciality</Typography>
+          <Typography><UtilityIcons src={ImageMap[0].img}/>Speciality</Typography>
           <Typography variant="h4">Bachelor of Design</Typography>
         </Grid>
         {ProgramDegreeDetails.map((item) => (
           <>
             <ProgramDetailsContainer item xs={6} key={item.id}>
-              <Typography>{item.title}</Typography>
+              <Typography><UtilityIcons src={ImageMap[item.id].img}/>{item.title}</Typography>
               <Typography>{item.value}</Typography>
             </ProgramDetailsContainer>
           </>

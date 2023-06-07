@@ -90,10 +90,10 @@ export const CountryFlagImages = [
   },
 ];
 export const ProgramDegreeDetails = [
-  { id: "4", title: "Admission Before", value: `11 Oct - 13 Dec` },
-  { id: "5", title: "Start Date", value: `November 1, 2021` },
-  { id: "6", title: "Age", value: `22-23 years old` },
-  { id: "7", title: "Price", value: `€ 22,989/year` },
+  { id: 1, title: "Admission Before", value: `11 Oct - 13 Dec` },
+  { id: 2, title: "Start Date", value: `November 1, 2021` },
+  { id: 3, title: "Age", value: `22-23 years old` },
+  { id: 4, title: "Price", value: `€ 22,989/year` },
 ];
 type Poffers = {
   id: string;

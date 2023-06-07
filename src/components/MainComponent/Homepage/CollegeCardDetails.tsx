@@ -10,7 +10,6 @@ import {
 } from "@mui/material";
 import {
   CollegeInfoCard,
-  CollegeBuildingImage,
   CollegeInfoSection,
   ContentContainer,
   VienaaCollegeImage,
@@ -38,8 +37,17 @@ const CollegeCardOpen = () => {
   return (
     <CollegeInfoCard elevation={6}>
       <Grid container>
-        <Grid item xs={2}>
-          <CollegeBuildingImage src={CollegeBuiding} alt="CollegeBuilding" />
+        <Grid
+          item
+          xs={2}
+          sx={{
+            backgroundImage: `url(${CollegeBuiding})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: 'cover',
+            borderRadius: '20px 0px 0px 20px'
+          }}
+        >
+          {/* <CollegeBuildingImage src={CollegeBuiding} alt="CollegeBuilding" /> */}
         </Grid>
         <CollegeInfoSection item xs={7}>
           <ContentContainer>

@@ -48,4 +48,5 @@ export const NaviagtionHeading = Styles(Typography)`
 export const FeeText = Styles(Typography)`
     margin: 0px; 
     text-align: end;
+    fontWeight: bold ! important;
 `;

@@ -1,11 +1,8 @@
 import MainNavbar from "../MainPage/MainNavbar";
-import FilterFieldHome from "./FilterFieldHome";
 import CollegeCardOpen from "./CollegeCardDetails";
 import FooterIcon from "../MainPage/FooterIcon";
 import FooterText from "../MainPage/FooterText";
-import {
-  FilterBoxMain,
-} from "../MainStyling/HomepageOverlayStyles";
+import { FilterBoxMain } from "../MainStyling/HomepageOverlayStyles";
 import {
   BoldText30Mar,
   FilterMainSubheading,
@@ -13,8 +10,19 @@ import {
 import { HomepageFilterSubheadingText } from "../../../GeneralConstants/Constants";
 import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
+import FilterHomepage from "./FilterHomepage";
+import { useState } from "react";
 
 const HomepageFiltered = () => {
+  const [CardCount, setCardCount] = useState(3);
+
+  function AddMoreCards() {
+    setCardCount((prev) => prev + 5);
+  }
+
+  const UniversityCards = Array.from({ length: CardCount }, (_, index) => (
+    <CollegeCardOpen key={index} />
+  ));
   return (
     <>
       <MainNavbar />
@@ -25,13 +33,12 @@ const HomepageFiltered = () => {
             {HomepageFilterSubheadingText}
           </FilterMainSubheading>
         </BoldText30Mar>
-        <FilterFieldHome />
-        <CollegeCardOpen />
-        <CollegeCardOpen />
-        <CollegeCardOpen />
-        <CollegeCardOpen />
+        <FilterHomepage />
+        {UniversityCards}
         <BoxCenterHighMar>
-          <ShowMoreButton variant="outlined">Show more</ShowMoreButton>
+          <ShowMoreButton variant="outlined" onClick={AddMoreCards}>
+            Show more
+          </ShowMoreButton>
         </BoxCenterHighMar>
         <FooterIcon />
         <FooterText />

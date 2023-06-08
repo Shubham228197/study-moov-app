@@ -8,6 +8,11 @@ import HomepageMain from "./components/MainComponent/Homepage/HomepageMain";
 import FormOverlay from "./components/MainComponent/MainPage/FormOverlay";
 import HomepageFiltered from "./components/MainComponent/Homepage/HomepageFiltered";
 import PrivacyPolicy from "./components/MainComponent/MainPage/PrivacyPolicy";
+import PrivacyPolicyMob from "./components/MainMobileView/PrivacyPolicyMob";
+import ConsultationForm from "./components/MainMobileView/ConsultationForm";
+import ConsultationResult from "./components/MainMobileView/ConsultationResult";
+import HomepageMob from "./components/MainMobileView/HomepageMob";
+import ProgramDetails from "./components/MainMobileView/ProgramDetails";
 
 function App() {
   return (
@@ -23,6 +28,12 @@ function App() {
           <Route path="/manage-cookie" element={<CookieManagement />} />
           <Route path="/cookie-error" element={<CookieErrorPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/formInput-mob" element={<ConsultationForm />} />
+          <Route path="/formResult-mob" element={<ConsultationResult />} />
+          <Route path="/home-mob" element={<HomepageMob />} />
+          <Route path="/program-details-mob" element={<ProgramDetails />} />
+          <Route path="/privacy-policy-mob" element={<PrivacyPolicyMob />} />
+          {/* <Route path="/privacy-policy-mob" element={<PrivacyPolicyMob />} /> */}
         </Routes>
       </BrowserRouter>
     </div>

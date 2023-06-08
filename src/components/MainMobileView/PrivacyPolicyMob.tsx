@@ -1,15 +1,14 @@
 import { Typography } from "@mui/material";
-import { BoldTextHighMarNoLR } from "../../../GeneralStyling/Texts";
-import PPsvg from "../../../FigmaImages/privacy_illustration.svg";
-import FooterText from "./FooterText";
-import { PolicyConatiner } from "../MainStyling/MainOverlayStyles";
-import MainNavbar from "./MainNavbar";
-import { PrivacyPolicyDeclaration } from "../../../GeneralConstants/Constants";
-
-const PrivacyPolicy = () => {
+import MobNavTextBlue from "./MobNavTextBlue";
+import { PolicyConatiner } from "../MainComponent/MainStyling/MainOverlayStyles";
+import { BoldTextHighMarNoLR } from "../../GeneralStyling/Texts";
+import FooterText from "../MainComponent/MainPage/FooterText";
+import PPsvg from "../../FigmaImages/privacy_illustration.svg";
+import { PrivacyPolicyDeclaration } from "../../GeneralConstants/Constants";
+const PrivacyPolicyMob = () => {
   return (
     <>
-      <MainNavbar />
+      <MobNavTextBlue />
       <PolicyConatiner>
         <object
           data={PPsvg}
@@ -32,4 +31,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default PrivacyPolicyMob;

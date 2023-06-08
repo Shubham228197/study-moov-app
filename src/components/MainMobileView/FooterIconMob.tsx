@@ -44,7 +44,7 @@ const FooterIcon = () => {
       <StackCenter direction="column">
         <FooterLink onClick={OpenModal}>About Us</FooterLink>
         <FooterLink>
-          <RouteLinkGray to="/privacy-policy">
+          <RouteLinkGray to="/privacy-policy-mob">
             Privacy Policy
           </RouteLinkGray>
         </FooterLink>

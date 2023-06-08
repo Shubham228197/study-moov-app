@@ -23,7 +23,7 @@ export const SelectCount = Styles.select`
     background: transparent; 
 `;
 export const FilterBoxMain = Styles(Box)`
-    margin: 20px 150px 20px 150px ! important;
+    margin: 20px 150px ! important;
 `;
 export const CollegeInfoCard = Styles(Paper)`
     margin-bottom: 20px ! important; 
@@ -37,7 +37,7 @@ export const ContentContainer = Styles(Box)`
     padding: 0px 15px ! important;
 `;
 export const HomepageContent = Styles(Grid)`
-    margin: 20px 150px 20px 150px ! important;
+    margin: 20px 150px ! important;
 `;
 export const CollegeInfoExtended = Styles(Paper)`
     border-radius: 20px ! important;

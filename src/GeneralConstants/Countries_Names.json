@@ -1,50 +1,41 @@
-[{"countries":"Tajikistan"},
-{"countries":"France"},
-{"countries":"Peru"},
-{"countries":"Croatia"},
-{"countries":"Czech Republic"},
-{"countries":"Philippines"},
-{"countries":"Ukraine"},
-{"countries":"Brazil"},
-{"countries":"Portugal"},
-{"countries":"Philippines"},
-{"countries":"Peru"},
-{"countries":"Ghana"},
-{"countries":"Russia"},
-{"countries":"Solomon Islands"},
-{"countries":"Kuwait"},
-{"countries":"China"},
-{"countries":"Greece"},
-{"countries":"Peru"},
-{"countries":"Russia"},
-{"countries":"Cuba"},
-{"countries":"China"},
-{"countries":"Cambodia"},
-{"countries":"Brazil"},
-{"countries":"Philippines"},
-{"countries":"Colombia"},
-{"countries":"China"},
-{"countries":"Philippines"},
-{"countries":"Russia"},
-{"countries":"Brazil"},
-{"countries":"China"},
-{"countries":"South Africa"},
-{"countries":"China"},
-{"countries":"Mexico"},
-{"countries":"Ukraine"},
-{"countries":"Ivory Coast"},
-{"countries":"Finland"},
-{"countries":"Philippines"},
-{"countries":"China"},
-{"countries":"Syria"},
-{"countries":"Niger"},
-{"countries":"Mexico"},
-{"countries":"Philippines"},
-{"countries":"Malaysia"},
-{"countries":"Switzerland"},
-{"countries":"China"},
-{"countries":"Philippines"},
-{"countries":"Japan"},
-{"countries":"United States"},
-{"countries":"Colombia"},
-{"countries":"Madagascar"}]
+[
+    {
+        "countries": "Austria"
+    },
+    {
+        "countries": "England"
+    },
+    {
+        "countries": "Germany"
+    },
+    {
+        "countries": "America"
+    },
+    {
+        "countries": "China"
+    },
+    {
+        "countries": "Japan"
+    },
+    {
+        "countries": "India"
+    },
+    {
+        "countries": "Brazil"
+    },
+    {
+        "countries": "Portugal"
+    },
+    {
+        "countries": "Philippines"
+    },
+    {
+        "countries": "Peru"
+    },
+    {
+        "countries": "Ghana"
+    },
+    {
+        "countries": "Russia"
+    }
+]

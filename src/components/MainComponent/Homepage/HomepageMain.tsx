@@ -9,17 +9,29 @@ import { HomepageHeading } from "../MainStyling/HomepageTextStyles";
 import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
 import FilterHomepage from "./FilterHomepage";
 import { useState } from "react";
+// import { useMediaQuery, useTheme } from '@mui/material'
+import { UniversitiesList } from "../../../GeneralConstants/CollegeList";
 
 const HomepageMain = () => {
   const [CardCount, setCardCount] = useState(3);
 
-  function AddMoreCards() {
-    setCardCount((prev) => prev + 5);
+  // const theme = useTheme();
+  // const mobileView = useMediaQuery(theme.breakpoints.down(1250))
+
+  const AddMoreCards = () => {
+    setCardCount((prev) => prev + 3);
+  }
+  const ReduceCards = () => {
+    setCardCount((prev) => prev - 3);
   }
 
-  const UniversityCards = Array.from({ length: CardCount }, (_, index) => (
-    <CollegeCardOpen key={index} />
+  const UniversityCards = UniversitiesList.map((item, index) => (
+    <CollegeCardOpen key={index} CollegeProfileInfo={item} />
   ));
+  const ShowUniversity = Array.from(
+    { length: CardCount },
+    (_, index) => UniversityCards[index]
+  );
 
   return (
     <>
@@ -30,11 +42,17 @@ const HomepageMain = () => {
           318 study programs in 11 countries
         </HomepageHeading>
         <FilterHomepage />
-        {UniversityCards}
+        {ShowUniversity}
         <BoxCenterHighMar>
-          <ShowMoreButton variant="outlined" onClick={AddMoreCards}>
-            Show more
+          {UniversitiesList.length <= CardCount ? (
+            <ShowMoreButton variant="outlined" onClick={ReduceCards}>
+            Show Less
           </ShowMoreButton>
+          ) : (
+            <ShowMoreButton variant="outlined" onClick={AddMoreCards}>
+              Show more
+            </ShowMoreButton>
+          )}
         </BoxCenterHighMar>
         <FooterIcon />
         <FooterText />

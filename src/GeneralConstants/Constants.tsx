@@ -64,7 +64,7 @@ export const SelectLanguages = [
   },
   {
     id: "1",
-    value: "english",
+    value: "English",
     label: "English",
     tag: (
       <MenuItem key="english" value="english">
@@ -75,7 +75,7 @@ export const SelectLanguages = [
   },
   {
     id: "2",
-    value: "german",
+    value: "German",
     label: "German",
     tag: (
       <MenuItem key="german" value="german">
@@ -85,7 +85,7 @@ export const SelectLanguages = [
   },
   {
     id: "3",
-    value: "russian",
+    value: "Russian",
     label: "Russian",
     tag: (
       <MenuItem key="russian" value="russian">
@@ -95,7 +95,7 @@ export const SelectLanguages = [
   },
   {
     id: "4",
-    value: "spanish",
+    value: "Spanish",
     label: "Spanish",
     tag: (
       <MenuItem key="spanish" value="spanish">

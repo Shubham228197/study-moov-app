@@ -23,6 +23,7 @@ import PencilIcon from "../../FigmaImages/pencil-icon.png";
 import BellIcon from "../../FigmaImages/bell-icon.png";
 import AppleIcon from "../../FigmaImages/apple-icon.png";
 import ClockIcon from "../../FigmaImages/sandwatch-icon.png";
+import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const ImageMap = [
   { id: 0, img: GradCap },
@@ -93,9 +94,11 @@ const ProgramDetails = () => {
           </>
         ))}
         <BoxCenterButton>
-          <SubmitAppLargeButton size="large" variant="contained">
-            Submit Your Application
-          </SubmitAppLargeButton>
+          <RouteLink to="/formInput-mob">
+            <SubmitAppLargeButton size="large" variant="contained">
+              Submit Your Application
+            </SubmitAppLargeButton>
+          </RouteLink>
         </BoxCenterButton>
       </PrgmListGrid>
     </>

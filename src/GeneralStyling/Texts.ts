@@ -8,6 +8,10 @@ export const BoldBlueSpan = Styles.span`
     color: blue;
     font-weight: bolder;
 `;
+export const BoldWhiteSpan = Styles.span`
+    color: white;
+    font-weight: bold;
+`;
 export const BoldText = Styles(Typography)`
     font-weight: bold ! important;
 `;

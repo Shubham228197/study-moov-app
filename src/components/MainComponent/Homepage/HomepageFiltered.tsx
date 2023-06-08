@@ -10,19 +10,70 @@ import {
 import { HomepageFilterSubheadingText } from "../../../GeneralConstants/Constants";
 import { ShowMoreButton } from "../../../GeneralStyling/Buttons";
 import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
-import FilterHomepage from "./FilterHomepage";
+import FilterCompleted from "./FilterCompleted";
 import { useState } from "react";
+import { UniversitiesList } from "../../../GeneralConstants/CollegeList";
+import useMoovContext from "../../../Hooks/use-moov-context";
 
 const HomepageFiltered = () => {
-  const [CardCount, setCardCount] = useState(3);
-
+  const [CardCount, setCardCount] = useState(2);
+  const { globalFormData } = useMoovContext();
   function AddMoreCards() {
     setCardCount((prev) => prev + 5);
   }
 
-  const UniversityCards = Array.from({ length: CardCount }, (_, index) => (
-    <CollegeCardOpen key={index} />
+  type UniversitiesListType = {
+    id: string;
+    name: string;
+    location: string;
+    degreeOffered: string[];
+    languages: string[];
+  }[];
+
+  const filterUniversityBySearch = (UniversitiesList: UniversitiesListType) => {
+    const FilterByLocation = UniversitiesList.filter((university) => {
+      if (
+        globalFormData.nativeLand.toLowerCase() ===
+          university.location.toLowerCase() ||
+        globalFormData.nativeLand === ""
+      ) {
+        return true;
+      }
+      return false;
+    });
+
+    const FilterByDegreeOffered = FilterByLocation.filter((university) => {
+      if (
+        globalFormData.program === "" ||
+        university.degreeOffered.includes(globalFormData.program)
+      ) {
+        return true;
+      }
+      return false;
+    });
+
+    const FilterByLanguages = FilterByDegreeOffered.filter((university) => {
+      if (
+        globalFormData.languages === "all-languages" ||
+        university.languages.includes(globalFormData.languages)
+      ) {
+        return true;
+      }
+      return false;
+    });
+    return FilterByLanguages;
+  };
+
+  const FilteredUniversity = filterUniversityBySearch(UniversitiesList);
+
+  const UniversityCards = FilteredUniversity.map((item, index) => (
+    <CollegeCardOpen key={item.id} CollegeProfileInfo={item} />
   ));
+
+  const ShowUniversity = Array.from(
+    { length: CardCount },
+    (_, index) => UniversityCards[index]
+  );
   return (
     <>
       <MainNavbar />
@@ -33,12 +84,16 @@ const HomepageFiltered = () => {
             {HomepageFilterSubheadingText}
           </FilterMainSubheading>
         </BoldText30Mar>
-        <FilterHomepage />
-        {UniversityCards}
+        <FilterCompleted />
+        {ShowUniversity}
         <BoxCenterHighMar>
-          <ShowMoreButton variant="outlined" onClick={AddMoreCards}>
-            Show more
-          </ShowMoreButton>
+          {FilteredUniversity.length <= CardCount ? (
+            <></>
+          ) : (
+            <ShowMoreButton variant="outlined" onClick={AddMoreCards}>
+              Show more
+            </ShowMoreButton>
+          )}
         </BoxCenterHighMar>
         <FooterIcon />
         <FooterText />

@@ -13,8 +13,18 @@ import {
 } from "./MobileStyling/MobileStylingOverlays";
 import { BoldText } from "../../GeneralStyling/Texts";
 import { RouteLink } from "../../GeneralStyling/Overlays";
+import { FC } from "react";
 
-const UniversityCard = () => {
+type clgType = {
+  name: string;
+  location: string;
+  degreeOffered: string[];
+  languages: string[];
+} 
+type UniversityProps = {
+  clgData: clgType
+}
+const UniversityCard: FC<UniversityProps> = (props): JSX.Element => {
   return (
     <UniversityCardContainer
       sx={{
@@ -22,7 +32,7 @@ const UniversityCard = () => {
       }}
       elevation={8}
     >
-      <BoldText variant="h3">Vienne Business University</BoldText>
+      <BoldText variant="h3">{props.clgData.name}</BoldText>
       <AddressNdRating>
         <RatingButton variant="contained" size="small" color="success">
           <StarIconLogo fontSize="small" />
@@ -32,7 +42,7 @@ const UniversityCard = () => {
           </Tooltip>
         </RatingButton>
         <FmdGoodIcon fontSize="small" />
-        Austria, Vienna
+        {props.clgData.location}
       </AddressNdRating>
       <Typography sx={{ display: "flex" }}>
         Language of instruction:

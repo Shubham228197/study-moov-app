@@ -9,17 +9,27 @@ import FooterText from "../MainComponent/MainPage/FooterText";
 import SearchFilterMob from "./SearchFilterMob";
 import { BoldText } from "../../GeneralStyling/Texts";
 import { useState } from "react";
+import { UniversitiesList } from "../../GeneralConstants/CollegeList";
 
 const HomepageMob = () => {
   const [CardCount, setCardCount] = useState(3);
 
-  function AddMoreCards() {
-    setCardCount((prev) => prev + 5);
-  }
+  const AddMoreCards = () => {
+    setCardCount((prev) => prev + 2);
+  };
 
-  const UniversityCards = Array.from({ length: CardCount }, (_, index) => (
-    <UniversityCard key={index} />
+  const ReduceCards = () => {
+    setCardCount((prev) => prev - 2);
+  };
+
+  const UniversityCards = UniversitiesList.map((item, index) => (
+    <UniversityCard key={index} clgData={item} />
   ));
+  const ShowUniversity = Array.from(
+    { length: CardCount },
+    (_, index) => UniversityCards[index]
+  );
+
   return (
     <>
       <NavbarMob />
@@ -28,9 +38,13 @@ const HomepageMob = () => {
         <BoldText variant="h5">318 study programs in 11 countries</BoldText>
         <SearchFilterMob />
       </BoxMidPad>
-      {UniversityCards}
+      {ShowUniversity}
       <BoxCenterHighMar>
-        <ShowMoreButton onClick={AddMoreCards}>Show More</ShowMoreButton>
+        {UniversitiesList.length === CardCount ? (
+          <ShowMoreButton onClick={ReduceCards}>Show Less</ShowMoreButton>
+        ) : (
+          <ShowMoreButton onClick={AddMoreCards}>Show More</ShowMoreButton>
+        )}
       </BoxCenterHighMar>
       <FooterIconMob />
       <Box sx={{ padding: "-50px" }}>

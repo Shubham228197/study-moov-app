@@ -18,7 +18,7 @@ import CollegeBuiding from "../../../FigmaImages/Rectangle-cropped.jpg";
 import FmdGoodIcon from "@mui/icons-material/FmdGood";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import CollegeCardMoreDetails from "./CollegeCardMoreDetails";
-import { useState } from "react";
+import { FC, useState } from "react";
 import { StarIconLogo, InfoIconLogo } from "../../../GeneralStyling/Icons";
 import { InfoBullets, InfoPoints } from "../MainStyling/HomepageTextStyles";
 import VienaaImage from "../../../FigmaImages/vienna-logo.jpg";
@@ -30,7 +30,16 @@ import {
 import { GridMidPad } from "../../../GeneralStyling/Overlays";
 import { RouteLink } from "../../../GeneralStyling/Overlays";
 
-const CollegeCardOpen = () => {
+type CollegeProfileInfoType = {
+  name: string;
+  location: string;
+  degreeOffered: string[];
+  languages: string[];
+};
+type CollegeCardType = {
+  CollegeProfileInfo: CollegeProfileInfoType;
+};
+const CollegeCardOpen: FC<CollegeCardType> = (props): JSX.Element => {
   const [dropdown, setDropdown] = useState(false);
 
   const handleClick = () => {
@@ -49,7 +58,9 @@ const CollegeCardOpen = () => {
         ></CollegeBuildingImage>
         <CollegeInfoSection item xs={7}>
           <ContentContainer>
-            <Typography variant="h5">Vienna Veterinary University</Typography>
+            <Typography variant="h5">
+              {props.CollegeProfileInfo.name}
+            </Typography>
             <Box>
               <SuperEllipseButton
                 color="success"
@@ -63,7 +74,7 @@ const CollegeCardOpen = () => {
                 </Tooltip>
               </SuperEllipseButton>
               <FmdGoodIcon fontSize="small" />
-              Austria, Vienna
+              {props.CollegeProfileInfo.location}
             </Box>
             <Stack direction="row">
               <InfoBullets>Programs:</InfoBullets>
@@ -79,7 +90,9 @@ const CollegeCardOpen = () => {
             </Stack>
             <Stack direction="row">
               <InfoBullets>Teaching languages</InfoBullets>
-              <InfoBullets>: English, Spanish, Bulgarian, Romanian</InfoBullets>
+              <InfoBullets>
+                : {props.CollegeProfileInfo.languages.join(", ")}
+              </InfoBullets>
             </Stack>
             <TextField
               variant="outlined"

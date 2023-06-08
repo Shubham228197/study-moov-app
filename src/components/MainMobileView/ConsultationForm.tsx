@@ -9,11 +9,10 @@ import {
 } from "../MainComponent/MainStyling/MainOverlayStyles";
 import { FormSubmit } from "../../GeneralStyling/Buttons";
 import { FormTnC } from "../../GeneralConstants/Constants";
-import FooterText from "../MainComponent/MainPage/FooterText";
 import { PaperMidPad } from "./MobileStyling/MobileStylingOverlays";
 import MobNavTextBlack from "./MobNavTextBlack";
 import { useForm } from "react-hook-form";
-import FooterIconMob from "./FooterIconMob";
+import { FC, useState } from "react";
 
 export const FieldStyle = {
   style: {
@@ -21,13 +20,20 @@ export const FieldStyle = {
     border: "1px solid black",
   },
 };
+
 type FormValues = {
   username: string;
   email: string;
   phone: number;
   TNC: boolean;
 };
-const ConsultationForm = () => {
+
+type formSubmission = {
+  setIsSubmitted: (value: boolean) => void;
+  isSubmitted: boolean;
+};
+
+const ConsultationForm: FC<formSubmission> = (props): JSX.Element => {
   const form = useForm<FormValues>({
     defaultValues: {
       username: "",
@@ -36,6 +42,8 @@ const ConsultationForm = () => {
     mode: "onBlur",
   });
 
+  const [TnC, setTnc] = useState(false);
+
   const { register, handleSubmit, reset, formState } = form;
 
   const { errors, isValid } = formState;
@@ -43,6 +51,7 @@ const ConsultationForm = () => {
   const onSubmit = (data: FormValues) => {
     console.log("FORM DATA: ", data);
     reset();
+    props.setIsSubmitted(!props.isSubmitted);
   };
   return (
     <>
@@ -89,9 +98,14 @@ const ConsultationForm = () => {
               </div>
               <FormControlLabel
                 label={<CheckboxLabel>{FormTnC}</CheckboxLabel>}
-                value="TnC"
-                control={<CheckBox />}
-                {...register("TNC", { required: { value: true, message: "" } })}
+                value={TnC}
+                control={<CheckBox onClick={() => setTnc(!TnC)} />}
+                {...register("TNC", {
+                  required: {
+                    value: true,
+                    message: "Accept terms and Condition",
+                  },
+                })}
               />
             </FormGroup>
             <FormSubmit type="submit" variant="contained" disabled={!isValid}>
@@ -100,8 +114,6 @@ const ConsultationForm = () => {
           </FormControl>
         </form>
       </PaperMidPad>
-      <FooterIconMob />
-      <FooterText />
     </>
   );
 };

@@ -7,6 +7,7 @@ import {
 } from "./MobileStyling/MobileStylingOverlays";
 import { CenterTextHighMar } from "../../GeneralStyling/Texts";
 import MobNavTextWhite from "./MobNavTextWhite";
+import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const NavbarMob = () => (
   <MobNavbar sx={{ backgroundImage: `url(${image})` }}>
@@ -20,7 +21,9 @@ const NavbarMob = () => (
           Official representative of more than 300 educational institutions
           around the world
         </CenterTextHighMar>
-        <ButtonMidMar variant="contained">Select University</ButtonMidMar>
+        <RouteLink to="/form-mob">
+          <ButtonMidMar variant="contained">Book Consulation</ButtonMidMar>
+        </RouteLink>
       </StackCenterMidPad>
     </Toolbar>
   </MobNavbar>

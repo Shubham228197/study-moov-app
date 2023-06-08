@@ -1,6 +1,4 @@
 import { Paper } from "@mui/material";
-import FooterIconMob from '../MainMobileView/FooterIconMob'
-import FooterText from "../MainComponent/MainPage/FooterText";
 import image from "../../FigmaImages/confetti_1-removebg-preview.png";
 import { FormSecondaryText, BoldTextCenter } from "../../GeneralStyling/Texts";
 import {
@@ -23,8 +21,6 @@ const ConsultationResult = () => (
         </FormSecondaryText>
       </ConfettiImageContainer>
     </Paper>
-    <FooterIconMob />
-    <FooterText />
   </>
 );
 

@@ -17,6 +17,11 @@ import { BoldBlueSpan } from "../../../GeneralStyling/Texts";
 import { RouteLinkWhite } from "../../../GeneralStyling/Overlays";
 
 const TransparentNavbar = () => {
+  const handleDial = () => {
+    const phoneNumber = "+7 495 284-44-23"; // Replace with your desired phone number
+    const link = `tel:${phoneNumber}`;
+    window.location.href = link;
+  };
   return (
     <TranspNav>
       <Toolbar>
@@ -30,7 +35,9 @@ const TransparentNavbar = () => {
         </NavtitleWhite>
         <Stack direction="row" spacing={2}>
           <ContactNumberWhite>+7 495 284-44-23</ContactNumberWhite>
-          <CallBackButton variant="contained">Call Back</CallBackButton>
+          <CallBackButton variant="contained" onClick={handleDial}>
+            Call Back
+          </CallBackButton>
           <Stack direction="row" spacing={2}>
             <GlobeIconBlue />
             <SelecteCountries name="countries">

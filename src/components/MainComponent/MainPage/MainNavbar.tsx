@@ -11,6 +11,11 @@ import { ContactNumber, BoldBlueSpan } from "../../../GeneralStyling/Texts";
 import { RouteLink } from "../../../GeneralStyling/Overlays";
 
 const FormNavbar = () => {
+  const handleDial = () => {
+    const phoneNumber = "+7 495 284-44-23"; // Replace with your desired phone number
+    const link = `tel:${phoneNumber}`;
+    window.location.href = link;
+  };
   return (
     <NavigationBar elevation={0}>
       <Toolbar>
@@ -24,7 +29,9 @@ const FormNavbar = () => {
         </Navtitle>
         <Stack direction="row" spacing={2}>
           <ContactNumber>+7 495 284-44-23</ContactNumber>
-          <CallBackButton variant="contained">Call Back</CallBackButton>
+          <CallBackButton variant="contained" onClick={handleDial}>
+            Call Back
+          </CallBackButton>
           <Stack direction="row" spacing={2}>
             <GlobeIcon />
             <ChooseCountries name="countries">

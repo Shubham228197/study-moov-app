@@ -12,6 +12,7 @@ import {
   UniversityCardContainer,
 } from "./MobileStyling/MobileStylingOverlays";
 import { BoldText } from "../../GeneralStyling/Texts";
+import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const UniversityCard = () => {
   return (
@@ -33,7 +34,7 @@ const UniversityCard = () => {
         <FmdGoodIcon fontSize="small" />
         Austria, Vienna
       </AddressNdRating>
-      <Typography sx={{display: 'flex'}}>
+      <Typography sx={{ display: "flex" }}>
         Language of instruction:
         {CountryFlagImages.map((flags) => (
           <div key={flags.id}>{flags.imageTag}</div>
@@ -43,9 +44,11 @@ const UniversityCard = () => {
         <Typography variant="subtitle2">Price</Typography>
         <Typography variant="h5">€ 25 538/year</Typography>
       </PriceBox>
-      <SubmitAppSmallButton variant="contained" size="small">
-        Submit Your Application
-      </SubmitAppSmallButton>
+      <RouteLink to="/program-details-mob">
+        <SubmitAppSmallButton variant="contained" size="small">
+          View Details
+        </SubmitAppSmallButton>
+      </RouteLink>
       <ProgramListButton variant="outlined">All Programs</ProgramListButton>
     </UniversityCardContainer>
   );

@@ -58,13 +58,14 @@ const ProgramDetails = () => {
         Vienne University
       </BoxBoldHighPadNoLR>
       <Stack direction="row" sx={{ backgroundColor: "#ebe0e0" }}>
-        {ProgramOffers.map((item) => (
+        {ProgramOffers.map((item,index) => (
           <StyledToggleButtonGroupV3
             size="small"
             value={programChoice}
             exclusive
             onChange={handleAlignment}
             aria-label="text alignment"
+            key={index}
           >
             <ToggleButton value={item.value} aria-label={item.label}>
               <ButtonCptzd color="inherit" size="small">
@@ -94,7 +95,7 @@ const ProgramDetails = () => {
           </>
         ))}
         <BoxCenterButton>
-          <RouteLink to="/formInput-mob">
+          <RouteLink to="/form-mob">
             <SubmitAppLargeButton size="large" variant="contained">
               Submit Your Application
             </SubmitAppLargeButton>

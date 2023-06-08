@@ -5,6 +5,7 @@ import { BoldTextHighMarNoLR } from "../../GeneralStyling/Texts";
 import FooterText from "../MainComponent/MainPage/FooterText";
 import PPsvg from "../../FigmaImages/privacy_illustration.svg";
 import { PrivacyPolicyDeclaration } from "../../GeneralConstants/Constants";
+
 const PrivacyPolicyMob = () => {
   return (
     <>

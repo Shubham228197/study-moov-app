@@ -9,7 +9,7 @@ import {
 } from "../MainComponent/MainStyling/MainOverlayStyles";
 import { FormSubmit } from "../../GeneralStyling/Buttons";
 import { FormTnC } from "../../GeneralConstants/Constants";
-import { PaperMidPad } from "./MobileStyling/MobileStylingOverlays";
+import { EntryForm, PaperMidPad } from "./MobileStyling/MobileStylingOverlays";
 import MobNavTextBlack from "./MobNavTextBlack";
 import { useForm } from "react-hook-form";
 import { FC, useState } from "react";
@@ -57,7 +57,7 @@ const ConsultationForm: FC<formSubmission> = (props): JSX.Element => {
     <>
       <PaperMidPad elevation={8}>
         <MobNavTextBlack />
-        <form onSubmit={handleSubmit(onSubmit)} noValidate>
+        <EntryForm onSubmit={handleSubmit(onSubmit)} noValidate>
           <FormControl>
             <FormHeading>Book a consultation</FormHeading>
             <FormGroup>
@@ -112,7 +112,7 @@ const ConsultationForm: FC<formSubmission> = (props): JSX.Element => {
               Submit your application
             </FormSubmit>
           </FormControl>
-        </form>
+        </EntryForm>
       </PaperMidPad>
     </>
   );

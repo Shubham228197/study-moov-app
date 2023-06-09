@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Grid, ImageList, Paper, Stack } from "@mui/material";
+import { AppBar, Box, Button, Grid, ImageList, Paper, Stack, Toolbar } from "@mui/material";
 import Styles from "styled-components";
 
 export const AboutContainerMob = Styles(Paper)`
@@ -33,14 +33,14 @@ export const StackCenterMidPad = Styles(Stack)`
     padding: 10px;
 `;
 export const ButtonMidMar = Styles(Button)`
-margin: 10px !important;
+    margin: 10px !important;
 `;
 export const BoxBoldHighPadNoLR = Styles(Box)`
     font-weight: bold; 
     padding: 20px 0px;
 `;
 export const ButtonNoPad = Styles(Button)`
-padding: 0px;
+    padding: 0px;
 `;
 export const ButtonCptzd = Styles(Button)`
     text-transform: capitalize ! important;
@@ -90,7 +90,15 @@ export const PrgmListGrid = Styles(Grid)`
     padding: 15px;
 `;
 export const MobSearchContainer = Styles(ImageList)`
-width: 380 ! important;
-position: -webkit-sticky ! important;
-row-height: 164 ! important;
+    width: 380 ! important;
+    position: -webkit-sticky ! important;
+    row-height: 164 ! important;
+`;
+export const NavToolbar = Styles(Toolbar)`
+    display: flex; 
+    margin: auto ! important;
+`;
+export const EntryForm = Styles.form`
+    display: flex;
+    justify-content: center;
 `;

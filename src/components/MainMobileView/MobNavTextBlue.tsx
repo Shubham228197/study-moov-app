@@ -4,7 +4,7 @@ import { BoldBlueSpan, MobNavTitle } from "../../GeneralStyling/Texts";
 
 const MobNavTextBlue = () => (
   <MobNavTitle variant="h6">
-    <RouteLink to="/home-mob">
+    <RouteLink to="/">
       Study
       <GreaterThanIcon />
       <BoldBlueSpan>Moov</BoldBlueSpan>

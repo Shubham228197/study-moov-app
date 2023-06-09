@@ -1,8 +1,9 @@
-import { Toolbar, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import image from "../../FigmaImages/vadim-sherbakov-darked-mob.jpg";
 import {
   ButtonMidMar,
   MobNavbar,
+  NavToolbar,
   StackCenterMidPad,
 } from "./MobileStyling/MobileStylingOverlays";
 import { CenterTextHighMar } from "../../GeneralStyling/Texts";
@@ -11,7 +12,7 @@ import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const NavbarMob = () => (
   <MobNavbar sx={{ backgroundImage: `url(${image})` }}>
-    <Toolbar>
+    <NavToolbar>
       <StackCenterMidPad>
         <MobNavTextWhite />
         <Typography variant="h4">
@@ -25,7 +26,7 @@ const NavbarMob = () => (
           <ButtonMidMar variant="contained">Book Consulation</ButtonMidMar>
         </RouteLink>
       </StackCenterMidPad>
-    </Toolbar>
+    </NavToolbar>
   </MobNavbar>
 );
 

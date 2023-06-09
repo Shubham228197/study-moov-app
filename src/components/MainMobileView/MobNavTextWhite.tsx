@@ -8,7 +8,7 @@ import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const MobNavTextWhite = () => (
   <MobNavTitle variant="h6">
-    <RouteLink to="/home-mob">
+    <RouteLink to="/">
       <BoldWhiteSpan>Study</BoldWhiteSpan>
       <GreaterThanIcon />
       <BoldBlueSpan>Moov</BoldBlueSpan>

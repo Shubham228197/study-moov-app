@@ -4,7 +4,7 @@ import { RouteLink } from "../../GeneralStyling/Overlays";
 
 const MobNavTextBlack = () => (
   <MobNavTitle variant="h6">
-    <RouteLink to='/home-mob'>
+    <RouteLink to='/'>
     Study
     <GreaterThanIcon />
     <BolderSpan>Moov</BolderSpan></RouteLink>

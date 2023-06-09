@@ -9,14 +9,10 @@ import { HomepageHeading } from "../MainStyling/HomepageTextStyles";
 import { BoxCenterHighMar } from "../../../GeneralStyling/Overlays";
 import FilterHomepage from "./FilterHomepage";
 import { useState } from "react";
-// import { useMediaQuery, useTheme } from '@mui/material'
 import { UniversitiesList } from "../../../GeneralConstants/CollegeList";
 
 const HomepageMain = () => {
   const [CardCount, setCardCount] = useState(3);
-
-  // const theme = useTheme();
-  // const mobileView = useMediaQuery(theme.breakpoints.down(1250))
 
   const AddMoreCards = () => {
     setCardCount((prev) => prev + 3);

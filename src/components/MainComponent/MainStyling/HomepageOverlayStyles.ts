@@ -108,7 +108,7 @@ export const VienaaCollegeImage = Styles.img`
     margin: auto;
 `;
 export const FeeContainer = Styles(Box)`
-    padding: 5px 50px;
+    padding: 5px 50px 5px 30px;
 `;
 export const CollegeBuildingImage = Styles(Grid)`
     background-repeat: no-repeat;
